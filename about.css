@@ -1,0 +1,104 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5c8eeb;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr 0.6fr;
+  align-items: flex-end;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer a {
+  text-decoration: none;
+  color: cadetblue;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.container {
+  background-color: rgba(173, 196, 238, 0.7);
+}
+
+section {
+  margin: 0px auto;
+  width: 80%;
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 2/4;
+  background-color: rgba(170, 167, 155, 0.4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr 1fr 2fr;
+  align-items: center;
+}
+section img {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  margin: 30px auto;
+  background-color: #5a7ead;
+  width: 100%;
+  height: 100%;
+}
+section .name {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 40%;
+  background-color: #edaa92;
+  text-align: center;
+  margin-top: 30px;
+}
+section p {
+  width: 80%;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0px auto;
+  text-align: start;
+  background-color: cornsilk;
+}
+section .skills {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-bottom: 30px;
+  margin: 0px auto;
+}
+section .icon {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=about.css.map */

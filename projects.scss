@@ -1,0 +1,35 @@
+@import "frame.scss";
+
+.container {
+  background-color: rgb(156, 218, 156);
+}
+.grid {
+  align-items: center;
+}
+
+section {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+
+  .terminal-app {
+    background-color: darkorange;
+    margin: 5%;
+    display: grid;
+  }
+  .personal-portfolio {
+    background-color: rgb(101, 146, 212);
+    margin: 5%;
+    display: grid;
+  }
+  .dme-plant {
+    background-color: rgb(212, 205, 101);
+    margin: 5%;
+    display: grid;
+
+  }
+}
