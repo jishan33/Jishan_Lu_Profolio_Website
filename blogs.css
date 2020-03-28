@@ -15,7 +15,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 0.5fr 0.6fr;
+  grid-template-rows: 0.3fr 1fr 0.5fr 0.3fr;
   align-items: flex-end;
 }
 
@@ -44,6 +44,23 @@ footer a {
   font-size: 18px;
   font-weight: bold;
   margin-right: 30px;
+}
+
+.container {
+  background: conic-gradient(from 0.25turn at 50% 30%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
+}
+
+section {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+}
+section div {
+  width: 15%;
+  height: 50%;
+  background: conic-gradient(red 36deg, orange 36deg 170deg, yellow 170deg);
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=blogs.css.map */

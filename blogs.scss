@@ -1,1 +1,23 @@
 @import "frame.scss";
+
+.container {
+  background: conic-gradient(from 0.25turn at 50% 30%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);; 
+}
+
+
+
+section {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  width: 100%;
+  height: 100%;
+  
+div {
+  width: 15%;
+  height: 50%;
+ background: conic-gradient(
+     red 36deg, orange 36deg 170deg, yellow 170deg);
+  border-radius: 50%
+}
+
+}
