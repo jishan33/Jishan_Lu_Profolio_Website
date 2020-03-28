@@ -5,31 +5,54 @@
 }
 .grid {
   align-items: center;
+  grid-template-rows: 1fr 2fr 2fr 0.6fr;
 }
 
 section {
   grid-row: 2 / 4;
   grid-column: 1 / 2;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   margin: auto auto;
   display: flex;
   justify-content: space-between;
 
-  .terminal-app {
-    background-color: darkorange;
-    margin: 5%;
+  .terminal-app, .personal-portfolio, .dme-plant {
+    background-color: rgba(194, 206, 200, 0.7);
+    border: 2px dotted pink;
+    margin-right: 30px;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.3fr;
   }
-  .personal-portfolio {
-    background-color: rgb(101, 146, 212);
-    margin: 5%;
-    display: grid;
+  .dme-plant { 
+    margin-right:0px;
   }
-  .dme-plant {
-    background-color: rgb(212, 205, 101);
-    margin: 5%;
-    display: grid;
+
+  img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
 
   }
+
+  i{
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin-left: 85%;
+    margin-top: 15%;
+  }
+
+  
 }

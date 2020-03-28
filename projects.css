@@ -52,31 +52,49 @@ footer a {
 
 .grid {
   align-items: center;
+  grid-template-rows: 1fr 2fr 2fr 0.6fr;
 }
 
 section {
   grid-row: 2/4;
   grid-column: 1/2;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   margin: auto auto;
   display: flex;
   justify-content: space-between;
 }
-section .terminal-app {
-  background-color: darkorange;
-  margin: 5%;
+section .terminal-app, section .personal-portfolio, section .dme-plant {
+  background-color: rgba(194, 206, 200, 0.7);
+  border: 2px dotted pink;
+  margin-right: 30px;
   display: grid;
-}
-section .personal-portfolio {
-  background-color: #6592d4;
-  margin: 5%;
-  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0.3fr;
 }
 section .dme-plant {
-  background-color: #d4cd65;
-  margin: 5%;
-  display: grid;
+  margin-right: 0px;
+}
+section img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: auto;
+}
+section p {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 90%;
+  height: 100%;
+  margin: 0px auto;
+}
+section i {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-left: 85%;
+  margin-top: 15%;
 }
 
 /*# sourceMappingURL=projects.css.map */
