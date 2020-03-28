@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="blogs.css">
+  <link rel="stylesheet" href="contact.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <title>Blogs</title>
+  <title>Contact Me</title>
 </head>
-
 <body>
-  <div class="container">
+   <div class="container">
     <div class="grid">
       <header>
         <h3>Jishan Logo</h3>
       </header>
       <section>
+        <form>
+          <div class="detail">
+          <label for="name">Name</label>
+          <input type="email" name="name" id="name">
+
+          <label for="email">Email</label><input type="email" name="email" id="email">
+          </div>
+
+          <label id ="comments-label" for="comment">Comment</label>
+          <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
+        </form>
 
       </section>
 
@@ -29,7 +38,6 @@
       </footer>
     </div>
   </div>
-
+  
 </body>
-
 </html>

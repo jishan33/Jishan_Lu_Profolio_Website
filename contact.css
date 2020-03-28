@@ -1,0 +1,89 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5c8eeb;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr 0.6fr;
+  align-items: flex-end;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer a {
+  text-decoration: none;
+  color: cadetblue;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.container {
+  background-color: skyblue;
+}
+
+.grid {
+  grid-template-rows: 1fr 1fr 1fr 0.6fr;
+}
+
+section {
+  grid-row: 2/4;
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+}
+section form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+section label {
+  margin-top: 20px;
+  margin-bottom: 3px;
+  color: #354cca;
+  font-weight: bold;
+}
+section input {
+  width: 330px;
+  height: 1.5em;
+}
+section #comments-label {
+  margin-right: 270px;
+}
+
+/*# sourceMappingURL=contact.css.map */
