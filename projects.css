@@ -15,7 +15,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 0.5fr 0.6fr;
+  grid-template-rows: 0.3fr 1fr 0.5fr 0.3fr;
   align-items: flex-end;
 }
 
@@ -24,6 +24,9 @@ header {
   height: 100%;
   grid-row: 1/2;
   grid-column: 1/2;
+  background-color: rgba(255, 192, 203, 0.8);
+}
+header h3 {
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -33,7 +36,7 @@ footer {
   height: 100%;
   grid-row: 4/5;
   grid-column: 1/2;
-  background-color: white;
+  background-color: rgba(255, 192, 203, 0.8);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -71,30 +74,35 @@ section .terminal-app, section .personal-portfolio, section .dme-plant {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 0.3fr;
+  justify-items: center;
 }
-section .dme-plant {
-  margin-right: 0px;
-}
-section img {
+section .terminal-app figure, section .personal-portfolio figure, section .dme-plant figure {
   grid-column: 1/2;
   grid-row: 1/2;
+}
+section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
   width: 100%;
   height: auto;
 }
-section p {
+section .terminal-app p, section .personal-portfolio p, section .dme-plant p {
   grid-column: 1/2;
   grid-row: 2/3;
-  width: 90%;
+  width: 85%;
   height: 100%;
   margin: 0px auto;
 }
-section i {
-  width: 100%;
+section .terminal-app i, section .personal-portfolio i, section .dme-plant i {
+  width: 20%;
   height: 100%;
   grid-column: 1/2;
   grid-row: 3/4;
-  margin-left: 85%;
-  margin-top: 15%;
+  margin-left: 80%;
+}
+
+#github-logo {
+  width: 10%;
+  height: auto;
+  margin-left: 80%;
 }
 
 /*# sourceMappingURL=projects.css.map */

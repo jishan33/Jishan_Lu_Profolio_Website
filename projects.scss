@@ -24,35 +24,40 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.3fr;
-  }
-  .dme-plant { 
-    margin-right:0px;
-  }
+    justify-items: center;
 
-  img {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    width: 100%;
-    height: auto;
-  }
+    figure {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+      
+    }
 
   p {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    width: 90%;
+    width: 85%;
     height: 100%;
     margin: 0px auto;
 
   }
 
   i{
-    width: 100%;
+    width: 20%;
     height: 100%;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    margin-left: 85%;
-    margin-top: 15%;
+    margin-left: 80%;
   }
+}
+}
 
-  
+#github-logo {
+  width: 10%;
+  height: auto;
+  margin-left: 80%;
 }
