@@ -61,14 +61,14 @@ section {
   margin: 0px auto;
   grid-row: 2/4;
   grid-column: 1/2;
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: space-around;
 }
 section .terminal-app, section .personal-portfolio, section .dme-plant {
   background-color: rgba(230, 235, 229, 0.582);
-  margin: 15px;
+  margin: 40px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 0.3fr;

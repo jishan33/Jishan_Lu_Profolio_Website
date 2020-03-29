@@ -19,9 +19,27 @@
       <section>
 
         <h1 class="skills">Skills</h1>
-        <figure class="icon">
-          <i class="fas fa-cloud"></i><i class="fas fa-cloud"></i><i class="fas fa-cloud"></i><i
-            class="fas fa-cloud"></i>
+        <figure class="icons">
+
+          <div class="popup"  onclick="myFunction('myPopup1')" data-popup-id="popup1"><img src="./photos/ruby.png" alt="ruby" class="ruby">
+            <span class="popuptext" id="myPopup1">Ruby</span>
+          </div>
+
+          <div class="popup" onclick="myFunction('myPopup2')"><img src="./photos/css.png" alt="css" class="css">
+            <span class="popuptext" id="myPopup2">CSS</span>
+          </div>
+
+           <div class="popup" id="popup-html" onclick="myFunction('myPopup3')"><img src="./photos/html.png" alt="html" class="html">
+            <span class="popuptext" id="myPopup3">HTML</span>
+          </div>
+
+           <div class="popup" id="popup-ig" onclick="myFunction('myPopup4')"><img src="./photos/instagram.png" alt="ig" class="ig">
+            <span class="popuptext" id="myPopup4">IG</span>
+          </div>
+
+
+
+
 
         </figure>
 
@@ -44,6 +62,14 @@
       </footer>
     </div>
   </div>
+
+  <script>
+    // When the user clicks on div, open the popup
+    function myFunction(popup_id) {
+      var popup = document.getElementById(popup_id);
+      popup.classList.toggle("show");
+    }
+  </script>
 
 </body>
 

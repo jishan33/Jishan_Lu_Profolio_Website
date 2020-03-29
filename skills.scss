@@ -24,11 +24,24 @@ section {
     margin: 0px auto;
   }
 
-  .icon {
+  .icons {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     display: flex;
     justify-content: space-evenly;
+
+    @import "popup-text";
+
+    .ruby, .css, .html, .ig{
+    width: 30%;
+    height: auto;
+    margin: 10%;
+    }
+
+    #myPopup4 {
+      right: 200%;
+    }
+
   }
 
   article {
@@ -45,7 +58,6 @@ section {
   }
 
 }
-
 
 
 

@@ -72,11 +72,62 @@ section .skills {
   grid-row: 1/2;
   margin: 0px auto;
 }
-section .icon {
+section .icons {
   grid-column: 2/4;
   grid-row: 1/2;
   display: flex;
   justify-content: space-evenly;
+  /* The actual popup */
+  /* Toggle this class - hide and show the popup */
+  /* Add animation (fade in the popup) */
+}
+section .icons .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+section .icons .popup .popuptext {
+  visibility: hidden;
+  width: 500px;
+  height: 300px;
+  background-color: #ecbfbf;
+  color: #f30606;
+  text-align: center;
+  border-radius: 16px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  top: 190%;
+  left: -150%;
+}
+section .icons .popuptext.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+section .icons .ruby, section .icons .css, section .icons .html, section .icons .ig {
+  width: 30%;
+  height: auto;
+  margin: 10%;
+}
+section .icons #myPopup4 {
+  right: 200%;
 }
 section article {
   width: 60%;
