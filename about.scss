@@ -48,18 +48,4 @@ section {
     text-align: start;
     background-color: cornsilk;
   }
-
-  .skills {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    margin-bottom: 30px;
-    margin: 0px auto;
-  }
-
-  .icon {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    display: flex;
-    justify-content: space-evenly;
-  }
 }

@@ -1,0 +1,58 @@
+@import "frame.scss";
+
+.container {
+  background-color: rgba(255, 192, 203);
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  width: 80%;
+}
+
+
+section {
+  background-color: wheat;
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  margin: 0px auto;
+  
+ .skills {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0px auto;
+  }
+
+  .icon {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  article {
+    width: 60%;
+    height: 90%;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    margin: 0px auto;
+
+
+    p {
+      margin: 0px auto;
+    }
+  }
+
+}
+
+
+
+
+
+
