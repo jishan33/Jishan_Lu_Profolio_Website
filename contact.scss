@@ -1,12 +1,13 @@
 @import "frame.scss";
 
-.container {
+.container, header, footer{
   background-color: skyblue;
 }
 
+
 .grid {
-  grid-template-rows: 1fr 1fr 2fr 0.6fr;
   grid-template-columns: 1fr 1fr;
+  
 }
 
 section {
@@ -17,13 +18,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 
   form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   }
 
   .detail {
@@ -34,7 +34,7 @@ section {
   label {
     margin-top: 10px;
     margin-bottom: 3px;
-    color: #354cca;
+    color: #0b316b;
     font-weight: bold;
   }
 
@@ -42,13 +42,11 @@ section {
     width:330px;
     height: 1.5em;
   }
-  #comments-label {
-    margin-right: 270px;
-  }
+  
 
   a {
     text-decoration: none;
-    color: white;
+    color: rgb(38, 74, 141);
     text-decoration: underline;
   }
 }
@@ -58,6 +56,8 @@ section {
     grid-row: 2 / 4;
     width: 80%;
     height: 100%;
+    display: flex;
+    align-items: center;
   }
 
 

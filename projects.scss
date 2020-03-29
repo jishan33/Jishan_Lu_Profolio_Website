@@ -1,26 +1,27 @@
 @import "frame.scss";
 
-.container {
-  background-color: rgb(156, 218, 156);
-}
-.grid {
-  align-items: center;
-  grid-template-rows: 1fr 2fr 2fr 0.6fr;
+.container, header {
+  background-color: rgb(33, 94, 33);
 }
 
+footer {
+  background-color: white;
+}
+
+
 section {
+  margin: 0px auto;
   grid-row: 2 / 4;
   grid-column: 1 / 2;
   width: 90%;
-  height: 90%;
-  margin: auto auto;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   .terminal-app, .personal-portfolio, .dme-plant {
-    background-color: rgba(194, 206, 200, 0.7);
-    border: 2px dotted pink;
-    margin-right: 30px;
+    background-color: rgba(180, 235, 173, 0.8);
+    margin: 10px;
+    margin-bottom: 0px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.3fr;
@@ -28,36 +29,46 @@ section {
 
     figure {
       grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      
+      grid-row: 1 / 2;  
       img {
         width: 100%;
         height: auto;
+        margin: 0px auto;
       }
-      
     }
+
 
   p {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     width: 85%;
     height: 100%;
-    margin: 0px auto;
-
+    margin: 10px auto;
   }
 
-  i{
-    width: 20%;
-    height: 100%;
+  a {
+    width: 10%;
+    height: 70%;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     margin-left: 80%;
   }
+
+  #github-logo, #portfolio, #barrel{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    color: pink;
+  }
+  #barrel {
+    margin-bottom: 10px;
+  }
+  #github-logo {
+    margin-top: 15px;
+  }
+
+
+  
 }
 }
 
-#github-logo {
-  width: 10%;
-  height: auto;
-  margin-left: 80%;
-}

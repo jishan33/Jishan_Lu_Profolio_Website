@@ -16,7 +16,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 2fr 0.3fr;
+  grid-template-rows: 0.3fr 1.5fr 0.3fr;
 }
 
 header {
