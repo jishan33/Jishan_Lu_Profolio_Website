@@ -34,9 +34,9 @@ header h3 {
 footer {
   width: 100%;
   height: 100%;
+  background-color: white;
   grid-row: 4/5;
   grid-column: 1/2;
-  background-color: rgba(255, 192, 203, 0.8);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -49,8 +49,8 @@ footer a {
   margin-right: 30px;
 }
 
-.container, header {
-  background-color: #215e21;
+.grid, header {
+  background-color: rgba(70, 151, 70, 0.9);
 }
 
 footer {
@@ -67,13 +67,15 @@ section {
   justify-content: space-around;
 }
 section .terminal-app, section .personal-portfolio, section .dme-plant {
-  background-color: rgba(180, 235, 173, 0.8);
-  margin: 10px;
-  margin-bottom: 0px;
+  background-color: rgba(230, 235, 229, 0.582);
+  margin: 15px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 0.3fr;
   justify-items: center;
+  border: 2px solid #e6cf6b;
+  box-shadow: 10px 10px 7px 0px #adbf9d;
+  border-radius: 5px;
 }
 section .terminal-app figure, section .personal-portfolio figure, section .dme-plant figure {
   grid-column: 1/2;
@@ -83,6 +85,7 @@ section .terminal-app figure img, section .personal-portfolio figure img, sectio
   width: 100%;
   height: auto;
   margin: 0px auto;
+  box-shadow: 10px 10px 7px 0px #e0b667;
 }
 section .terminal-app p, section .personal-portfolio p, section .dme-plant p {
   grid-column: 1/2;
@@ -102,10 +105,9 @@ section .terminal-app #github-logo, section .terminal-app #portfolio, section .t
   width: 100%;
   height: auto;
   margin-top: 10px;
-  color: pink;
 }
 section .terminal-app #barrel, section .personal-portfolio #barrel, section .dme-plant #barrel {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 section .terminal-app #github-logo, section .personal-portfolio #github-logo, section .dme-plant #github-logo {
   margin-top: 15px;

@@ -1,8 +1,9 @@
 @import "frame.scss";
 
-.container, header {
-  background-color: rgb(33, 94, 33);
+ .grid, header{
+  background-color: rgba(70, 151, 70, 0.9);
 }
+
 
 footer {
   background-color: white;
@@ -19,21 +20,24 @@ section {
   justify-content: space-around;
 
   .terminal-app, .personal-portfolio, .dme-plant {
-    background-color: rgba(180, 235, 173, 0.8);
-    margin: 10px;
-    margin-bottom: 0px;
+    background-color: rgba(230, 235, 229, 0.582);
+    margin: 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.3fr;
     justify-items: center;
+    border: 2px solid rgb(230, 207, 107);
+    box-shadow: 10px 10px 7px 0px rgba(173,191,157,1);
+    border-radius: 5px;
 
     figure {
       grid-column: 1 / 2;
-      grid-row: 1 / 2;  
+      grid-row: 1 / 2; 
       img {
         width: 100%;
         height: auto;
         margin: 0px auto;
+        box-shadow: 10px 10px 7px 0px rgba(224,182,103,1);
       }
     }
 
@@ -58,16 +62,13 @@ section {
     width: 100%;
     height: auto;
     margin-top: 10px;
-    color: pink;
   }
   #barrel {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   #github-logo {
     margin-top: 15px;
   }
-
-
   
 }
 }
