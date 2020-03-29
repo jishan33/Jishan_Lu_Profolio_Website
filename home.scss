@@ -56,10 +56,11 @@ figure {
   padding: 10px;
   display: flex;
   align-items: center;
+
   .border {
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
+  }
   
 
   img {

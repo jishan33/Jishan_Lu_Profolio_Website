@@ -77,10 +77,21 @@ section figure {
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 section figure img {
-  width: 50%;
+  width: 70%;
   height: auto;
+  border-radius: 25px;
+}
+section figure .border {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #eed04d;
+  background-color: wheat;
+  border-radius: 25px;
 }
 section article {
   margin: 0px auto;
