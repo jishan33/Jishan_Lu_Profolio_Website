@@ -1,51 +1,48 @@
 @import "frame.scss";
 
 
-.container {
-  background-color: rgba(173, 196, 238, 0.7);
+header, .container {
+  background-color: rgb(113, 156, 238);
 }
+
+ footer {
+   background-color: white;
+ }
 
 
 section {
-  margin:0px auto;
+  margin: 0px auto;
+  background-color: rgba(230, 222, 221, 0.4);
   width: 80%;
   height:100%;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
-  background-color: rgba(170, 167, 155, 0.4);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 3fr 1fr 2fr;
-  // justify-content: center;
+  grid-template-rows: 1fr;
   align-items: center;
-  
-  img {
+
+  figure {
     grid-column: 1 / 2;
-    grid-row: 1 / 5;
+    grid-row: 1 / 3;
     margin: 30px auto;
-    background-color: rgb(90, 126, 173);
     width: 100%;
     height:100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 50%;
+      height: auto;
+    }
   }
 
-  .name {
-    
+  article {
+    margin: 0px auto;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    width: 100%;
-    height:40%; 
-    background-color: hsl(16, 71%, 75%);  
-    text-align: center;
-    margin-top: 30px;
+    width: 80%;
+    height:40%;  
   }
   
-  p {
-    width: 80%;
-    height:100%;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    margin: 0px auto;
-    text-align: start;
-    background-color: cornsilk;
-  }
 }
