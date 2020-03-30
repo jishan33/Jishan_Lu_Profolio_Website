@@ -86,10 +86,14 @@ section label {
 section input {
   width: 330px;
   height: 1.5em;
+  box-shadow: 2px 2px 5px 0px #2945e3;
+}
+section #comment {
+  box-shadow: 2px 2px 5px 0px #2945e3;
 }
 section a {
   text-decoration: none;
-  color: #264a8d;
+  color: #2945e3;
   text-decoration: underline;
 }
 
@@ -105,6 +109,7 @@ figure {
 #map {
   height: 80%;
   width: 100%;
+  box-shadow: 5px 5px 12px 0px #87878f;
 }
 
 footer {
@@ -114,8 +119,8 @@ footer {
 @media screen and (max-width: 550px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.6fr 1fr 0.3fr;
-    align-items: flex-start;
+    grid-template-rows: 0.2fr 0.5fr 1fr 0.2fr;
+    align-items: center;
     justify-items: center;
   }
 
@@ -129,6 +134,7 @@ footer {
   section form {
     width: 90%;
     height: 80%;
+    align-content: center;
   }
   section form input, section form #comment {
     width: 90%;
@@ -138,7 +144,7 @@ footer {
     grid-row: 3/4;
     grid-column: 1/2;
     justify-content: center;
-    align-items: flex-start;
+    align-content: flex-start;
   }
   figure #map {
     height: 90%;

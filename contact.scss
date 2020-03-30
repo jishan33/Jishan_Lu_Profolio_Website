@@ -41,12 +41,17 @@ section {
   input {
     width:330px;
     height: 1.5em;
+    box-shadow: 2px 2px 5px 0px rgba(41,69,227,1);
+  }
+
+  #comment {
+    box-shadow: 2px 2px 5px 0px rgba(41,69,227,1);
   }
   
 
   a {
     text-decoration: none;
-    color: rgb(38, 74, 141);
+    color: rgba(41,69,227,1);
     text-decoration: underline;
   }
 }
@@ -61,10 +66,11 @@ section {
   }
 
 
-#map {
-      height: 80%;
-      width: 100%;
-}
+  #map {
+    height: 80%;
+    width: 100%;
+    box-shadow: 5px 5px 12px 0px rgba(135,135,143,1);
+  }
 
 footer {
   grid-column: 1 / 3;
@@ -73,8 +79,8 @@ footer {
 @media screen and (max-width: 550px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.6fr 1fr 0.3fr;
-    align-items: flex-start;
+    grid-template-rows: 0.2fr 0.5fr 1fr 0.2fr;
+    align-items: center;
     justify-items: center;
 
   }
@@ -89,6 +95,7 @@ footer {
    form {
      width: 90%;
      height: 80%;
+     align-content: center;
 
      input, #comment {
        width: 90%;
@@ -100,7 +107,7 @@ footer {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     justify-content: center;
-    align-items: flex-start;
+    align-content: flex-start;
 
     #map {
       height: 90%;
