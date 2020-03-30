@@ -3,24 +3,28 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
-  width: 500px;
-  height: 300px;
-  background-color: rgb(236, 191, 191);
+  width: 115%;
+  height: 150%;
+  background-color: rgba(255, 192, 203);
   color: rgb(243, 6, 6);
-  text-align: center;
+  box-shadow: 9px 7px 7px 0px rgba(222,16,112,1);
   border-radius: 16px;
   padding: 8px;
   position: absolute;
+  text-align: center;
   z-index: 1;
-  top: 190%;
-  left: -150%;
+  top: 130%;
+  left: -40%;
 }
-
 
 
 

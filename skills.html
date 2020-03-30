@@ -21,7 +21,7 @@
         <h1 class="skills">Skills</h1>
         <figure class="icons">
 
-          <div class="popup"  onclick="myFunction('myPopup1')" data-popup-id="popup1"><img src="./photos/ruby.png" alt="ruby" class="ruby">
+          <div class="popup"  onclick="myFunction('myPopup1')"><img src="./photos/ruby.png" alt="ruby" class="ruby">
             <span class="popuptext" id="myPopup1">Ruby</span>
           </div>
 
@@ -29,11 +29,11 @@
             <span class="popuptext" id="myPopup2">CSS</span>
           </div>
 
-           <div class="popup" id="popup-html" onclick="myFunction('myPopup3')"><img src="./photos/html.png" alt="html" class="html">
+           <div class="popup" onclick="myFunction('myPopup3')"><img src="./photos/html.png" alt="html" class="html">
             <span class="popuptext" id="myPopup3">HTML</span>
           </div>
 
-           <div class="popup" id="popup-ig" onclick="myFunction('myPopup4')"><img src="./photos/instagram.png" alt="ig" class="ig">
+           <div class="popup" onclick="myFunction('myPopup4')"><img src="./photos/instagram.png" alt="ig" class="ig">
             <span class="popuptext" id="myPopup4">IG</span>
           </div>
 
@@ -44,8 +44,7 @@
         </figure>
 
         <article>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis mollitia ea deserunt magnam, ullam
-            doloribus.</p>
+          <p>Click on the icons to know more</p>
         </article>
 
       </section>
@@ -68,6 +67,7 @@
     function myFunction(popup_id) {
       var popup = document.getElementById(popup_id);
       popup.classList.toggle("show");
+      
     }
   </script>
 

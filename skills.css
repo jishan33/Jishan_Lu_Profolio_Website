@@ -55,17 +55,24 @@ footer a {
   justify-content: center;
 }
 
+.grid {
+  align-items: center;
+}
+
 section {
-  background-color: wheat;
   grid-row: 2/4;
   grid-column: 1/2;
   width: 80%;
   height: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   margin: 0px auto;
+  background-color: rgba(245, 210, 169, 0.884);
+  border: 2px solid #ff7657;
+  border-radius: 70px;
+  box-shadow: 9px 7px 7px 0px #de1070;
 }
 section .skills {
   grid-column: 1/2;
@@ -85,20 +92,25 @@ section .icons .popup {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 section .icons .popup .popuptext {
   visibility: hidden;
-  width: 500px;
-  height: 300px;
-  background-color: #ecbfbf;
+  width: 115%;
+  height: 150%;
+  background-color: pink;
   color: #f30606;
-  text-align: center;
+  box-shadow: 9px 7px 7px 0px #de1070;
   border-radius: 16px;
   padding: 8px;
   position: absolute;
+  text-align: center;
   z-index: 1;
-  top: 190%;
-  left: -150%;
+  top: 130%;
+  left: -40%;
 }
 section .icons .popuptext.show {
   visibility: visible;
@@ -125,9 +137,24 @@ section .icons .ruby, section .icons .css, section .icons .html, section .icons 
   width: 30%;
   height: auto;
   margin: 10%;
+  padding: 5px;
+  border-radius: 30%;
+  border: 2px solid #ec913c;
 }
-section .icons #myPopup4 {
-  right: 200%;
+section .icons .ig {
+  padding: 5px;
+}
+section .icons .ruby:hover {
+  background-color: red;
+}
+section .icons .css:hover {
+  background: conic-gradient(red 120deg, green 120deg 240deg, blue 240deg 360deg);
+}
+section .icons .html:hover {
+  background: conic-gradient(grey 180deg, wheat 180deg 360deg);
+}
+section .icons .ig:hover {
+  background: conic-gradient(from 0.3turn at 50% 50%, orange, 50deg, yellow, 100deg, purple, 250deg, yellow);
 }
 section article {
   width: 60%;
@@ -135,9 +162,12 @@ section article {
   grid-column: 1/4;
   grid-row: 2/3;
   margin: 0px auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 section article p {
-  margin: 0px auto;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=skills.css.map */

@@ -6,17 +6,24 @@
   justify-content: center;
 }
 
+.grid {
+  align-items: center;
+}
+
 section {
-  background-color: wheat;
   grid-row: 2 / 4;
   grid-column: 1 / 2;
   width: 80%;
   height: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   margin: 0px auto;
+  background-color: rgba(245, 210, 169, 0.884);
+  border: 2px solid rgba(255,118,87,1);
+  border-radius: 70px;
+  box-shadow: 9px 7px 7px 0px rgba(222,16,112,1);
   
  .skills {
     grid-column: 1 / 2;
@@ -36,10 +43,30 @@ section {
     width: 30%;
     height: auto;
     margin: 10%;
+    padding: 5px;
+    border-radius: 30%;
+    border: 2px solid rgb(236, 145, 60);
+  
     }
 
-    #myPopup4 {
-      right: 200%;
+    .ig{
+      padding: 5px;
+    } 
+    
+    .ruby:hover {
+      background-color: red;
+    }
+    .css:hover {
+      background: conic-gradient( 
+     red 120deg, green 120deg 240deg, blue 240deg 360deg);
+    }
+    .html:hover {
+      background: conic-gradient( 
+     grey 180deg, wheat 180deg 360deg);
+    }
+
+    .ig:hover {
+      background: conic-gradient(from 0.30turn at 50% 50%, orange, 50deg, yellow, 100deg, purple, 250deg, yellow);
     }
 
   }
@@ -50,10 +77,13 @@ section {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     margin: 0px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
 
     p {
-      margin: 0px auto;
+      font-size: 20px;
     }
   }
 
