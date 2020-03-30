@@ -50,7 +50,7 @@ footer a {
 }
 
 .container {
-  background: conic-gradient(from 0.75turn at 50% 30%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
+  background: conic-gradient(from 0.75turn at 50% 23%, #f69d3c, 30deg, #3f87a6, 350deg, #ebf8e1);
 }
 
 .grid {
@@ -129,7 +129,7 @@ footer a {
 @media screen and (max-width: 550px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.5fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
     align-items: center;
     justify-items: center;
   }
@@ -140,14 +140,27 @@ footer a {
     height: 80%;
     grid-row: 2/3;
     grid-column: 1/2;
+    align-items: flex-start;
+    justify-items: center;
+  }
+  section .contact-detail {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
   }
   section form {
     width: 90%;
-    height: 80%;
-    align-content: center;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
   }
-  section form input, section form #comment {
-    width: 90%;
+  section form input {
+    width: 152%;
+  }
+  section form #comment {
+    width: 100%;
+    height: 55px;
   }
 
   figure {
@@ -163,6 +176,25 @@ footer a {
 
   footer a {
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .grid {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  input {
+    width: 50px;
+  }
+
+  header h3 {
+    font-size: 10px;
+  }
+
+  #map {
+    height: 20%;
+    width: 80%;
   }
 }
 

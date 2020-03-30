@@ -337,12 +337,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   #dme {
     height: 120px;
   }
-
-  .terminal-app, .personal-portfolio, .dme-plant {
-    width: 85%;
-    height: 20%;
-    margin: 3px;
-  }
 }
 
 /*# sourceMappingURL=projects.css.map */
