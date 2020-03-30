@@ -20,6 +20,8 @@ section {
   justify-content: space-around;
 
   .terminal-app, .personal-portfolio, .dme-plant {
+    width: 100%;
+    height: 80%;
     background-color: rgba(230, 235, 229, 0.582);
     margin: 40px;
     display: grid;
@@ -33,8 +35,9 @@ section {
     figure {
       grid-column: 1 / 2;
       grid-row: 1 / 2; 
+
       img {
-        width: 100%;
+        width: 300px;
         height: auto;
         margin: 0px auto;
         box-shadow: 10px 10px 7px 0px rgba(224,182,103,1);
@@ -42,34 +45,59 @@ section {
     }
 
 
-  p {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    width: 85%;
-    height: 100%;
-    margin: 10px auto;
+    article {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      width: 85%;
+      height: 100%;
+      margin: 10px auto;
+    }
+
+    a {
+      width: 10%;
+      height: 70%;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      margin-left: 80%;
+    }
+
+    #github-logo, #portfolio, #barrel{
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+    #barrel {
+      margin-bottom: 15px;
+    }
+    #github-logo {
+      margin-top: 15px;
+    }  
+  }
+}
+@media screen and (max-width: 1400px) {
+  @import "projects-responsive.scss";
+
+        #dme {
+          height: 250px;
+          margin-bottom: 25px;
+          width: auto;
+        }
+}
+
+@media screen and (max-width: 550px) {
+  @import "projects-responsive.scss";
+  body {
+    font-size: 15px;
   }
 
-  a {
-    width: 10%;
-    height: 70%;
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    margin-left: 80%;
+  img {
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
   }
 
-  #github-logo, #portfolio, #barrel{
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
-  #barrel {
-    margin-bottom: 15px;
-  }
-  #github-logo {
-    margin-top: 15px;
+  #dme {
+    height: 170px;
   }
   
 }
-}
-

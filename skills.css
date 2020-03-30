@@ -172,7 +172,7 @@ section article p {
 
 @media screen and (max-width: 550px) {
   .grid {
-    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
   }
 
   section {
@@ -203,7 +203,7 @@ section article p {
   }
 
   footer a, #text {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 
