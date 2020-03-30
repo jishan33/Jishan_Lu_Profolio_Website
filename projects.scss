@@ -89,6 +89,7 @@ section {
   body {
     font-size: 15px;
   }
+  
 
   img {
     width: auto ;
@@ -100,4 +101,28 @@ section {
     height: 170px;
   }
   
+}
+
+@media screen and (max-width: 350px) {
+  @import "projects-responsive.scss";
+  body {
+    font-size: 10px;
+  }
+
+  img {
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
+  }
+
+  #dme {
+    height: 120px;
+  }
+
+  .terminal-app, .personal-portfolio, .dme-plant {
+    width: 85%;
+    height: 20%;
+    margin: 3px;
+  }
+
 }
