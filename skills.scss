@@ -1,6 +1,7 @@
 @import "frame.scss";
 
 .container {
+  
   background-color: rgba(255, 192, 203);
   display: flex;
   justify-content: center;
@@ -37,7 +38,7 @@ section {
     display: flex;
     justify-content: space-evenly;
 
-    @import "popup-text";
+    @import "popup-text.scss";
 
     .ruby, .css, .html, .ig{
     width: 30%;
@@ -86,6 +87,54 @@ section {
       font-size: 20px;
     }
   }
+}
+
+
+@media screen and (max-width: 550px) {
+  .grid {
+     grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
+  }
+  section {
+    height: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.8fr 0.3fr;
+    align-items: flex-start;
+
+    .skills {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin-top: 15%;
+      text-align: end;
+      font-size: 20px;
+    }
+    .icons {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      align-content: flex-start;
+    }
+    article {
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+    }
+
+    .popup .popuptext {
+      margin-top: 30%;
+      margin-left: 5%;
+    }
+
+  }
+footer a, #text {
+  font-size: 15px;
+}
+  // section {
+    
+  // @import "popup-text.scss";
+    // .popup .popuptext {
+    //   width: 115%;
+    //   height: 200%;
+    //   top: 300%;
+    // }
+  // }
 
 }
 

@@ -109,7 +109,7 @@ section .icons .popup .popuptext {
   position: absolute;
   text-align: center;
   z-index: 1;
-  top: 130%;
+  top: 110%;
   left: -40%;
 }
 section .icons .popuptext.show {
@@ -168,6 +168,43 @@ section article {
 }
 section article p {
   font-size: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .grid {
+    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
+  }
+
+  section {
+    height: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.8fr 0.3fr;
+    align-items: flex-start;
+  }
+  section .skills {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-top: 15%;
+    text-align: end;
+    font-size: 20px;
+  }
+  section .icons {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-content: flex-start;
+  }
+  section article {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  section .popup .popuptext {
+    margin-top: 30%;
+    margin-left: 5%;
+  }
+
+  footer a, #text {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=skills.css.map */
