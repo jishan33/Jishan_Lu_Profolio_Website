@@ -9,18 +9,25 @@ header, .container {
    background-color: white;
  }
 
+ .grid {
+   align-items: center;
+ }
+
 
 section {
   margin: 0px auto;
   background-color: rgba(230, 222, 221, 0.4);
   width: 80%;
-  height:100%;
+  height:70%;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 12px 0px rgba(135,135,143,1);
+
 
   figure {
     grid-column: 1 / 2;
@@ -46,6 +53,7 @@ section {
       border: 3px solid #eed04d;
       background-color: wheat;;
       border-radius: 25px;
+      box-shadow: 5px 5px 21px 0px rgba(242,169,126,1);
     }
   }
 
