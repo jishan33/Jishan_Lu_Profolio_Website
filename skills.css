@@ -99,8 +99,6 @@ section .icons .popup {
 }
 section .icons .popup .popuptext {
   visibility: hidden;
-  width: 115%;
-  height: 150%;
   background-color: pink;
   color: #f30606;
   box-shadow: 9px 7px 7px 0px #de1070;
@@ -109,8 +107,14 @@ section .icons .popup .popuptext {
   position: absolute;
   text-align: center;
   z-index: 1;
-  top: 110%;
-  left: -40%;
+}
+@media screen and (min-width: 551px) {
+  section .icons .popup .popuptext {
+    width: 80%;
+    height: 150%;
+    top: 110%;
+    left: -14%;
+  }
 }
 section .icons .popuptext.show {
   visibility: visible;
@@ -146,6 +150,7 @@ section .icons .ig {
 }
 section .icons .ruby:hover {
   background-color: red;
+  transition: background-color 1s ease-out;
 }
 section .icons .css:hover {
   background: conic-gradient(red 120deg, green 120deg 240deg, blue 240deg 360deg);
@@ -192,6 +197,11 @@ section article p {
     grid-row: 2/3;
     grid-column: 1/2;
     align-content: flex-start;
+    flex-direction: column;
+  }
+  section .icons .ruby, section .icons .css, section .icons .html, section .icons .ig {
+    width: 10%;
+    height: auto;
   }
   section article {
     grid-row: 3/4;
@@ -204,6 +214,15 @@ section article p {
 
   footer a, #text {
     font-size: 10px;
+  }
+
+  /* The actual popup */
+  .popup .popuptext {
+    width: 68%;
+    height: 65%;
+    z-index: 1;
+    top: -58%;
+    left: 25%;
   }
 }
 

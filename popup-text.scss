@@ -12,8 +12,6 @@
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
-  width: 115%;
-  height: 150%;
   background-color: rgba(255, 192, 203);
   color: rgb(243, 6, 6);
   box-shadow: 9px 7px 7px 0px rgba(222,16,112,1);
@@ -22,8 +20,15 @@
   position: absolute;
   text-align: center;
   z-index: 1;
-  top: 110%;
-  left: -40%;
+}
+
+@media screen and (min-width: 551px) {
+  .popup .popuptext {
+    width: 80%;
+    height: 150%;
+    top: 110%;
+    left: -14%;
+  }
 }
 
 
