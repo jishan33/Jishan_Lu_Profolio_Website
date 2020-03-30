@@ -111,4 +111,43 @@ footer {
   grid-column: 1/3;
 }
 
+@media screen and (max-width: 550px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.6fr 1fr 0.3fr;
+    align-items: flex-start;
+    justify-items: center;
+  }
+
+  section {
+    font-size: 10px;
+    width: 70%;
+    height: 80%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  section form {
+    width: 90%;
+    height: 80%;
+  }
+  section form input, section form #comment {
+    width: 90%;
+  }
+
+  figure {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  figure #map {
+    height: 90%;
+    width: 90%;
+  }
+
+  footer a {
+    font-size: 15px;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */
