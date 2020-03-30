@@ -53,10 +53,10 @@ figure {
   padding: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 figure .border {
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  margin: 0px auto;
 }
 figure img {
   width: 100%;
@@ -92,9 +92,13 @@ footer a {
   .grid figure {
     grid-row: 2/3;
     grid-column: 1/2;
-    margin: 0px auto;
+    justify-items: center;
   }
-  .grid figure img {
+  .grid figure .border {
+    display: flex;
+    justify-content: center;
+  }
+  .grid figure .border img {
     width: auto;
     max-width: 70%;
     height: auto;

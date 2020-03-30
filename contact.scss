@@ -1,13 +1,18 @@
 @import "frame.scss";
 
-.container, header, footer{
-  background-color: skyblue;
+
+.container{
+  background: conic-gradient(from 0.75turn at 50% 30%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
 }
 
 
 .grid {
-  grid-template-columns: 1fr 1fr;
-  
+  grid-template-columns: 1fr 1fr;  
+}
+header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  background-color: transparent;
 }
 
 section {
@@ -74,6 +79,10 @@ section {
 
 footer {
   grid-column: 1 / 3;
+  background-color: transparent;
+  a {
+    color: rgb(255, 145, 0);
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -121,3 +130,4 @@ footer {
   }
   
 }
+
