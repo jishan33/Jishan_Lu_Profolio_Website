@@ -1,3 +1,7 @@
+* {
+  font-family: "Playfair Display", serif, sans-serif;
+}
+
 body {
   margin: 0px;
   overflow-x: hidden;
@@ -78,13 +82,17 @@ footer .portfolio-link a {
   }
   footer .portfolio-link a {
     font-size: 13px;
-    margin-right: 13px;
+    margin-right: 10px;
   }
 }
 .container {
-  background-color: pink;
+  background: conic-gradient(from 0.75turn at 10% 13%, snow, 100deg, pink, 300deg, #e8c8f0);
   display: flex;
   justify-content: center;
+}
+
+header, footer {
+  background-color: transparent;
 }
 
 .grid {
@@ -101,8 +109,8 @@ section {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   margin: 0px auto;
-  background-color: rgba(245, 210, 169, 0.884);
-  border: 2px solid #ff7657;
+  background: conic-gradient(from 0.75turn at 100% 35%, purple, 10deg, snow, 350deg, #e7962b);
+  border: 3px solid #ff7657;
   border-radius: 70px;
   box-shadow: 9px 7px 7px 0px #de1070;
 }
@@ -110,9 +118,10 @@ section .skills {
   grid-column: 1/2;
   grid-row: 1/2;
   margin: 0px auto;
-  color: #194fa0;
-  font-size: 30px;
+  color: #284eb8;
+  font-size: 40px;
   font-weight: bold;
+  text-shadow: 1px 1px #811357;
 }
 section .icons {
   grid-column: 2/4;
@@ -212,9 +221,8 @@ section article {
   justify-content: center;
 }
 section article #text {
-  font-size: 25px;
-  color: #ff7657;
-  font-weight: bold;
+  font-size: 15px;
+  color: #284eb8;
 }
 
 @media screen and (max-width: 550px) {
