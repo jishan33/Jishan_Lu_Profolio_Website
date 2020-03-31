@@ -163,6 +163,11 @@ section .icons .ruby, section .icons .css, section .icons .html, section .icons 
 section .icons .ig {
   padding: 5px;
 }
+section .icons #my-ig {
+  margin-top: 15%;
+  width: 80%;
+  height: auto;
+}
 section .icons .ruby:hover {
   background-color: red;
   transition: background-color 1s ease-out;
