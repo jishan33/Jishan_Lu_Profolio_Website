@@ -1,3 +1,7 @@
+* {
+  font-family: "Playfair Display", serif, sans-serif;
+}
+
 body {
   margin: 0px;
   overflow-x: hidden;
@@ -78,15 +82,21 @@ footer .portfolio-link a {
   }
   footer .portfolio-link a {
     font-size: 13px;
-    margin-right: 13px;
+    margin-right: 10px;
   }
 }
-.grid, header {
-  background-color: rgba(70, 151, 70, 0.9);
+.grid {
+  background: conic-gradient(from 0.75turn at 10% 13%, green, 10deg, forestgreen, 350deg, aquamarine);
 }
 
-footer {
-  background-color: white;
+footer, header {
+  background-color: transparent;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin: 0px auto;
 }
 
 section {
@@ -116,9 +126,6 @@ section .terminal-app figure, section .personal-portfolio figure, section .dme-p
   grid-row: 1/2;
 }
 section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
-  width: 300px;
-  height: auto;
-  margin: 0px auto;
   box-shadow: 10px 10px 7px 0px #e0b667;
 }
 section .terminal-app article, section .personal-portfolio article, section .dme-plant article {
@@ -217,14 +224,37 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     font-size: 15px;
   }
 
-  #dme {
-    height: 250px;
+  .grid {
+    background: conic-gradient(from 0.25turn at 20% 7%, green, 10deg, forestgreen, 350deg, aquamarine);
+  }
+
+  .dme-pic #dme {
+    height: 160px;
     margin-bottom: 25px;
     width: auto;
   }
 
-  #dme {
-    height: 180px;
+  .personal-portfolio img, .terminal-app img {
+    height: 160px;
+    width: auto;
+  }
+
+  #barrel {
+    margin-bottom: 15px;
+  }
+
+  footer .other-links {
+    margin-left: 10px;
+  }
+  footer .other-links img {
+    display: inline-block;
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+  }
+  footer .portfolio-link a {
+    font-size: 13px;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 550px) {

@@ -1,15 +1,20 @@
 @import "frame.scss";
 
- .grid, header{
-  background-color: rgba(70, 151, 70, 0.9);
+ .grid{
+  background: conic-gradient(from 0.75turn at 10% 13%, green, 10deg, forestgreen, 350deg, aquamarine);
 }
 
 
-footer {
-  background-color: white;
+footer, header {
+  background-color: transparent;
 }
 
+     img {
+        width: 300px;
+        height: auto;
+        margin: 0px auto;
 
+      }
 section {
   margin: 0px auto;
   grid-row: 2 / 4;
@@ -36,13 +41,12 @@ section {
       grid-column: 1 / 2;
       grid-row: 1 / 2; 
 
-      img {
-        width: 300px;
-        height: auto;
-        margin: 0px auto;
-        box-shadow: 10px 10px 7px 0px rgba(224,182,103,1);
-      }
+    img {
+          box-shadow: 10px 10px 7px 0px rgba(224,182,103,1);
+
     }
+  }
+
 
 
     article {
@@ -61,6 +65,7 @@ section {
       margin-left: 80%;
     }
 
+
     #github-logo, #portfolio, #barrel{
       width: 100%;
       height: auto;
@@ -76,17 +81,42 @@ section {
 }
 @media screen and (max-width: 1400px) {
   @import "projects-responsive.scss";
+    .grid{
+      background: conic-gradient(from 0.25turn at 20% 7%, green, 10deg, forestgreen, 350deg, aquamarine);
+    }  
 
-        #dme {
-          height: 250px;
-          margin-bottom: 25px;
-          width: auto;
+    .dme-pic #dme {
+      height: 160px;
+      margin-bottom: 25px;
+      width: auto;
+    }
+
+    .personal-portfolio img, .terminal-app img {
+      height: 160px;
+      width: auto;
+    }
+
+    #barrel {
+      margin-bottom: 15px;
+    }
+
+     footer {
+    .other-links {
+      margin-left: 10px;
+        img {
+          display: inline-block;
+          width: 25px;
+          height: auto;
+          margin-right: 10px;
         }
+    }
 
+    .portfolio-link a {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+}
 
-        #dme {
-          height: 180px;
-        }
 }
 
 @media screen and (max-width: 550px) {
@@ -94,6 +124,8 @@ section {
   body {
     font-size: 15px;
   }
+
+  
   
 
   img {
