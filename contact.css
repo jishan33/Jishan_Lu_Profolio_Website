@@ -15,7 +15,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 1fr 0.5fr 0.2fr;
+  grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
   align-items: flex-end;
 }
 
@@ -53,7 +53,7 @@ footer .other-links img {
 }
 footer .portfolio-link a {
   text-decoration: none;
-  color: #228068;
+  color: #13614d;
   font-size: 20px;
   font-weight: bold;
   margin-right: 30px;
@@ -87,6 +87,7 @@ footer .portfolio-link a {
 
 .grid {
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
 }
 
 header {
@@ -118,13 +119,13 @@ section form .detail {
 section form label {
   margin-top: 10px;
   margin-bottom: 3px;
-  color: #0b316b;
+  color: #0d1e69;
   font-weight: bold;
 }
 section form input {
   width: 350px;
   height: 2em;
-  box-shadow: 2px 2px 5px 0px #2945e3;
+  box-shadow: 3px 3px 5px 0px #0d1e69;
 }
 section form .comment {
   display: flex;
@@ -132,14 +133,13 @@ section form .comment {
   margin: 0px auto;
 }
 section form .comment #comment {
-  padding: 1px;
-  box-shadow: 2px 2px 5px 0px #2945e3;
+  box-shadow: 3px 3px 5px 0px #0d1e69;
   width: 350px;
   height: 150px;
 }
-section a {
+section form a {
   text-decoration: none;
-  color: #2945e3;
+  color: #0d1e69;
   text-decoration: underline;
 }
 
@@ -155,15 +155,12 @@ figure {
 #map {
   height: 80%;
   width: 100%;
-  box-shadow: 5px 5px 12px 0px #87878f;
+  box-shadow: 3px 3px 5px 0px #cf8610;
 }
 
 footer {
   grid-column: 1/3;
   background-color: transparent;
-}
-footer a {
-  color: #ff9100;
 }
 
 @media screen and (max-width: 550px) {
@@ -173,7 +170,7 @@ footer a {
 
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 0.15fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
     align-items: center;
     justify-items: center;
   }
