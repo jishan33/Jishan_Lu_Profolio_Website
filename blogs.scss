@@ -2,7 +2,6 @@
 
 .grid {
   grid-template-columns: 1fr 1fr;
-  overflow-y: scroll;
   align-items: center;
   background: conic-gradient(darkblue, lightblue, purple, skyblue, blue);
 }
@@ -75,7 +74,7 @@ section {
     }
 
     p {
-      width: 80%;
+      width: 90%;
       margin: 0px;
       margin-bottom: 10px;
     }
@@ -90,7 +89,7 @@ section {
   
   
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .grid {
     grid-template-rows: 0.2fr 2fr 2fr 0.32fr;
     overflow-y: visible;
@@ -132,6 +131,25 @@ section {
       align-content: center;
       h4 {
         margin-bottom: 0px;
+        font-size: 20px;
+      }
+      p {
+      font-size: 15px;
+      }
+
+      .date {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section article {
+      justify-content: center;
+      align-content: center;
+      h4 {
+        margin-bottom: 0px;
         font-size: 13px;
       }
       p {
@@ -143,7 +161,4 @@ section {
       }
 
     }
-  }
-
- 
 }

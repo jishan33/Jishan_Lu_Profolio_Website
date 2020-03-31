@@ -102,7 +102,6 @@ footer .portfolio-link a {
 }
 .grid {
   grid-template-columns: 1fr 1fr;
-  overflow-y: scroll;
   align-items: center;
   background: conic-gradient(darkblue, lightblue, purple, skyblue, blue);
 }
@@ -164,7 +163,7 @@ section article h4 {
   margin-top: 0px;
 }
 section article p {
-  width: 80%;
+  width: 90%;
   margin: 0px;
   margin-bottom: 10px;
 }
@@ -173,7 +172,7 @@ section article .date {
   color: #0e0736;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .grid {
     grid-template-rows: 0.2fr 2fr 2fr 0.32fr;
     overflow-y: visible;
@@ -205,6 +204,22 @@ section article .date {
     width: 100%;
     height: auto;
   }
+  section article {
+    justify-content: center;
+    align-content: center;
+  }
+  section article h4 {
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  section article p {
+    font-size: 15px;
+  }
+  section article .date {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
   section article {
     justify-content: center;
     align-content: center;
