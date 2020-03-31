@@ -119,10 +119,25 @@ section figure img {
 }
 section article {
   display: flex;
-  justify-items: center;
+  justify-items: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+section article h4 {
+  font-weight: bold;
+  margin-top: 0px;
+}
+section article p {
+  width: 80%;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+section article .date {
+  font-size: 10px;
+  color: #0e0736;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .grid {
     grid-template-rows: 0.2fr 2fr 2fr 0.3fr;
   }
@@ -143,20 +158,29 @@ section article {
   }
   section .post-1, section .post-2, section .post-3, section .post-4, section .post-5 {
     justify-items: flex-start;
+    margin-bottom: 10px;
   }
   section figure {
     justify-content: flex-start;
-    width: 60%;
+    width: 100%;
   }
   section figure img {
     width: 100%;
     height: auto;
   }
   section article {
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
+  }
+  section article h4 {
+    margin-bottom: 0px;
+    font-size: 13px;
   }
   section article p {
     font-size: 10px;
+  }
+  section article .date {
+    margin-bottom: 3px;
   }
 }
 

@@ -30,6 +30,10 @@ section {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin: 0px auto;
+    color: rgb(25, 79, 160);
+    font-size: 30px;
+    font-weight: bold;
+    
   }
 
   .icons {
@@ -55,7 +59,7 @@ section {
     } 
 
     #my-ig {
-      margin-top: 15%;
+      margin-top: 5%;
       width: 80%; 
       height: auto;
     }
@@ -90,12 +94,13 @@ section {
     justify-content: center;
 
 
-    p {
-      font-size: 20px;
+    #text {
+      font-size: 25px;
+      color: rgba(255,118,87,1);
+      font-weight: bold;
     }
   }
 }
-
 
 @media screen and (max-width: 550px) {
  
@@ -150,7 +155,6 @@ section {
     top: -58%;
     left: 25%;
   }
-
 
 }
 

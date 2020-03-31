@@ -93,6 +93,9 @@ section .skills {
   grid-column: 1/2;
   grid-row: 1/2;
   margin: 0px auto;
+  color: #194fa0;
+  font-size: 30px;
+  font-weight: bold;
 }
 section .icons {
   grid-column: 2/4;
@@ -164,7 +167,7 @@ section .icons .ig {
   padding: 5px;
 }
 section .icons #my-ig {
-  margin-top: 15%;
+  margin-top: 5%;
   width: 80%;
   height: auto;
 }
@@ -191,8 +194,10 @@ section article {
   align-items: flex-end;
   justify-content: center;
 }
-section article p {
-  font-size: 20px;
+section article #text {
+  font-size: 25px;
+  color: #ff7657;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 550px) {
