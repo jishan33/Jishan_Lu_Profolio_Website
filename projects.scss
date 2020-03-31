@@ -1,7 +1,7 @@
 @import "frame.scss";
 
  .grid{
-  background: conic-gradient(from 0.75turn at 10% 13%, green, 10deg, forestgreen, 350deg, aquamarine);
+  background: conic-gradient(from 0.75turn at 10% 15%, green, 10deg, forestgreen, 350deg, aquamarine);
 }
 
 
@@ -99,23 +99,30 @@ section {
     #barrel {
       margin-bottom: 15px;
     }
+  
+  header img {
+    margin: 20px;
+    width: 150px;
+    height: auto;
+    position: fixed;
+  }
 
-     footer {
+  footer {
     .other-links {
       margin-left: 10px;
         img {
           display: inline-block;
-          width: 25px;
+          width: 20px;
           height: auto;
           margin-right: 10px;
         }
     }
 
     .portfolio-link a {
-        font-size: 13px;
+        font-size: 18px;
         margin-right: 10px;
     }
-}
+  }
 
 }
 
@@ -123,10 +130,7 @@ section {
   @import "projects-responsive.scss";
   body {
     font-size: 15px;
-  }
-
-  
-  
+  } 
 
   img {
     width: auto ;
