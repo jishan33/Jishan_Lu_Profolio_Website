@@ -46,9 +46,9 @@ footer {
 footer a {
   text-decoration: none;
   color: cadetblue;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  margin-right: 70px;
+  margin-right: 30px;
 }
 
 @media screen and (max-width: 550px) {
@@ -105,7 +105,7 @@ section form label {
   font-weight: bold;
 }
 section form input {
-  width: 400px;
+  width: 350px;
   height: 2em;
   box-shadow: 2px 2px 5px 0px #2945e3;
 }
@@ -117,7 +117,7 @@ section form .comment {
 section form .comment #comment {
   padding: 1px;
   box-shadow: 2px 2px 5px 0px #2945e3;
-  width: 400px;
+  width: 350px;
   height: 150px;
 }
 section a {

@@ -46,9 +46,9 @@ footer {
 footer a {
   text-decoration: none;
   color: cadetblue;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  margin-right: 70px;
+  margin-right: 30px;
 }
 
 @media screen and (max-width: 550px) {
@@ -204,6 +204,10 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     height: 250px;
     margin-bottom: 25px;
     width: auto;
+  }
+
+  #dme {
+    height: 180px;
   }
 }
 @media screen and (max-width: 550px) {
