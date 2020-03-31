@@ -90,10 +90,20 @@ footer {
   grid-column: 1 / 3;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-   background-color: rgb(231, 124, 142);
+  justify-content: space-between;
+  background-color: rgb(231, 124, 142);
+    .other-links {
+      margin-left: 30px;
+      img {
+        width: 60px;
+        height: auto;
+        margin-right: 30px;
+      }
+    }
+  
+  
 
-  a {
+  .portfolio-link a {
     text-decoration: none;
     color:rgb(34, 128, 104);
     font-size: 20px;
@@ -139,6 +149,21 @@ footer {
       grid-row: 4 / 5;
       grid-column: 1 / 2;
 
+      .other-links {
+        margin-left: 10px;
+          img {
+            display: inline-block;
+            width: 25px;
+            height: auto;
+            margin-right: 10px;
+          }
+        }
+
+      .portfolio-link a {
+        font-size: 13px;
+        margin-right: 13px;
+      }
+
     }
 
   }
@@ -148,11 +173,5 @@ footer {
     height: auto;
     position: fixed;
   }
-
-  footer a {
-    font-size: 15px;
-    margin-right: 20px;
-  }
-  
 
 }

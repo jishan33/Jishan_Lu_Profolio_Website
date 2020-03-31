@@ -75,10 +75,18 @@ footer {
   grid-column: 1/3;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: #e77c8e;
 }
-footer a {
+footer .other-links {
+  margin-left: 30px;
+}
+footer .other-links img {
+  width: 60px;
+  height: auto;
+  margin-right: 30px;
+}
+footer .portfolio-link a {
   text-decoration: none;
   color: #228068;
   font-size: 20px;
@@ -116,17 +124,25 @@ footer a {
     grid-row: 4/5;
     grid-column: 1/2;
   }
+  .grid footer .other-links {
+    margin-left: 10px;
+  }
+  .grid footer .other-links img {
+    display: inline-block;
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .grid footer .portfolio-link a {
+    font-size: 13px;
+    margin-right: 13px;
+  }
 
   header img {
     margin: 20px;
     width: 80px;
     height: auto;
     position: fixed;
-  }
-
-  footer a {
-    font-size: 15px;
-    margin-right: 20px;
   }
 }
 
