@@ -92,9 +92,7 @@ section {
 
 
 @media screen and (max-width: 550px) {
-  body {
-    overflow-y: scroll;
-  }
+ 
   .grid {
      grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
   }
@@ -135,7 +133,7 @@ section {
   }
 
   footer a, #text {
-  font-size: 10px;
+  font-size: 15px;
   }
 
     /* The actual popup */

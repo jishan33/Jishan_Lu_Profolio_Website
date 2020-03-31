@@ -1,13 +1,13 @@
 @import "frame.scss";
 
 
-header, .container {
+.container, header {
   background-color: rgb(113, 156, 238);
 }
 
- footer {
-   background-color: white;
- }
+footer {
+  background-color: rgb(238, 217, 178);
+}
 
  .grid {
    align-items: center;
@@ -17,7 +17,7 @@ header, .container {
 section {
   margin: 0px auto;
   background-color: rgba(230, 222, 221, 0.4);
-  width: 80%;
+  width: 60%;
   height:70%;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
@@ -70,10 +70,11 @@ section {
 @media screen and (max-width: 550px) {
    .grid {
      grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
-     align-items: flex-start;
+     align-items: center;
    }
   section {
-    height: 90%;
+    height: 80%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.6fr 1fr;
@@ -111,9 +112,5 @@ section {
     }
 
   }
-
-
-  footer a {
-  font-size: 10px;
-  }
+  
 }

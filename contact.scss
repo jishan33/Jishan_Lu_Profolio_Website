@@ -2,7 +2,7 @@
 
 
 .container{
-  background: conic-gradient(from 0.75turn at 50% 23%, #f69d3c, 30deg, #3f87a6, 350deg, #ebf8e1);
+  background: conic-gradient(from 0.25turn at 30% 15%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
 }
 
 
@@ -29,30 +29,38 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  }
 
-  .detail {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px 
-  }
-  label {
-    margin-top: 10px;
-    margin-bottom: 3px;
-    color: #0b316b;
-    font-weight: bold;
-  }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px 
+    }
+    label {
+      margin-top: 10px;
+      margin-bottom: 3px;
+      color: #0b316b;
+      font-weight: bold;
+    }
 
-  input {
-    width:330px;
-    height: 1.5em;
-    box-shadow: 2px 2px 5px 0px rgba(41,69,227,1);
-  }
+    input {
+      width:400px;
+      height: 2em;
+      box-shadow: 2px 2px 5px 0px rgba(41,69,227,1);
+    }
 
-  #comment {
-    box-shadow: 2px 2px 5px 0px rgba(41,69,227,1);
+    .comment {
+       display: flex;
+       flex-direction: column;
+       margin: 0px auto;
+
+      #comment {
+        padding: 1px;
+        box-shadow: 2px 2px 5px 0px rgba(41,69,227,1);
+        width: 400px;
+        height: 150px;
+      }
+    }  
   }
-  
 
   a {
     text-decoration: none;
@@ -86,9 +94,14 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+
+  .container{
+    background: conic-gradient(from 0.25turn at 30% 10%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
+  }
+
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.15fr;
     align-items: center;
     justify-items: center;
 
@@ -107,23 +120,26 @@ footer {
       display: flex;
       flex-direction: column;
       margin: 0px auto;
+      font-size: 15px;
     }
    
    form {
-     width: 90%;
-     height: 100%;
-     display: flex;
-     align-items: flex-start;
-     justify-content: center;
-     
+     width: 100%;
+     height: 90%;
+     font-size: 15px;
 
-     input {
-       width: 152%;
+     .detail {
+       margin: 0px auto;
      }
 
-     #comment {
-       width: 100%;
-       height: 55px;
+  
+     input {
+       width: 200px;
+     }
+
+     .comment #comment {
+       width: 200px;
+       height: 100px;
      }
     }
   }
@@ -139,12 +155,6 @@ footer {
       width: 90%;
     }
   }
-
-
-  footer a {
-  font-size: 10px;
-  }
-  
 }
 
 @media screen and (max-width: 350px) {
@@ -157,11 +167,6 @@ footer {
   input {
        width: 50px;
      }
-
-
-  header h3 {
-    font-size: 10px;
-  }
 
   #map {
     height: 20%;

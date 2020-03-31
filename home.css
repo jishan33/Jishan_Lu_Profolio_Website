@@ -16,7 +16,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 1.5fr 0.3fr;
+  grid-template-rows: 0.2fr 1.5fr 0.2fr;
 }
 
 header {
@@ -26,8 +26,11 @@ header {
   grid-column: 1/3;
   background-color: #e77c8e;
 }
-header h3 {
-  margin: 30px;
+header img {
+  margin: 20px;
+  width: 150px;
+  height: auto;
+  position: fixed;
 }
 
 section {
@@ -78,9 +81,9 @@ footer {
 footer a {
   text-decoration: none;
   color: #228068;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
-  margin-right: 30px;
+  margin-right: 70px;
 }
 
 @media screen and (max-width: 550px) {
@@ -114,8 +117,16 @@ footer a {
     grid-column: 1/2;
   }
 
+  header img {
+    margin: 20px;
+    width: 80px;
+    height: auto;
+    position: fixed;
+  }
+
   footer a {
-    font-size: 10px;
+    font-size: 15px;
+    margin-right: 20px;
   }
 }
 

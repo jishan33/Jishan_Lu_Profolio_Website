@@ -15,7 +15,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 1fr 0.5fr 0.3fr;
+  grid-template-rows: 0.3fr 1fr 0.5fr 0.2fr;
   align-items: flex-end;
 }
 
@@ -26,9 +26,11 @@ header {
   grid-column: 1/2;
   background-color: rgba(255, 192, 203, 0.8);
 }
-header h3 {
-  margin-top: 30px;
-  margin-left: 30px;
+header img {
+  margin: 20px;
+  width: 150px;
+  height: auto;
+  position: fixed;
 }
 
 footer {
@@ -44,17 +46,30 @@ footer {
 footer a {
   text-decoration: none;
   color: cadetblue;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
-  margin-right: 30px;
+  margin-right: 70px;
 }
 
-header, .container {
+@media screen and (max-width: 550px) {
+  header img {
+    margin: 20px;
+    width: 80px;
+    height: auto;
+    position: fixed;
+  }
+
+  footer a {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+}
+.container, header {
   background-color: #719cee;
 }
 
 footer {
-  background-color: white;
+  background-color: #eed9b2;
 }
 
 .grid {
@@ -64,7 +79,7 @@ footer {
 section {
   margin: 0px auto;
   background-color: rgba(230, 222, 221, 0.4);
-  width: 80%;
+  width: 60%;
   height: 70%;
   grid-column: 1/2;
   grid-row: 2/4;
@@ -111,11 +126,12 @@ section article {
 @media screen and (max-width: 550px) {
   .grid {
     grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
-    align-items: flex-start;
+    align-items: center;
   }
 
   section {
-    height: 90%;
+    height: 80%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.6fr 1fr;
@@ -146,10 +162,6 @@ section article {
   section article p {
     font-size: 13px;
     text-align: start;
-  }
-
-  footer a {
-    font-size: 10px;
   }
 }
 

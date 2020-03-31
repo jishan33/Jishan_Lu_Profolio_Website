@@ -15,7 +15,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 1fr 0.5fr 0.3fr;
+  grid-template-rows: 0.3fr 1fr 0.5fr 0.2fr;
   align-items: flex-end;
 }
 
@@ -26,9 +26,11 @@ header {
   grid-column: 1/2;
   background-color: rgba(255, 192, 203, 0.8);
 }
-header h3 {
-  margin-top: 30px;
-  margin-left: 30px;
+header img {
+  margin: 20px;
+  width: 150px;
+  height: auto;
+  position: fixed;
 }
 
 footer {
@@ -44,13 +46,26 @@ footer {
 footer a {
   text-decoration: none;
   color: cadetblue;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
-  margin-right: 30px;
+  margin-right: 70px;
 }
 
+@media screen and (max-width: 550px) {
+  header img {
+    margin: 20px;
+    width: 80px;
+    height: auto;
+    position: fixed;
+  }
+
+  footer a {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+}
 .container {
-  background: conic-gradient(from 0.75turn at 50% 23%, #f69d3c, 30deg, #3f87a6, 350deg, #ebf8e1);
+  background: conic-gradient(from 0.25turn at 30% 15%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
 }
 
 .grid {
@@ -78,24 +93,32 @@ section form {
   flex-direction: column;
   justify-content: flex-start;
 }
-section .detail {
+section form .detail {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-section label {
+section form label {
   margin-top: 10px;
   margin-bottom: 3px;
   color: #0b316b;
   font-weight: bold;
 }
-section input {
-  width: 330px;
-  height: 1.5em;
+section form input {
+  width: 400px;
+  height: 2em;
   box-shadow: 2px 2px 5px 0px #2945e3;
 }
-section #comment {
+section form .comment {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+section form .comment #comment {
+  padding: 1px;
   box-shadow: 2px 2px 5px 0px #2945e3;
+  width: 400px;
+  height: 150px;
 }
 section a {
   text-decoration: none;
@@ -127,9 +150,13 @@ footer a {
 }
 
 @media screen and (max-width: 550px) {
+  .container {
+    background: conic-gradient(from 0.25turn at 30% 10%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
+  }
+
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.15fr;
     align-items: center;
     justify-items: center;
   }
@@ -147,20 +174,22 @@ footer a {
     display: flex;
     flex-direction: column;
     margin: 0px auto;
+    font-size: 15px;
   }
   section form {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    width: 100%;
+    height: 90%;
+    font-size: 15px;
+  }
+  section form .detail {
+    margin: 0px auto;
   }
   section form input {
-    width: 152%;
+    width: 200px;
   }
-  section form #comment {
-    width: 100%;
-    height: 55px;
+  section form .comment #comment {
+    width: 200px;
+    height: 100px;
   }
 
   figure {
@@ -173,10 +202,6 @@ footer a {
     height: 90%;
     width: 90%;
   }
-
-  footer a {
-    font-size: 10px;
-  }
 }
 @media screen and (max-width: 350px) {
   .grid {
@@ -186,10 +211,6 @@ footer a {
 
   input {
     width: 50px;
-  }
-
-  header h3 {
-    font-size: 10px;
   }
 
   #map {
