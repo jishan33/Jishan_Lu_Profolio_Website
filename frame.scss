@@ -68,6 +68,25 @@ footer {
 }
 
 
+@media screen and (max-width: 900px) {
+
+  footer {
+    .other-links {
+      margin-left: 10px;
+        img {
+          display: inline-block;
+          width: 20px;
+          height: auto;
+          margin-right: 10px;
+        }
+    }
+
+    .portfolio-link a {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+  }
+}
 
 @media screen and (max-width: 550px) {
 
@@ -94,3 +113,4 @@ footer {
     }
   }
 }
+

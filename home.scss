@@ -1,3 +1,7 @@
+*{
+  font-family: 'Playfair Display', serif, sans-serif;
+}
+
 body {
   margin: 0px;
   overflow-x: hidden; 
@@ -112,6 +116,37 @@ footer {
   }
 }
 
+@media screen and (max-width: 1200px) {
+
+ footer {
+    .other-links {
+      margin-left: 10px;
+        img {
+          display: inline-block;
+          width: 20px;
+          height: auto;
+          margin-right: 10px;
+        }
+    }
+
+    .portfolio-link a {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+  }
+
+      
+     .border {
+       margin-left: 0px;
+      img {
+          width: 300px;
+          height: auto;
+        }
+     }
+      
+
+}
+
 @media screen and (max-width: 550px) {
   .grid {
     grid-template-columns: 1fr;
@@ -161,7 +196,7 @@ footer {
 
       .portfolio-link a {
         font-size: 13px;
-        margin-right: 13px;
+        margin-right: 10px;
       }
 
     }

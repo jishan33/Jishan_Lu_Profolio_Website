@@ -85,6 +85,21 @@ footer .portfolio-link a {
     margin-right: 10px;
   }
 }
+@media screen and (max-width: 900px) {
+  footer .other-links {
+    margin-left: 10px;
+  }
+  footer .other-links img {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  footer .portfolio-link a {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+}
 .grid {
   background: conic-gradient(from 0.75turn at 10% 13%, green, 10deg, forestgreen, 350deg, aquamarine);
 }

@@ -63,6 +63,21 @@ footer .portfolio-link a {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 900px) {
+  footer .other-links {
+    margin-left: 10px;
+  }
+  footer .other-links img {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  footer .portfolio-link a {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
 @media screen and (max-width: 550px) {
   header img {
     margin: 20px;
