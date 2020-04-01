@@ -140,7 +140,7 @@ section {
   grid-row: 2/4;
   grid-column: 1/2;
   width: 80%;
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: space-around;
 }
@@ -162,6 +162,7 @@ section .terminal-app figure, section .personal-portfolio figure, section .dme-p
   grid-row: 1/2;
 }
 section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
+  margin-top: 20px;
   box-shadow: 10px 10px 7px 0px #e0b667;
 }
 section .terminal-app article, section .personal-portfolio article, section .dme-plant article {
@@ -175,6 +176,7 @@ section .terminal-app article, section .personal-portfolio article, section .dme
   align-content: center;
 }
 section .terminal-app article h3, section .personal-portfolio article h3, section .dme-plant article h3 {
+  margin: 0px;
   text-align: center;
 }
 section .terminal-app a, section .personal-portfolio a, section .dme-plant a {
