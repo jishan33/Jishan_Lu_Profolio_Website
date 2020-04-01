@@ -148,7 +148,10 @@ section .terminal-app article, section .personal-portfolio article, section .dme
   grid-row: 2/3;
   width: 85%;
   height: 100%;
-  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 section .terminal-app a, section .personal-portfolio a, section .dme-plant a {
   width: 10%;
@@ -230,10 +233,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: 80px;
     height: auto;
     position: fixed;
-  }
-
-  footer {
-    font-size: 15px;
   }
 
   .grid {
@@ -339,22 +338,61 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     position: fixed;
   }
 
-  footer {
-    font-size: 15px;
+  section .terminal-app, section .personal-portfolio, section .dme-plant {
+    box-shadow: 6px 6px 6px 0px #adbf9d;
+  }
+  section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
+    box-shadow: 5px 5px 5px 0px #e0b667;
   }
 
-  body {
-    font-size: 15px;
+  .grid {
+    grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
   }
 
-  img {
-    width: auto;
-    max-width: 100%;
+  .terminal-app img {
+    width: 130px;
     height: auto;
   }
 
+  .personal-portfolio img {
+    height: 100px;
+    width: auto;
+  }
+
   #dme {
-    height: 170px;
+    height: 180px;
+  }
+
+  #barrel {
+    margin-bottom: 0px;
+  }
+
+  .dme-pic #dme {
+    margin-bottom: 0px;
+  }
+
+  article {
+    justify-content: flex-start;
+  }
+  article h3 {
+    font-size: 10px;
+  }
+  article p {
+    font-size: 8px;
+  }
+
+  footer .other-links {
+    margin-left: 10px;
+  }
+  footer .other-links img {
+    display: inline-block;
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+  }
+  footer .portfolio-link a {
+    font-size: 13px;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -418,10 +456,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: 80px;
     height: auto;
     position: fixed;
-  }
-
-  footer {
-    font-size: 15px;
   }
 
   body {

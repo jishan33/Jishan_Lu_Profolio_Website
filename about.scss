@@ -4,7 +4,7 @@
 
 
 .container {
-  background: conic-gradient(from 0.75turn at 100% 15%, darkorange, 10deg, rgb(73, 131, 206), 330deg, #ebf8e1);
+  background: conic-gradient(from 0.75turn at 95% 15%, darkorange, 10deg, rgb(73, 131, 206), 330deg, #ebf8e1);
 }
 
 footer, header {
@@ -118,6 +118,9 @@ section {
 }
 
 @media screen and (max-width: 550px) {
+  .container {
+    background: conic-gradient(from 0.75turn at 95% 10%, darkorange, 10deg, rgb(73, 131, 206), 330deg, #ebf8e1);
+  }
    .grid {
      grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
      align-items: center;

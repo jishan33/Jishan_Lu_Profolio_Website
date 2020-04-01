@@ -54,7 +54,11 @@ section {
       grid-row: 2 / 3;
       width: 85%;
       height: 100%;
-      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
     }
 
     a {
@@ -128,18 +132,68 @@ section {
 
 @media screen and (max-width: 550px) {
   @import "projects-responsive.scss";
-  body {
-    font-size: 15px;
-  } 
 
-  img {
-    width: auto ;
-    max-width: 100% ;
-    height: auto ;
+  section{
+
+    .terminal-app, .personal-portfolio, .dme-plant {
+      box-shadow: 6px 6px 6px 0px rgba(173,191,157,1);
+      
+      figure img {
+        box-shadow: 5px 5px 5px 0px rgba(224,182,103,1);
+      }
+    }
+  }
+
+  .grid {
+    grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
+  }
+
+  .terminal-app img {
+    width: 130px;
+    height: auto;
+  }
+  .personal-portfolio img {
+    height: 100px;
+    width: auto;
   }
 
   #dme {
-    height: 170px;
+    height: 180px;
+  }
+
+  #barrel {
+    margin-bottom: 0px;
+  }
+
+  .dme-pic #dme {
+      margin-bottom: 0px;
+  }
+
+  article {
+    justify-content: flex-start;
+    h3 {
+      font-size: 10px;
+    }
+    p {
+      font-size: 8px;
+    }
+  }
+
+  footer {
+    .other-links {
+      margin-left: 10px;
+        img {
+          display: inline-block;
+          width: 25px;
+          height: auto;
+          margin-right: 10px;
+        }
+    }
+
+    .portfolio-link a {
+        font-size: 13px;
+        margin-right: 10px;
+    }
   }
   
 }

@@ -21,6 +21,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr 1.5fr 0.198fr;
+  justify-items: center;
 }
 
 header {
@@ -38,7 +39,7 @@ header img {
 }
 
 section {
-  width: 100%;
+  width: 90%;
   height: 100%;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -55,12 +56,11 @@ section .intro {
 figure {
   grid-row: 2/3;
   grid-column: 2/3;
-  width: 100%;
+  width: 90%;
   height: 100%;
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 figure .border {
   margin: 0px auto;

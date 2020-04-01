@@ -95,17 +95,18 @@ section {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-
-
-    #text {
+    p {
       font-size: 15px;
       color: rgb(40, 78, 184);
     }
   }
+
 }
 
 @media screen and (max-width: 550px) {
- 
+  .container {
+    background: conic-gradient(from 0.75turn at 15% 15%, snow, 100deg, pink, 300deg, rgb(232, 200, 240));
+  }
   .grid {
      grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
   }
@@ -134,6 +135,12 @@ section {
       }
     }
 
+    #my-ig {
+      margin-top: 5%;
+      width: 50%; 
+      height: auto;
+    }
+
     article {
       grid-row: 3 / 4;
       grid-column: 1 / 2;
@@ -143,10 +150,6 @@ section {
       margin-top: 30%;
       margin-left: 5%;
     }
-  }
-
-  footer a, #text {
-  font-size: 15px;
   }
 
     /* The actual popup */
