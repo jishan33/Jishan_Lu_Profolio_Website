@@ -92,20 +92,26 @@ footer {
         margin-right: 30px;
       }
     }
-  
-  
 
-  .portfolio-link a {
-    text-decoration: none;
-    color:rgb(137, 212, 162);
-    text-shadow: 1px 1px rgb(30, 85, 42);
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 30px;  
-  }
+    .other-links img:hover {
+      background-color: rgba(137, 144, 151, 0.664);
+    }
+
+    .portfolio-link a {
+      text-decoration: none;
+      color:rgb(137, 212, 162);
+      text-shadow: 1px 1px rgb(30, 85, 42);
+      font-size: 25px;
+      font-weight: bold;
+      margin-right: 30px;  
+    }
+
+    .portfolio-link a:hover {
+      color: rgba(137, 144, 151, 0.664);
+    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   
   section {
     width: 350px;

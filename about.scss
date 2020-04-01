@@ -87,9 +87,11 @@ section {
       background-color: rgb(34, 70, 138); 
       box-shadow: 2px 2px 2px 0px rgba(110,108,110,1);
       color: snow;
-      font-family: 'Titan One', cursive;
+      font-family: 'Titan One', cursive; 
+    }
 
-      
+    button:hover {
+      color: rgb(153, 156, 158);
     }
   }
   

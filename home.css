@@ -83,16 +83,22 @@ footer .other-links img {
   height: auto;
   margin-right: 30px;
 }
+footer .other-links img:hover {
+  background-color: rgba(137, 144, 151, 0.664);
+}
 footer .portfolio-link a {
   text-decoration: none;
   color: #89d4a2;
   text-shadow: 1px 1px #1e552a;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin-right: 30px;
 }
+footer .portfolio-link a:hover {
+  color: rgba(137, 144, 151, 0.664);
+}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   section {
     width: 350px;
     height: 350px;

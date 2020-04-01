@@ -25,27 +25,49 @@ section {
   align-items: center;
   justify-content: center;
 
+  .contact-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-size: 28px;
+      text-align: start;
+      margin: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(58, 58, 61);
+      text-decoration: underline;
+    }
+    
+    
+  }
+
   form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  
 
     .detail {
       display: flex;
       flex-direction: column;
-      margin-top: 20px 
+      margin-top: 0px 
     }
     label {
       margin-top: 10px;
       margin-bottom: 3px;
-      color: rgba(13,30,105,1);
-      font-weight: bold;
+      color: rgb(54, 53, 51);
     }
 
     input {
       width:350px;
       height: 2em;
       box-shadow: 3px 3px 5px 0px rgba(13,30,105,1);
+      border-radius: 5px;
     }
 
     .comment {
@@ -57,13 +79,10 @@ section {
         box-shadow: 3px 3px 5px 0px rgba(13,30,105,1);
         width: 350px;
         height: 150px;
+        border-radius: 5px;
       }
     }  
-  a {
-      text-decoration: none;
-      color:rgba(13,30,105,1);
-      text-decoration: underline;
-    }
+  
   }
  
 }
@@ -79,7 +98,7 @@ section {
 
 
   #map {
-    height: 80%;
+    height: 100%;
     width: 100%;
     box-shadow: 3px 3px 5px 0px rgba(207,134,16,1);
   }
@@ -116,9 +135,6 @@ footer {
     justify-items: center;
     
     .contact-detail{
-      display: flex;
-      flex-direction: column;
-      margin: 0px auto;
       font-size: 15px;
     }
    

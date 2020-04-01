@@ -92,6 +92,8 @@ section {
       width: 100%;
       height: auto;
       margin-top: 10px;
+      border: 2px solid rgb(90, 83, 83);
+      border-radius: 30px;
     }
     
     #github-logo {
@@ -99,6 +101,13 @@ section {
     }  
   }
 }
+
+#github-logo:hover, #portfolio:hover, #barrel:hover {
+  background-color: rgba(50, 123, 136, 0.61);
+}
+
+
+
 @media screen and (max-width: 1400px) {
   @import "projects-responsive.scss";
     .grid{

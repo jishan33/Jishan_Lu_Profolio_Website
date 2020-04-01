@@ -64,6 +64,12 @@ footer .portfolio-link a {
   font-weight: bold;
   margin-right: 30px;
 }
+footer .portfolio-link a:hover {
+  color: rgba(137, 144, 151, 0.664);
+}
+footer .other-links img:hover {
+  background-color: rgba(137, 144, 151, 0.664);
+}
 
 @media screen and (max-width: 900px) {
   footer .other-links {
@@ -126,6 +132,22 @@ section {
   align-items: center;
   justify-content: center;
 }
+section .contact-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .contact-detail h3 {
+  font-size: 28px;
+  text-align: start;
+  margin: 0px;
+}
+section .contact-detail a {
+  text-decoration: none;
+  color: #3a3a3d;
+  text-decoration: underline;
+}
 section form {
   display: flex;
   flex-direction: column;
@@ -134,18 +156,18 @@ section form {
 section form .detail {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 section form label {
   margin-top: 10px;
   margin-bottom: 3px;
-  color: #0d1e69;
-  font-weight: bold;
+  color: #363533;
 }
 section form input {
   width: 350px;
   height: 2em;
   box-shadow: 3px 3px 5px 0px #0d1e69;
+  border-radius: 5px;
 }
 section form .comment {
   display: flex;
@@ -156,11 +178,7 @@ section form .comment #comment {
   box-shadow: 3px 3px 5px 0px #0d1e69;
   width: 350px;
   height: 150px;
-}
-section form a {
-  text-decoration: none;
-  color: #0d1e69;
-  text-decoration: underline;
+  border-radius: 5px;
 }
 
 figure {
@@ -173,7 +191,7 @@ figure {
 }
 
 #map {
-  height: 80%;
+  height: 100%;
   width: 100%;
   box-shadow: 3px 3px 5px 0px #cf8610;
 }
@@ -205,9 +223,6 @@ footer {
     justify-items: center;
   }
   section .contact-detail {
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
     font-size: 15px;
   }
   section form {

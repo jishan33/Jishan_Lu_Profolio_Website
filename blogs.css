@@ -64,6 +64,12 @@ footer .portfolio-link a {
   font-weight: bold;
   margin-right: 30px;
 }
+footer .portfolio-link a:hover {
+  color: rgba(137, 144, 151, 0.664);
+}
+footer .other-links img:hover {
+  background-color: rgba(137, 144, 151, 0.664);
+}
 
 @media screen and (max-width: 900px) {
   footer .other-links {
