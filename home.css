@@ -11,7 +11,7 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #eebe65;
+  background-image: url(./photos/background2.jpg);
   display: flex;
 }
 
@@ -29,7 +29,6 @@ header {
   height: 100%;
   grid-row: 1/2;
   grid-column: 1/3;
-  background-color: #e77c8e;
 }
 header img {
   margin: 20px;
@@ -39,37 +38,26 @@ header img {
 }
 
 section {
-  width: 90%;
+  width: 100%;
   height: 100%;
   grid-row: 2/3;
-  grid-column: 1/2;
+  grid-column: 1/3;
   display: flex;
-  flex-direction: column;
   align-content: center;
   justify-content: center;
-  color: #e05050;
 }
 section .intro {
-  margin: 0px auto;
-}
-
-figure {
-  grid-row: 2/3;
-  grid-column: 2/3;
-  width: 90%;
+  width: 45%;
   height: 100%;
-  padding: 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #101055;
+  font-size: 25px;
 }
-figure .border {
-  margin: 0px auto;
-}
-figure img {
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  border: 2px solid red;
+section .intro p {
+  font-size: 20px;
 }
 
 footer {
@@ -80,7 +68,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #e77c8e;
 }
 footer .other-links {
   margin-left: 30px;
@@ -99,6 +86,13 @@ footer .portfolio-link a {
 }
 
 @media screen and (max-width: 1200px) {
+  .intro #title {
+    font-size: 20px;
+  }
+  .intro p {
+    font-size: 15px;
+  }
+
   footer .other-links {
     margin-left: 10px;
   }
@@ -112,14 +106,6 @@ footer .portfolio-link a {
     font-size: 18px;
     margin-right: 10px;
   }
-
-  .border {
-    margin-left: 0px;
-  }
-  .border img {
-    width: 300px;
-    height: auto;
-  }
 }
 @media screen and (max-width: 550px) {
   .grid {
@@ -127,40 +113,39 @@ footer .portfolio-link a {
     grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
     justify-items: center;
   }
-  .grid figure {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    justify-items: center;
-  }
-  .grid figure .border {
-    display: flex;
-    justify-content: center;
-  }
-  .grid figure .border img {
-    width: auto;
-    max-width: 70%;
-    height: auto;
-  }
-  .grid section {
-    width: 80%;
+
+  section {
+    width: 100%;
     height: 100%;
-    grid-row: 3/4;
+    grid-row: 2/4;
     grid-column: 1/2;
   }
-  .grid footer {
+  section .intro {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  section .intro #title {
+    margin-left: 13%;
+  }
+
+  footer {
     grid-row: 4/5;
     grid-column: 1/2;
   }
-  .grid footer .other-links {
+  footer .other-links {
     margin-left: 10px;
   }
-  .grid footer .other-links img {
+  footer .other-links img {
     display: inline-block;
     width: 25px;
     height: auto;
     margin-right: 10px;
   }
-  .grid footer .portfolio-link a {
+  footer .portfolio-link a {
     font-size: 13px;
     margin-right: 10px;
   }
