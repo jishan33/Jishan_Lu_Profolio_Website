@@ -131,6 +131,12 @@ footer, header {
   height: auto;
 }
 
+.terminal-pic img:hover {
+  transform: scale(2.5);
+  margin-left: 100px;
+  box-shadow: none;
+}
+
 #barrel {
   margin-bottom: 15px;
 }
@@ -162,8 +168,8 @@ section .terminal-app figure, section .personal-portfolio figure, section .dme-p
   grid-row: 1/2;
 }
 section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
-  margin-top: 20px;
-  box-shadow: 10px 10px 7px 0px #e0b667;
+  margin-top: 10px;
+  box-shadow: 6px 6px 7px 0px #e0b667;
 }
 section .terminal-app article, section .personal-portfolio article, section .dme-plant article {
   grid-column: 1/2;
@@ -269,6 +275,7 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     box-shadow: 6px 6px 6px 0px #adbf9d;
   }
   section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
+    margin-top: 0px;
     box-shadow: 5px 5px 5px 0px #e0b667;
   }
 
@@ -290,6 +297,10 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   .terminal-pic img {
     width: 280px;
     height: auto;
+  }
+
+  .terminal-pic img:hover {
+    transform: scale(2);
   }
 
   img #barrel {
@@ -389,10 +400,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   .personal-portfolio img {
     height: 100px;
     width: auto;
-  }
-
-  #dme {
-    height: 180px;
   }
 
   #barrel {
