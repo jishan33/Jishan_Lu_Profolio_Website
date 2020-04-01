@@ -72,7 +72,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Playfair Display", serif, sans-serif;
+  font-family: "Baloo Da 2", cursive;
+  background-color: rgba(170, 170, 168, 0.432);
 }
 footer .other-links {
   margin-left: 30px;
@@ -84,8 +85,8 @@ footer .other-links img {
 }
 footer .portfolio-link a {
   text-decoration: none;
-  color: #202bc5;
-  text-shadow: 1px 1px #26a126;
+  color: #89d4a2;
+  text-shadow: 1px 1px #1e552a;
   font-size: 20px;
   font-weight: bold;
   margin-right: 30px;

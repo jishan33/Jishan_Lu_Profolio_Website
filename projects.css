@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
 * {
-  font-family: "Playfair Display", serif, sans-serif;
+  font-family: "Baloo Da 2", cursive;
 }
 
 body {
@@ -57,8 +58,9 @@ footer .other-links img {
 }
 footer .portfolio-link a {
   text-decoration: none;
-  color: #13614d;
-  font-size: 20px;
+  color: #89d4a2;
+  text-shadow: 1px 1px #1e552a;
+  font-size: 25px;
   font-weight: bold;
   margin-right: 30px;
 }
@@ -108,10 +110,23 @@ footer, header {
   background-color: transparent;
 }
 
-img {
+.portfolio-pic img {
   width: 300px;
   height: auto;
-  margin: 0px auto;
+}
+
+.dme-pic img {
+  width: 200px;
+  height: auto;
+}
+
+.terminal-pic img {
+  width: 350px;
+  height: auto;
+}
+
+#barrel {
+  margin-bottom: 15px;
 }
 
 section {
@@ -153,6 +168,9 @@ section .terminal-app article, section .personal-portfolio article, section .dme
   justify-content: center;
   align-content: center;
 }
+section .terminal-app article h3, section .personal-portfolio article h3, section .dme-plant article h3 {
+  text-align: center;
+}
 section .terminal-app a, section .personal-portfolio a, section .dme-plant a {
   width: 10%;
   height: 70%;
@@ -164,9 +182,6 @@ section .terminal-app #github-logo, section .terminal-app #portfolio, section .t
   width: 100%;
   height: auto;
   margin-top: 10px;
-}
-section .terminal-app #barrel, section .personal-portfolio #barrel, section .dme-plant #barrel {
-  margin-bottom: 15px;
 }
 section .terminal-app #github-logo, section .personal-portfolio #github-logo, section .dme-plant #github-logo {
   margin-top: 15px;
@@ -224,9 +239,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     height: auto;
     margin-bottom: 25px;
   }
-  section .terminal-app a #barrel, section .personal-portfolio a #barrel, section .dme-plant a #barrel {
-    margin-bottom: 35px;
-  }
 
   header img {
     margin: 20px;
@@ -239,10 +251,11 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     background: conic-gradient(from 0.25turn at 20% 7%, green, 10deg, forestgreen, 350deg, aquamarine);
   }
 
-  .dme-pic #dme {
-    height: 160px;
-    margin-bottom: 25px;
-    width: auto;
+  section .terminal-app, section .personal-portfolio, section .dme-plant {
+    box-shadow: 6px 6px 6px 0px #adbf9d;
+  }
+  section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
+    box-shadow: 5px 5px 5px 0px #e0b667;
   }
 
   .personal-portfolio img, .terminal-app img {
@@ -250,8 +263,23 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: auto;
   }
 
-  #barrel {
-    margin-bottom: 15px;
+  .portfolio-pic img {
+    width: auto;
+    height: 160px;
+  }
+
+  .dme-pic img {
+    width: auto;
+    height: 160px;
+  }
+
+  .terminal-pic img {
+    width: 280px;
+    height: auto;
+  }
+
+  img #barrel {
+    margin-bottom: 25px;
   }
 
   header img {
@@ -327,22 +355,12 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     height: auto;
     margin-bottom: 25px;
   }
-  section .terminal-app a #barrel, section .personal-portfolio a #barrel, section .dme-plant a #barrel {
-    margin-bottom: 35px;
-  }
 
   header img {
     margin: 20px;
     width: 80px;
     height: auto;
     position: fixed;
-  }
-
-  section .terminal-app, section .personal-portfolio, section .dme-plant {
-    box-shadow: 6px 6px 6px 0px #adbf9d;
-  }
-  section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
-    box-shadow: 5px 5px 5px 0px #e0b667;
   }
 
   .grid {
@@ -364,7 +382,7 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   }
 
   #barrel {
-    margin-bottom: 0px;
+    margin-bottom: 25px;
   }
 
   .dme-pic #dme {
@@ -446,9 +464,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: 50%;
     height: auto;
     margin-bottom: 25px;
-  }
-  section .terminal-app a #barrel, section .personal-portfolio a #barrel, section .dme-plant a #barrel {
-    margin-bottom: 35px;
   }
 
   header img {

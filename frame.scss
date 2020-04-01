@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
 *{
-  font-family: 'Playfair Display', serif, sans-serif;
+  font-family: 'Baloo Da 2', cursive;
 }
 
 body {
@@ -60,8 +61,9 @@ footer {
 
   .portfolio-link a {
     text-decoration: none;
-    color:rgb(19, 97, 77);
-    font-size: 20px;
+    color:rgb(137, 212, 162);
+    text-shadow: 1px 1px rgb(30, 85, 42);
+    font-size: 25px;
     font-weight: bold;
     margin-right: 30px;  
   }
