@@ -109,7 +109,13 @@ footer .other-links img:hover {
   }
 }
 .grid {
-  background-image: url(./photos/big-sunset.jpg);
+  background-image: url(./photos/background2.jpg);
+  background-color: #cccccc;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 footer, header {
