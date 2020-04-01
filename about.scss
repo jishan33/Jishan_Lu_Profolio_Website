@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import "frame.scss";
 
 
+
 .container {
-  background: conic-gradient(from 0.75turn at 90% 15%, darkorange, 10deg, mediumblue, 350deg, #ebf8e1);
+  background: conic-gradient(from 0.75turn at 100% 15%, darkorange, 10deg, rgb(73, 131, 206), 330deg, #ebf8e1);
 }
 
 footer, header {
@@ -78,9 +80,15 @@ section {
 
     button {
       margin-top: 20px;
-      width: 7em;
+      width: 9em;
       height: 2.5em;
       border-radius: 30px;
+      border: 2px solid rgb(164, 164, 226);
+      background-color: rgb(34, 70, 138); 
+      box-shadow: 2px 2px 2px 0px rgba(110,108,110,1);
+      color: snow;
+      font-family: 'Titan One', cursive;
+
       
     }
   }
@@ -163,7 +171,7 @@ section {
       }
 
       button {
-       margin-left: 70%;
+       margin-left: 60%;
       }
     }
 
