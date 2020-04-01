@@ -128,7 +128,7 @@ section {
       justify-content: flex-start;
       width: 100%;
       img {
-        width: 400px;
+        width: 300px;
         height: auto;
       }
     }
@@ -151,25 +151,47 @@ section {
   }
 }
 
+@media screen and (max-width: 850px) {
+  section {
+    article {
+      h4 {
+        font-size: 13px;
+      }
+
+      p {
+        font-size: 9px;
+      }
+    }
+    
+  }
+}
+
 @media screen and (max-width: 550px) {
   .grid {
     grid-template-rows: 0.2fr 1fr 0.5fr 0.126fr;
   }
 
-  section article {
-      justify-content: center;
-      align-content: center;
-      h4 {
-        margin-bottom: 0px;
-        font-size: 13px;
+  section {
+    figure {
+      img {
+        width: 200px;
       }
-      p {
-      font-size: 10px;
-      }
-
-      .date {
-        margin-bottom: 3px;
-      }
-
     }
+    article {
+        justify-content: center;
+        align-content: center;
+        h4 {
+          margin-bottom: 0px;
+          font-size: 12px;
+        }
+        p {
+        font-size: 8px;
+        }
+
+        .date {
+          margin-bottom: 3px;
+        }
+
+      }
+  }
 }

@@ -217,7 +217,7 @@ section article .date {
     width: 100%;
   }
   section figure img {
-    width: 400px;
+    width: 300px;
     height: auto;
   }
   section article {
@@ -235,21 +235,32 @@ section article .date {
     margin-bottom: 10px;
   }
 }
+@media screen and (max-width: 850px) {
+  section article h4 {
+    font-size: 13px;
+  }
+  section article p {
+    font-size: 9px;
+  }
+}
 @media screen and (max-width: 550px) {
   .grid {
     grid-template-rows: 0.2fr 1fr 0.5fr 0.126fr;
   }
 
+  section figure img {
+    width: 200px;
+  }
   section article {
     justify-content: center;
     align-content: center;
   }
   section article h4 {
     margin-bottom: 0px;
-    font-size: 13px;
+    font-size: 12px;
   }
   section article p {
-    font-size: 10px;
+    font-size: 8px;
   }
   section article .date {
     margin-bottom: 3px;
