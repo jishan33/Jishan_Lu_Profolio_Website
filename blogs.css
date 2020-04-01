@@ -111,12 +111,17 @@ footer .other-links img:hover {
 .grid {
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  background: conic-gradient(darkblue, lightblue, purple, skyblue, blue);
+  background-image: url(./photos/background3.jpg);
 }
 
 header, footer {
   grid-column: 1/3;
   background-color: transparent;
+}
+
+footer {
+  height: 80%;
+  background-color: rgba(169, 169, 169, 0.2);
 }
 
 section {
@@ -125,6 +130,8 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 section .post-1 {
   grid-row: 1/2;
@@ -147,6 +154,7 @@ section .post-5 {
   grid-column: 2/3;
 }
 section .post-1, section .post-2, section .post-3, section .post-4, section .post-5 {
+  width: 80%;
   display: flex;
   align-items: center;
   align-content: center;
@@ -180,7 +188,7 @@ section article .date {
   color: #0e0736;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
   .grid {
     grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
     overflow-y: visible;

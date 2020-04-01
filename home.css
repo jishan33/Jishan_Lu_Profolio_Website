@@ -8,8 +8,7 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url(./photos/background2.jpg);
-  display: flex;
+  background-image: url(./photos/background1.jpg);
 }
 
 .grid {
@@ -33,6 +32,7 @@ header img {
   width: 150px;
   height: auto;
   position: fixed;
+  box-shadow: 5px 5px 5px 0px #6aacb0;
 }
 
 section {
@@ -73,7 +73,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   font-family: "Baloo Da 2", cursive;
-  background-color: rgba(170, 170, 168, 0.432);
 }
 footer .other-links {
   margin-left: 30px;
@@ -82,6 +81,8 @@ footer .other-links img {
   width: 60px;
   height: auto;
   margin-right: 30px;
+  background-color: #ece2ce;
+  border-radius: 7px;
 }
 footer .other-links img:hover {
   background-color: rgba(137, 144, 151, 0.664);

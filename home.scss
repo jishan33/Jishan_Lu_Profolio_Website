@@ -10,9 +10,7 @@ body {
 .container {
   width: 100vw;
   height:100vh;
-  background-image: url(./photos/background2.jpg); 
-  display: flex;
-
+  background-image: url(./photos/background1.jpg);
 }
 
 .grid {
@@ -36,9 +34,10 @@ header {
     width: 150px;
     height: auto;
     position: fixed;
+    box-shadow: 5px 5px 5px 0px rgba(106,172,176,1);
   }
-
 }
+
 
 section {
 
@@ -82,7 +81,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   font-family: 'Baloo Da 2', cursive;
-  background-color: rgba(170, 170, 168, 0.432);
 
     .other-links {
       margin-left: 30px;
@@ -90,6 +88,8 @@ footer {
         width: 60px;
         height: auto;
         margin-right: 30px;
+        background-color: rgb(236, 226, 206);
+        border-radius: 7px;
       }
     }
 
