@@ -275,7 +275,7 @@ section article p {
 }
 @media screen and (max-width: 550px) {
   .container {
-    background: conic-gradient(from 0.75turn at 15% 15%, snow, 100deg, pink, 300deg, #e8c8f0);
+    background: conic-gradient(from 0.75turn at 20% 10%, snow, 100deg, pink, 300deg, #e8c8f0);
   }
 
   .grid {
@@ -306,7 +306,7 @@ section article p {
     height: auto;
   }
   section #my-ig {
-    margin-top: 5%;
+    margin-top: 0px;
     width: auto;
     height: 50px;
   }
