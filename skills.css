@@ -203,10 +203,14 @@ section .icons .ruby, section .icons .css, section .icons .html, section .icons 
 section .icons .ig {
   padding: 5px;
 }
-section .icons #my-ig {
-  margin-top: 5%;
-  width: 80%;
-  height: auto;
+section .icons .popuptext a img {
+  margin-top: 10px;
+  width: auto;
+  height: 150px;
+}
+section .icons #click {
+  font-size: 10px;
+  margin-top: 0px;
 }
 section .icons .ruby:hover {
   background-color: red;
@@ -231,12 +235,41 @@ section article {
   align-items: flex-end;
   justify-content: center;
 }
-section article #text {
+section article p {
   font-size: 15px;
   color: #284eb8;
 }
 
+@media screen and (max-width: 1350px) {
+  a #my-ig {
+    margin-top: 5px;
+    width: auto;
+    height: 70px;
+  }
+
+  #myPopup1, #myPopup2, #myPopup3, #myPopup4 {
+    font-size: 10px;
+  }
+
+  .popup .popuptext {
+    margin-top: 40%;
+    margin-left: 0%;
+  }
+
+  /* The actual popup */
+  .popup .popuptext {
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+    top: -58%;
+    left: 25%;
+  }
+}
 @media screen and (max-width: 550px) {
+  .container {
+    background: conic-gradient(from 0.75turn at 15% 15%, snow, 100deg, pink, 300deg, #e8c8f0);
+  }
+
   .grid {
     grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
   }
@@ -264,6 +297,11 @@ section article #text {
     width: 10%;
     height: auto;
   }
+  section #my-ig {
+    margin-top: 5%;
+    width: auto;
+    height: 50px;
+  }
   section article {
     grid-row: 3/4;
     grid-column: 1/2;
@@ -271,10 +309,6 @@ section article #text {
   section .popup .popuptext {
     margin-top: 30%;
     margin-left: 5%;
-  }
-
-  footer a, #text {
-    font-size: 15px;
   }
 
   /* The actual popup */

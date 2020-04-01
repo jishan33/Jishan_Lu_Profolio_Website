@@ -61,11 +61,17 @@ section {
       padding: 5px;
     } 
 
-    #my-ig {
-      margin-top: 5%;
-      width: 80%; 
-      height: auto;
+    .popuptext a img {
+      margin-top: 10px;
+      width: auto; 
+      height: 150px;
     }
+
+    #click {
+      font-size: 10px;
+      margin-top: 0px;
+    }
+    
     
     .ruby:hover {
       background-color: red;
@@ -102,6 +108,34 @@ section {
   }
 
 }
+@media screen and (max-width: 1350px) {
+  a #my-ig {
+      margin-top: 5px;
+      width: auto; 
+      height: 70px;
+    }
+
+  #myPopup1, #myPopup2, #myPopup3, #myPopup4 {
+      font-size: 10px;
+    }
+
+  .popup .popuptext {
+    margin-top: 40%;
+    margin-left: 0%;
+  }
+  
+
+    /* The actual popup */
+  .popup .popuptext {
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+    top: -58%;
+    left: 25%;
+  }
+}
+
+
 
 @media screen and (max-width: 550px) {
   .container {
@@ -137,8 +171,8 @@ section {
 
     #my-ig {
       margin-top: 5%;
-      width: 50%; 
-      height: auto;
+      width: auto; 
+      height: 50px;
     }
 
     article {
