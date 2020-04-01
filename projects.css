@@ -109,13 +109,7 @@ footer .other-links img:hover {
   }
 }
 .grid {
-  background-image: url(./photos/background2.jpg);
-  background-color: #cccccc;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background: conic-gradient(from 0.75turn at 10% 13%, green, 10deg, forestgreen, 350deg, aquamarine);
 }
 
 footer, header {
