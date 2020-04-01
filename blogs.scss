@@ -93,7 +93,6 @@ section {
   .grid {
     grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
     overflow-y: visible;
-
   }
 
   section {
@@ -145,7 +144,9 @@ section {
 }
 
 @media screen and (max-width: 550px) {
- 
+  .grid {
+    grid-template-rows: 0.2fr 1fr 0.5fr 0.126fr;
+  }
 
   section article {
       justify-content: center;
