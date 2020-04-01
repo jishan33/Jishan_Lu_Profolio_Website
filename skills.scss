@@ -139,7 +139,7 @@ section {
 
 @media screen and (max-width: 550px) {
   .container {
-    background: conic-gradient(from 0.75turn at 20% 10%, snow, 100deg, pink, 300deg, rgb(232, 200, 240));
+    background: conic-gradient(from 0.75turn at % 10%, snow, 100deg, pink, 300deg, rgb(232, 200, 240));
   }
   .grid {
      grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;

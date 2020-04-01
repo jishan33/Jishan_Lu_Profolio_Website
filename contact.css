@@ -192,7 +192,7 @@ figure {
 }
 
 #map {
-  height: 100%;
+  height: 80%;
   width: 100%;
   box-shadow: 3px 3px 5px 0px #cf8610;
 }
@@ -214,7 +214,7 @@ footer {
 
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1.5fr 0.3fr;
     align-items: center;
     justify-items: center;
   }
@@ -255,8 +255,9 @@ footer {
     align-content: flex-start;
   }
   figure #map {
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 100%;
+    margin-left: 25px;
   }
 }
 @media screen and (max-width: 350px) {
