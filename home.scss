@@ -10,7 +10,7 @@ body {
 .container {
   width: 100vw;
   height:100vh;
-  background-image: url(./photos/background1.jpg);
+  background: conic-gradient(from 0.25turn at 10% 82%, wheat, 40deg, lightgrey, 350deg, snow);
 }
 
 .grid {
@@ -40,7 +40,6 @@ header {
 
 
 section {
-
   width: 550px;
   height: 550px;
   grid-row: 2 / 3;
@@ -71,6 +70,46 @@ section {
   }
   
 }
+
+figure {
+  width: 100%;
+  height: 100%;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  .position-1{
+    height: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin: 0px auto;
+    display: flex;
+    align-items: flex-end;
+
+    #hysys {
+      width:300px;
+      height: auto;
+      transform: rotate(90deg);
+      margin-left: 10%;
+      margin-bottom: 0px;
+    }
+   }
+   .position-2 {
+     grid-row: 2 / 3;
+     grid-column: 1 / 2;
+     display: flex;
+     align-items: flex-start;
+     
+     
+     #terminal-app {
+       width:500px;
+       height: auto;
+
+    }
+   }
+ }
 
 footer {
   width: 100%;
@@ -111,7 +150,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   
   section {
     width: 350px;
@@ -127,7 +166,16 @@ footer {
         font-size: 15px;
       }  
     }
+
   }
+
+    figure .position-1 #hysys {
+      width: 150px;
+    }
+    figure .position-2 #terminal-app {
+      width: 250px;
+    }
+  
 
  footer {
     .other-links {
@@ -157,7 +205,8 @@ footer {
   }
       
   section {
-    grid-row: 2 / 4;
+    align-items: flex-end;
+    grid-row: 2 / 3;
     grid-column: 1 / 2;
     width: 90%;
     height: 90%;
@@ -173,6 +222,20 @@ footer {
         p {
           font-size: 10px;
         }  
+    }
+  }
+
+  figure {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+
+    .position-2  {
+      width: 80%;
+      justify-content: center;
+
+      #terminal-app {
+        width: 250px;
+      }
     }
   }
 
