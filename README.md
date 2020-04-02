@@ -88,18 +88,18 @@ Protecting against this kind of modification is important as otherwise my site's
 
 ## Target audience
 
- - Recuriters
+ - Recruiters
  - Colleagues
  - Friends
 
 ## Tech stack
 
  * HTML
- * sass
+ * SCSS
  * Formsfree
  * Balsamiq
  * Lucidchart
- * netlify
+ * Netlify
 
  
 
