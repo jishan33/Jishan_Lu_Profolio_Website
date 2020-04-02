@@ -82,7 +82,22 @@ section {
         height: 150px;
         border-radius: 5px;
       }
-    }  
+    }
+    button {
+      font-weight: bolder;
+      font-size: 15px;
+      margin-top: 20px;
+      width: 100px;
+      background-color: #f69d3c;
+      box-shadow: 5px 5px 5px 0px rgba(105,101,105,1);
+      color: snow;
+      border-radius: 20px;
+      
+    }
+
+    button:hover {
+      background-color: #acaaa8be;
+    }
   
   }
  

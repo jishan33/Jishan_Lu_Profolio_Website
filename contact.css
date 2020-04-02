@@ -181,6 +181,19 @@ section form .comment #comment {
   height: 150px;
   border-radius: 5px;
 }
+section form button {
+  font-weight: bolder;
+  font-size: 15px;
+  margin-top: 20px;
+  width: 100px;
+  background-color: #f69d3c;
+  box-shadow: 5px 5px 5px 0px #696569;
+  color: snow;
+  border-radius: 20px;
+}
+section form button:hover {
+  background-color: #acaaa8be;
+}
 
 figure {
   grid-column: 2/3;
