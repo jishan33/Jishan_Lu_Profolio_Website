@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="skills.css" integrity="sha384-fMktcnjGs6NIrw8qJBrCL7Vq0Zw9fOXounrJIure7vpBvam3WpHse3ZzDFyHX4+J">
+  <link rel="stylesheet" href="skills.css" integrity="sha384-+b1pFep+DBDXpO6/I54NbjYbB0QD5ubdPaPsejxeAC5o5fwf1lIsfGO0N0Yv5uJk">
   <title>Skills</title>
 </head>
 
@@ -20,20 +20,28 @@
         <h1 class="skills">Skills</h1>
         <figure class="icons">
 
-          <div class="popup"  onclick="myFunction('myPopup1')"><img src="./photos/ruby.png" alt="ruby" class="ruby">
-            <span class="popuptext" id="myPopup1">Ruby</span>
+          <div class="popup" onclick="myFunction('myPopup1')"><img src="./photos/ruby.png" alt="ruby" class="ruby">
+            <span class="popuptext" id="myPopup1">Ruby: I have really enjoyed learning Ruby as part of my CoderAcademy
+              course. I have created a terminal app using Ruby which you can see in my portfolio.</span>
           </div>
 
           <div class="popup" onclick="myFunction('myPopup2')"><img src="./photos/css.png" alt="css" class="css">
-            <span class="popuptext" id="myPopup2">CSS</span>
+            <span class="popuptext" id="myPopup2">CSS: While building this page, I spent time learning about CSS and
+              responsive media queries. I've been able to put my knowledge into practice by building this site.</span>
           </div>
 
-           <div class="popup" onclick="myFunction('myPopup3')"><img src="./photos/html.png" alt="html" class="html">
-            <span class="popuptext" id="myPopup3">HTML</span>
+          <div class="popup" onclick="myFunction('myPopup3')"><img src="./photos/html.png" alt="html" class="html">
+            <span class="popuptext" id="myPopup3">HTML: This website was created from scratch in order to help develop
+              my HTML skills.</span>
           </div>
 
-           <div class="popup" onclick="myFunction('myPopup4')"><img src="./photos/instagram.png" alt="ig" class="ig">
-            <span class="popuptext" id="myPopup4"><a href="https://www.instagram.com/foodie_cooking_lu/"><img id ="my-ig" src="./photos/Lu-IG.png" alt="my-ig"></a><p id="click">Click the photo &#128512;</p></span>
+          <div class="popup" onclick="myFunction('myPopup4')"><img src="./photos/instagram.png" alt="ig" class="ig">
+            <span class="popuptext" id="myPopup4"><a href="https://www.instagram.com/foodie_cooking_lu/"><img id="my-ig"
+                  src="./photos/Lu-IG.png" alt="my-ig"></a>
+              <p id="click">Cooking:
+                I also really enjoy cooking! Here are a few photo's of some things I've cooked. Click the photo
+                &#128512;</p>
+            </span>
           </div>
 
 
@@ -49,20 +57,20 @@
 
 
       <footer>
-        
+
         <div class="other-links">
-         <a href="https://github.com/jishan33/T1A2"><img src="./photos/github-logo.png" alt="github-logo"
+          <a href="https://github.com/jishan33/T1A2"><img src="./photos/github-logo.png" alt="github-logo"
               id="github-logo"></a>
-        <a href="https://au.linkedin.com/"><img src="./photos/linkedin.png" alt="linkedin-logo"></a>
+          <a href="https://au.linkedin.com/"><img src="./photos/linkedin.png" alt="linkedin-logo"></a>
         </div>
 
         <div class="portfolio-link">
-        <nav><a href="./index.html" class="home">Home</a>
-          <a href="./about.html" class="About">About</a>
-          <a href="./skills.html" class="skills">Skills</a>
-          <a href="./projects.html" class="projects">Projects</a>
-          <a href="./blogs.html" class="Blogs">Blogs</a>
-          <a href="contact.html" class="contact">Contact</a></nav>
+          <nav><a href="./index.html" class="home">Home</a>
+            <a href="./about.html" class="About">About</a>
+            <a href="./skills.html" class="skills">Skills</a>
+            <a href="./projects.html" class="projects">Projects</a>
+            <a href="./blogs.html" class="Blogs">Blogs</a>
+            <a href="contact.html" class="contact">Contact</a></nav>
         </div>
 
       </footer>
@@ -74,7 +82,7 @@
     function myFunction(popup_id) {
       var popup = document.getElementById(popup_id);
       popup.classList.toggle("show");
-      
+
     }
   </script>
 

@@ -174,7 +174,7 @@ section .icons .popup .popuptext {
 @media screen and (min-width: 551px) {
   section .icons .popup .popuptext {
     width: 80%;
-    height: 150%;
+    height: 300px;
     top: 110%;
     left: -14%;
   }
@@ -216,10 +216,6 @@ section .icons .popuptext a img {
   width: auto;
   height: 150px;
 }
-section .icons #click {
-  font-size: 10px;
-  margin-top: 0px;
-}
 section .icons .ruby:hover {
   background-color: red;
   transition: background-color 1s ease-out;
@@ -247,15 +243,27 @@ section article p {
   font-size: 15px;
   color: #284eb8;
 }
+section #myPopup1, section #myPopup2, section #myPopup3 {
+  font-size: 20px;
+  color: #283c74;
+  font-weight: bold;
+}
+section #myPopup4 {
+  font-size: 15px;
+  color: #283c74;
+}
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   a #my-ig {
     margin-top: 5px;
     width: auto;
     height: 70px;
   }
 
-  #myPopup1, #myPopup2, #myPopup3, #myPopup4 {
+  section #myPopup1, section #myPopup2, section #myPopup3, section #click {
+    font-size: 13px;
+  }
+  section #click {
     font-size: 10px;
   }
 
@@ -267,15 +275,24 @@ section article p {
   /* The actual popup */
   .popup .popuptext {
     width: 80%;
-    height: 80%;
+    height: 400px;
     z-index: 1;
     top: -58%;
     left: 25%;
   }
 }
+@media screen and (max-width: 750px) {
+  section #myPopup1, section #myPopup2, section #myPopup3 {
+    font-size: 10px;
+  }
+  section #click {
+    display: flex;
+    font-size: 10px;
+  }
+}
 @media screen and (max-width: 550px) {
   .container {
-    background: conic-gradient(from 0.75turn at 20% 10%, snow, 100deg, pink, 300deg, #e8c8f0);
+    background: conic-gradient(from 0.75turn at 10%, snow, 100deg, pink, 300deg, #e8c8f0);
   }
 
   .grid {

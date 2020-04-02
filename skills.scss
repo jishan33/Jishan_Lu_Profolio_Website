@@ -66,11 +66,6 @@ section {
       width: auto; 
       height: 150px;
     }
-
-    #click {
-      font-size: 10px;
-      margin-top: 0px;
-    }
     
     
     .ruby:hover {
@@ -92,6 +87,7 @@ section {
 
   }
 
+
   article {
     width: 60%;
     height: 90%;
@@ -107,18 +103,31 @@ section {
     }
   }
 
-}
-@media screen and (max-width: 1350px) {
+  #myPopup1, #myPopup2, #myPopup3{
+      font-size: 20px;
+      color: rgb(40, 60, 116);
+      font-weight: bold;
+  }
+  #myPopup4 {
+    font-size: 15px;
+    color: rgb(40, 60, 116);
+  }
+}   
+   
+@media screen and (max-width: 1550px) {
   a #my-ig {
       margin-top: 5px;
       width: auto; 
       height: 70px;
     }
-
-  #myPopup1, #myPopup2, #myPopup3, #myPopup4 {
+  section {
+  #myPopup1, #myPopup2, #myPopup3, #click {
+      font-size: 13px;
+    }
+    #click {
       font-size: 10px;
     }
-
+  }
   .popup .popuptext {
     margin-top: 40%;
     margin-left: 0%;
@@ -128,10 +137,25 @@ section {
     /* The actual popup */
   .popup .popuptext {
     width: 80%;
-    height: 80%;
+    height: 400px;
     z-index: 1;
     top: -58%;
     left: 25%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section{
+
+    #myPopup1, #myPopup2, #myPopup3{
+        font-size: 10px;
+      }
+    
+
+    #click {
+        display: flex;
+        font-size: 10px;
+    }
   }
 }
 
@@ -139,11 +163,12 @@ section {
 
 @media screen and (max-width: 550px) {
   .container {
-    background: conic-gradient(from 0.75turn at % 10%, snow, 100deg, pink, 300deg, rgb(232, 200, 240));
+    background: conic-gradient(from 0.75turn at 10%, snow, 100deg, pink, 300deg, rgb(232, 200, 240));
   }
   .grid {
      grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
   }
+
   section {
     height: 80%;
     grid-template-columns: 1fr;
@@ -194,8 +219,12 @@ section {
     top: -58%;
     left: 25%;
   }
-
 }
+
+  
+
+
+
 
 
 
