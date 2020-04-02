@@ -174,7 +174,7 @@ section .icons .popup .popuptext {
 @media screen and (min-width: 551px) {
   section .icons .popup .popuptext {
     width: 80%;
-    height: 300px;
+    height: 260px;
     top: 110%;
     left: -14%;
   }
