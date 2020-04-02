@@ -59,6 +59,48 @@ Given that my page is being hosted by a 3rd party ([Netlify](https://www.netlify
 
 Protecting against this kind of modification is important as otherwise my site's resources could be changed without my permission and my personal site used to distribute malware or serve ads without my consent.
 
+## Sitmap
 
+![Jishan's Portfolio Plan](./docs/Portfolio_Sitemap.png)
+
+
+## Wireframe Screenshots
+
+
+
+![Home Page with Features' Explanation](./docs/Home.png)
+
+
+![About me Page with Features' Explanation](./docs/About_me.png)
+
+
+![Skills Page with Features' explanation](./docs/Skills.png)
+
+
+![Projects Page with Features' explanation](./docs/Projects.png)
+
+
+![Blogs Page with Features' explanation](./docs/Blogs.png)
+
+
+![Contact Page with Features' explanation](./docs/Contact.png)
+
+
+## Target audience
+
+ - Recuriters
+ - Colleagues
+ - Friends
+
+## Tech stack
+
+ * HTML
+ * sass
+ * Formsfree
+ * Balsamiq
+ * Lucidchart
+ * netlify
+
+ 
 
 
