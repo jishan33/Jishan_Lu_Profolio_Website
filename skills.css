@@ -244,9 +244,8 @@ section article p {
   color: #284eb8;
 }
 section #myPopup1, section #myPopup2, section #myPopup3 {
-  font-size: 20px;
-  color: #283c74;
-  font-weight: bold;
+  font-size: 18px;
+  color: #db8719;
 }
 section #myPopup4 {
   display: flex;

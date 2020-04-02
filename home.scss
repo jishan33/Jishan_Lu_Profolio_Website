@@ -104,8 +104,8 @@ figure {
      
      
      #terminal-app {
-       width:500px;
-       height: auto;
+       width: auto;
+       height: 300px;
 
     }
    }
@@ -150,8 +150,8 @@ footer {
     }
 }
 
-@media screen and (max-width: 1000px) {
-  
+@media screen and (max-width: 1100px) {
+
   section {
     width: 350px;
     height: 350px;
@@ -171,9 +171,11 @@ footer {
 
     figure .position-1 #hysys {
       width: 150px;
+      height: auto;
     }
     figure .position-2 #terminal-app {
-      width: 250px;
+      width: 200px;
+      height: auto;
     }
   
 
@@ -197,10 +199,10 @@ footer {
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
+    grid-template-rows: 0.2fr 1.1fr 1.4fr 0.2fr;
     justify-items: center;
   }
       
@@ -210,8 +212,8 @@ footer {
     grid-column: 1 / 2;
     width: 90%;
     height: 90%;
-    width: 250px;
-    height: 250px;
+    width: 380px;
+    height: 380px;
     .intro {
         #name {
           margin-bottom: 0px;
@@ -228,6 +230,12 @@ footer {
   figure {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
+    margin-top: 0px;
+
+    .position-1 {
+      
+      margin-top: 0px;
+    }
 
     .position-2  {
       width: 80%;
