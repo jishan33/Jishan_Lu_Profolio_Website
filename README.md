@@ -1,4 +1,4 @@
-# Jishan Lu Portfolio Website 
+# Jishan Lu Portfolio Website
 
 Website: https://jishan.netlify.com/
 Github: https://github.com/jishan33/Jishan_Lu_Portfolio_Website_T1A3
