@@ -9,7 +9,7 @@ footer, header {
 }
 
 .portfolio-pic img {
-  width: 300px;
+  width: 350px;
   height: auto;
 }
 
@@ -26,6 +26,16 @@ footer, header {
 .terminal-pic img:hover {
   transform: scale(2.5); 
   margin-left: 100px;
+  box-shadow: none;
+}
+
+.portfolio-pic img:hover {
+  transform: scale(2.5); 
+  box-shadow: none;
+}
+
+.dme-pic img:hover {
+  transform: scale(2.5); 
   box-shadow: none;
 }
 
@@ -105,7 +115,7 @@ section {
     }
     
     #github-logo {
-      margin-top: 15px;
+      margin-top: 10px;
     }  
   }
 }
@@ -154,6 +164,15 @@ section {
 
     .terminal-pic img:hover {
       transform: scale(2); 
+    }
+
+    .portfolio-pic img:hover {
+      transform: scale(1.8); 
+      margin-left: 100px;
+    }
+    .dme-pic img:hover {
+      transform: scale(1.8); 
+      
     }
 
     img #barrel {
