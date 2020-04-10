@@ -100,39 +100,50 @@ header, footer {
 
 
 
-@media screen and (max-width: 550px) {
-  
+@media screen and (max-width: 600px) {
    .grid {
-     grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
-     align-items: center;
+      width:100%;
+      height:100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 1.4fr 1fr 0.2fr;
+      background-color:rgba(243, 235, 230, 1);  
    }
-  section {
-    height: 80%;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 1fr;
-    
+   
+   header {
+     grid-row: 1 / 2;
+     grid-column: 1 / 2;
+     background-color: transparent;
+   }
+
+   footer {
+     grid-row: 4 / 5;
+     grid-column: 1 / 2;
+     background-color: transparent;
+   }
 
     figure {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-
-      }
-    
-
-    article {
-    
+      width: 100%;
+      height: 100%;
       grid-column: 1 / 2;
       grid-row: 2 / 3;
-      margin-top: 10px;
-      margin: 0px auto;
-      
-      
+
+      img {
+        height: 300px;
+        width: auto;
+      }
+
+      .text {
+        top: 80%;
+      }
+    }
+
+    article {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    
 
       h1 {
-        font-size: 20px;
-        margin-top: 10px;
+        font-size: 25px;
         text-align: center;
       }
 
@@ -146,6 +157,6 @@ header, footer {
       }
     }
 
-  }
+  
 
 }
