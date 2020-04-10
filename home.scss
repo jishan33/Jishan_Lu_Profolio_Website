@@ -33,23 +33,36 @@ header {
   grid-column: 1 / 2;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   background-color: white;
-  .portfolio-link {
-    margin-top: 25px;
+
+  #portfolio-link {
+    display: none;
+    
   }
-  .portfolio-link a {
+  #portfolio-link a {
     text-decoration: none;
     color:rgb(177, 174, 174);
     font-size: 20px;
     font-weight: bold;
     margin-right: 30px;  
   }
-
-  .portfolio-link a:hover {
-    color: rgb(87, 86, 86);
-    text-decoration: underline;
-  }
   
+  a.icon {
+    text-decoration: none;
+    float: right;
+    display: flex;
+    align-items: center;
+  
+  }
+  i{
+    margin-right: 10px;
+    color: rgb(116, 116, 116);
+  }
+
+  #portfolio-link a:hover {
+    color: rgb(87, 86, 86);
+  } 
 }
 
 
@@ -101,23 +114,13 @@ span {
 	  background: url(https://s3.amazonaws.com/f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
 	  -webkit-background-clip: text;
 	  background-clip: text;
-
-/* Animate Background Image */
-
+    backface-visibility: hidden;
+    animation: aitf 80s linear infinite;
 	  -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 80s linear infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
-	  -webkit-transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden;
-
+    transform: translate3d(0,0,0);
 }
 
-
-/* Animate Background Image */
-
-@-webkit-keyframes aitf {
+@keyframes aitf {
 	0% { background-position: 0% 100%; }
 	100% { background-position: 100% 50%; }
 }
@@ -146,7 +149,7 @@ footer {
   header {
     justify-content: space-evenly;
     
-    .portfolio-link a {
+    #portfolio-link a {
       font-size: 15px;
       margin-right: 10px;
     }
