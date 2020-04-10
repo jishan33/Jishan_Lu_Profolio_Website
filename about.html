@@ -4,55 +4,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="about.css" integrity="sha384-Ay3qHhVOUsIKzlISDgFTG6jS4S7c2yuMNfgH8FHrbuT7knD3X3jh5yfMoKQuPiWf">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css" integrity="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>About Me</title>
 </head>
 
 <body>
   <div class="container">
     <div class="grid">
-      <header>
-        <img src="./photos/logo_transparent.png" alt="logo">
-      </header>
 
-      <section>
-        <figure>
-          <div class="pic-border">
-        <img src="./photos/jishan.jpg" alt="Photo of me">
-        </div>
-        </figure>
-
-        <article>
-          <div class="paragraph">
-          <h1>Jishan Lu</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ratione dolore, deleniti
-          officiis eius sed fugit doloremque iure, aut odio soluta et facere commodi, sequi corrupti. Corrupti illoeum numquam?</p>
-
-          <a href="https://docs.google.com/document/d/e/2PACX-1vRepeXGUaEftEMrN3kGlfTciN7LxuVKW_QR4uT8-6IKrAkrmT-cyN55eWIKXO1WTYUTyTsSs9GZGz7a/pub?embedded=true"><button>Jishan's CV</button></a>
-
-          
-         </div>
-        </article>
-      </section>
-
-      <footer>
-         <div class="other-links">
-         <a href="https://github.com/jishan33/T1A2"><img src="./photos/github-logo.png" alt="github-logo"
-              id="github-logo"></a>
-        <a href="https://au.linkedin.com/"><img src="./photos/linkedin.png" alt="linkedin-logo"></a>
-        </div>
-
-        <div class="portfolio-link">
-        <nav><a href="./index.html" class="home">Home</a>
+       <header>
+        <div id="portfolio-link">
+          <a href="./index.html" class="home">Home</a>
           <a href="./about.html" class="About">About</a>
           <a href="./skills.html" class="skills">Skills</a>
           <a href="./projects.html" class="projects">Projects</a>
           <a href="./blogs.html" class="Blogs">Blogs</a>
-          <a href="contact.html" class="contact">Contact</a></nav>
+          <a href="contact.html" class="contact">Contact</a>
         </div>
+
+        <a href="javascript:void(0)" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+      </header>
+
+      
+        <figure>
+        <img src="./photos/jishan.jpg" alt="me">
+        <div class="text">HELLO</div>
+        </figure>
+      
+
+      <article>
+        <div class="paragraph">
+        <h1>JISHAN</h1>
+        <h1>LU</h1>
+        <p><span>L </span>orem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ratione dolore, deleniti
+        officiis eius sed fugit doloremque iure, aut odio soluta et facere commodi, sequi corrupti. Corrupti illoeum numquam?</p>
+
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRepeXGUaEftEMrN3kGlfTciN7LxuVKW_QR4uT8-6IKrAkrmT-cyN55eWIKXO1WTYUTyTsSs9GZGz7a/pub?embedded=true"><button>Jishan's CV</button></a>
+
         
+        </div>
+      </article>
+
+      <footer>   
       </footer>
+
+       <script>
+        function myFunction() {
+          var x = document.getElementById("portfolio-link");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
     </div>
   </div>
 </body>

@@ -81,7 +81,8 @@ section .intro {
 }
 section .intro h3 {
   letter-spacing: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  font-weight: normal;
 }
 section .intro #name {
   margin-top: 50px;
@@ -94,6 +95,7 @@ section .intro p {
 span {
   text-transform: uppercase;
   font: 60px "Oswald", sans-serif;
+  font-weight: bold;
   letter-spacing: 0;
   padding: 0.25em 0 0.325em;
   display: block;

@@ -88,7 +88,9 @@ section {
     font-family: "Oswald", sans-serif; 
     h3 {
       letter-spacing: 5px;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
+      font-weight: normal;
+      
     }
     #name {
       margin-top: 50px;
@@ -103,6 +105,7 @@ section {
 span { 
     text-transform: uppercase;
   	font: 60px "Oswald", sans-serif;
+    font-weight: bold;
   	letter-spacing: 0;
   	padding: .25em 0 .325em;
 	  display: block;
