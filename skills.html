@@ -4,86 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="skills.css" integrity="sha384-YKIW6xf+MI6Cn8Sw9N6nnFGmxFpfrVPamqnObCpksbJrf3w9Zqjql7fwhiE0HE3+">
+  <link rel="stylesheet" href="skills.css" integrity="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Skills</title>
 </head>
 
 <body>
   <div class="container">
     <div class="grid">
+
       <header>
-        <img src="./photos/logo_transparent.png" alt="logo">
+        <div id="portfolio-link">
+          <a href="./index.html" class="home">Home</a>
+          <a href="./about.html" class="About">About</a>
+          <a href="./skills.html" class="skills">Skills</a>
+          <a href="./projects.html" class="projects">Projects</a>
+          <a href="./blogs.html" class="Blogs">Blogs</a>
+          <a href="contact.html" class="contact">Contact</a>
+        </div>
+        <a href="javascript:void(0)" class="icon" onclick="myFunction1()"><i class="fa fa-bars"></i></a>
       </header>
+
+      <article>
+        <p class="skills">Skills</p>
+        <p id="text">Click the icons &#128516;</p>
+      </article>
 
       <section>
 
-        <h1 class="skills">Skills</h1>
         <figure class="icons">
 
-          <div class="popup" onclick="myFunction('myPopup1')"><img src="./photos/ruby.png" alt="ruby" class="ruby">
-            <span class="popuptext" id="myPopup1">Ruby: I have really enjoyed learning Ruby as part of my CoderAcademy
+          <div class="popup" onclick="myFunction2('myPopup1')"><img src="./photos/ruby.png" alt="ruby" class="ruby">
+            <span class="popuptext" id="myPopup1"><h4>Ruby: </h4> I have really enjoyed learning Ruby as part of my CoderAcademy
               course. I have created a terminal app using Ruby which you can see in my portfolio.</span>
           </div>
 
-          <div class="popup" onclick="myFunction('myPopup2')"><img src="./photos/css.png" alt="css" class="css">
-            <span class="popuptext" id="myPopup2">CSS: While building this page, I spent time learning about CSS and
+          <div class="popup" onclick="myFunction2('myPopup2')"><img src="./photos/css.png" alt="css" class="css">
+            <span class="popuptext" id="myPopup2"><h4>CSS: </h4> While building this page, I spent time learning about CSS and
               responsive media queries. I've been able to put my knowledge into practice by building this site.</span>
           </div>
 
-          <div class="popup" onclick="myFunction('myPopup3')"><img src="./photos/html.png" alt="html" class="html">
-            <span class="popuptext" id="myPopup3">HTML: This website was created from scratch in order to help develop
+          <div class="popup" onclick="myFunction2('myPopup3')"><img src="./photos/html.png" alt="html" class="html">
+            <span class="popuptext" id="myPopup3"><h4>HTML: </h4> This website was created from scratch in order to help develop
               my HTML skills.</span>
           </div>
 
-          <div class="popup" onclick="myFunction('myPopup4')"><img src="./photos/instagram.png" alt="ig" class="ig">
+          <div class="popup" onclick="myFunction2('myPopup4')"><img src="./photos/instagram.png" alt="ig" class="ig">
             <span class="popuptext" id="myPopup4"><a href="https://www.instagram.com/foodie_cooking_lu/"><img id="my-ig"
                   src="./photos/Lu-IG.png" alt="my-ig"></a>
               <p id="click">Cooking:
                 I also enjoy cooking! Click the photo &#128512;</p>
             </span>
           </div>
-
-
         </figure>
-
-        <article>
-          <p id="text">Click on the icons to know more &#128516;</p>
-        </article>
-
       </section>
 
-
-
-
       <footer>
-
-        <div class="other-links">
-          <a href="https://github.com/jishan33/T1A2"><img src="./photos/github-logo.png" alt="github-logo"
-              id="github-logo"></a>
-          <a href="https://au.linkedin.com/"><img src="./photos/linkedin.png" alt="linkedin-logo"></a>
-        </div>
-
-        <div class="portfolio-link">
-          <nav><a href="./index.html" class="home">Home</a>
-            <a href="./about.html" class="About">About</a>
-            <a href="./skills.html" class="skills">Skills</a>
-            <a href="./projects.html" class="projects">Projects</a>
-            <a href="./blogs.html" class="Blogs">Blogs</a>
-            <a href="contact.html" class="contact">Contact</a></nav>
-        </div>
-
+      
       </footer>
+      
     </div>
   </div>
 
   <script>
-    // When the user clicks on div, open the popup
-    function myFunction(popup_id) {
-      var popup = document.getElementById(popup_id);
-      popup.classList.toggle("show");
-
+    function myFunction1() {
+      var x = document.getElementById("portfolio-link");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
     }
   </script>
+
+  <script>
+
+    // When the user clicks on div, open the popup
+    function myFunction2(popup_id) {
+      var popup = document.getElementById(popup_id);
+      popup.classList.toggle("show");
+    }
+  </script>
+
+
 
 </body>
 

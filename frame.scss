@@ -18,7 +18,7 @@ body {
   height:100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
+  grid-template-rows: 0.2fr 0.5fr 1fr 0.2fr;
   justify-items: center;
   align-items: center;
   
@@ -68,7 +68,6 @@ footer {
   height:100%;
   grid-row: 4 / 5;
   grid-column: 1 / 2;
-  background-color: white;
 }
 
 
