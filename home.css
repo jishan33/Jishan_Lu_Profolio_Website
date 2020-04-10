@@ -8,238 +8,166 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  background: conic-gradient(from 0.25turn at 10% 82%, wheat, 40deg, lightgrey, 350deg, snow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 1.5fr 0.2fr;
   justify-items: center;
   align-items: center;
+  background-color: #747474;
 }
 
 header {
   width: 100%;
   height: 100%;
   grid-row: 1/2;
-  grid-column: 1/3;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
 }
-header img {
-  margin: 20px;
-  width: 150px;
-  height: auto;
-  position: fixed;
-  box-shadow: 5px 5px 5px 0px #6aacb0;
+header .portfolio-link {
+  margin-top: 25px;
+}
+header .portfolio-link a {
+  text-decoration: none;
+  color: #b1aeae;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+header .portfolio-link a:hover {
+  color: #575656;
+  text-decoration: underline;
 }
 
 section {
-  width: 550px;
-  height: 550px;
+  width: 80%;
+  height: 100%;
   grid-row: 2/3;
   grid-column: 1/2;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 section .intro {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 70%;
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(194, 168, 236, 0.466);
-  border-radius: 400px;
   color: white;
-  text-shadow: 2px 2px #f57d0d;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: "Baloo Da 2", cursive;
-  text-align: center;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+section .intro h3 {
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+section .intro #name {
+  margin-top: 50px;
 }
 section .intro p {
+  letter-spacing: 3px;
   font-size: 20px;
 }
 
-figure {
-  width: 100%;
-  height: 100%;
-  grid-row: 2/3;
-  grid-column: 2/3;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-figure .position-1 {
-  height: 100%;
-  grid-row: 1/2;
-  grid-column: 1/2;
-  margin: 0px auto;
-  display: flex;
-  align-items: flex-end;
-}
-figure .position-1 #hysys {
-  width: 300px;
-  height: auto;
-  transform: rotate(90deg);
-  margin-left: 10%;
-  margin-bottom: 0px;
-}
-figure .position-2 {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  display: flex;
-  align-items: flex-start;
-}
-figure .position-2 #terminal-app {
-  width: auto;
-  height: 300px;
+span {
+  text-transform: uppercase;
+  font: 60px "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(https://s3.amazonaws.com/f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
 }
 
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 footer {
   width: 100%;
   height: 100%;
   grid-row: 3/4;
-  grid-column: 1/3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Baloo Da 2", cursive;
-}
-footer .other-links {
-  margin-left: 30px;
-}
-footer .other-links img {
-  width: 60px;
-  height: auto;
-  margin-right: 30px;
-  background-color: #ece2ce;
-  border-radius: 7px;
-}
-footer .other-links img:hover {
-  background-color: rgba(137, 144, 151, 0.664);
-}
-footer .portfolio-link a {
-  text-decoration: none;
-  color: #89d4a2;
-  text-shadow: 1px 1px #1e552a;
-  font-size: 25px;
-  font-weight: bold;
-  margin-right: 30px;
-}
-footer .portfolio-link a:hover {
-  color: rgba(137, 144, 151, 0.664);
+  grid-column: 1/2;
+  background-color: white;
 }
 
-@media screen and (max-width: 1100px) {
-  section {
-    width: 350px;
-    height: 350px;
-  }
-  section .intro #name {
-    margin-bottom: 0px;
-  }
-  section .intro #title {
-    font-size: 22px;
-  }
-  section .intro p {
-    font-size: 15px;
-  }
-
-  figure .position-1 #hysys {
-    width: 150px;
-    height: auto;
-  }
-
-  figure .position-2 #terminal-app {
-    width: 200px;
-    height: auto;
-  }
-
-  footer .other-links {
-    margin-left: 10px;
-  }
-  footer .other-links img {
-    display: inline-block;
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
-  }
-  footer .portfolio-link a {
-    font-size: 18px;
-    margin-right: 10px;
-  }
-}
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .grid {
+    width: 100%;
+    height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1.1fr 1.3fr 0.2fr;
     justify-items: center;
   }
 
-  section {
-    align-items: flex-end;
-    grid-row: 2/3;
-    grid-column: 1/2;
-    width: 90%;
-    height: 90%;
-    width: 230px;
-    height: 230px;
+  header {
+    justify-content: space-evenly;
   }
-  section .intro #name {
-    margin-bottom: 0px;
-  }
-  section .intro #title {
-    font-size: 18px;
-  }
-  section .intro p {
-    font-size: 10px;
+  header .portfolio-link a {
+    font-size: 15px;
+    margin-right: 10px;
   }
 
-  figure {
-    grid-row: 3/4;
+  section {
+    align-items: flex-end;
+    grid-row: 2/4;
     grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
   }
-  figure .position-1 {
-    margin-top: 0px;
+  section .intro {
+    width: 90%;
+    height: 100%;
+    justify-items: center;
   }
-  figure .position-2 {
-    width: 80%;
-    justify-content: center;
+  section .intro h3 {
+    font-size: 18px;
+    font-weight: normal;
   }
-  figure .position-2 #terminal-app {
-    width: 250px;
+  section .intro span {
+    font-size: 35px;
+    text-align: center;
+  }
+  section .intro p {
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-align: center;
   }
 
   footer {
     width: 100%;
     height: 100%;
+    background-color: transparent;
     grid-row: 4/5;
     grid-column: 1/2;
-  }
-  footer .other-links {
-    margin-left: 10px;
-  }
-  footer .other-links img {
-    display: inline-block;
-    width: 25px;
-    height: auto;
-    margin-right: 10px;
-  }
-  footer .portfolio-link a {
-    font-size: 13px;
-    margin-right: 10px;
-  }
-
-  header img {
-    margin: 20px;
-    margin-bottom: 0px;
-    width: 70px;
-    height: auto;
-    position: fixed;
   }
 }
 
