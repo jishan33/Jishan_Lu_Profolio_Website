@@ -268,33 +268,31 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     height: 100%;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 2fr 1fr 0.3fr;
+    grid-template-columns: 1fr 1fr 0.3fr;
     grid-template-rows: 1fr;
   }
   section .terminal-app article, section .personal-portfolio article, section .dme-plant article {
-    width: 100%;
+    width: 90%;
     height: 100%;
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
     align-items: center;
+    text-align: justify;
   }
   section .terminal-app a, section .personal-portfolio a, section .dme-plant a {
     width: 100%;
-    height: 100%;
+    height: auto;
     grid-column: 3/4;
     grid-row: 1/2;
-    margin-left: 0px;
-    margin-right: 20px;
+    margin: 0px;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
   }
   section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel {
     width: 50%;
     height: auto;
-    margin-bottom: 25px;
-    margin-right: 20px;
+    margin: 0px;
+    margin-top: 200px;
   }
   section .terminal-app a #github-logo, section .personal-portfolio a #github-logo, section .dme-plant a #github-logo {
     border: none;
@@ -304,23 +302,18 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     margin-top: 0px;
   }
 
-  .personal-portfolio img, .terminal-app img {
-    height: 160px;
-    width: auto;
-  }
-
   .portfolio-pic img {
-    width: auto;
-    height: 160px;
+    width: 200px;
+    height: auto;
   }
 
   .dme-pic img {
     width: auto;
-    height: 160px;
+    height: 180px;
   }
 
   .terminal-pic img {
-    width: 280px;
+    width: 200px;
     height: auto;
   }
 
@@ -382,33 +375,31 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     height: 100%;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 2fr 1fr 0.3fr;
+    grid-template-columns: 1fr 1fr 0.3fr;
     grid-template-rows: 1fr;
   }
   section .terminal-app article, section .personal-portfolio article, section .dme-plant article {
-    width: 100%;
+    width: 90%;
     height: 100%;
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
     align-items: center;
+    text-align: justify;
   }
   section .terminal-app a, section .personal-portfolio a, section .dme-plant a {
     width: 100%;
-    height: 100%;
+    height: auto;
     grid-column: 3/4;
     grid-row: 1/2;
-    margin-left: 0px;
-    margin-right: 20px;
+    margin: 0px;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
   }
   section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel {
     width: 50%;
     height: auto;
-    margin-bottom: 25px;
-    margin-right: 20px;
+    margin: 0px;
+    margin-top: 200px;
   }
   section .terminal-app a #github-logo, section .personal-portfolio a #github-logo, section .dme-plant a #github-logo {
     border: none;
