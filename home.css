@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand+Baloo+Da+2&display=swap");
 body {
   margin: 0px;
   overflow-x: hidden;
@@ -33,15 +33,15 @@ header {
   justify-content: flex-end;
   align-items: center;
   background-color: white;
+  font-family: "Quicksand", sans-serif;
 }
 header #portfolio-link {
   display: none;
 }
 header #portfolio-link a {
   text-decoration: none;
-  color: #b1aeae;
+  color: #c2c1c0;
   font-size: 20px;
-  font-weight: bold;
   margin-right: 30px;
 }
 header a.icon {

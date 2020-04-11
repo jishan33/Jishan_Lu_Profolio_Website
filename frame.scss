@@ -32,7 +32,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: white;
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
 
   #portfolio-link {
     display: none;
@@ -40,9 +41,8 @@ header {
   }
   #portfolio-link a {
     text-decoration: none;
-    color:rgb(177, 174, 174);
+    color:rgb(194, 193, 192);
     font-size: 20px;
-    font-weight: bold;
     margin-right: 30px;  
   }
   

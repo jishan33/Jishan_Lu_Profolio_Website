@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand+Playfair+Display&display=swap");
 body {
   margin: 0px;
   overflow-x: hidden;
@@ -31,16 +31,16 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: white;
+  background-color: transparent;
+  font-family: "Quicksand", sans-serif;
 }
 header #portfolio-link {
   display: none;
 }
 header #portfolio-link a {
   text-decoration: none;
-  color: #b1aeae;
+  color: #c2c1c0;
   font-size: 20px;
-  font-weight: bold;
   margin-right: 30px;
 }
 header a.icon {
@@ -90,7 +90,7 @@ footer {
 .dme-pic img {
   width: auto;
   height: 190px;
-  filter: opacity(0.5);
+  filter: opacity(0.7);
 }
 
 .terminal-pic img {
@@ -244,9 +244,9 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: 90%;
     height: 100%;
     justify-content: flex-start;
-    font-size: 25px;
+    font-size: 27px;
     z-index: 3;
-    margin-top: 0px;
+    margin-top: 2px;
   }
 
   footer {
@@ -358,9 +358,9 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: 90%;
     height: 100%;
     justify-content: flex-start;
-    font-size: 25px;
+    font-size: 27px;
     z-index: 3;
-    margin-top: 0px;
+    margin-top: 2px;
   }
 
   footer {

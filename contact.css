@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand+Girassol|Playfair+Display|Playfair+Display+SC|Raleway&display=swap");
 body {
   margin: 0px;
   overflow-x: hidden;
@@ -30,16 +31,16 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: white;
+  background-color: transparent;
+  font-family: "Quicksand", sans-serif;
 }
 header #portfolio-link {
   display: none;
 }
 header #portfolio-link a {
   text-decoration: none;
-  color: #b1aeae;
+  color: #c2c1c0;
   font-size: 20px;
-  font-weight: bold;
   margin-right: 30px;
 }
 header a.icon {
@@ -90,7 +91,7 @@ footer {
 
 header {
   grid-row: 1/2;
-  grid-column: 2/3;
+  grid-column: 1/3;
   background-color: transparent;
 }
 
@@ -119,11 +120,21 @@ section .contact-detail h3 {
   font-size: 28px;
   text-align: start;
   margin: 0px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #535355;
+  font-family: "Playfair Display SC", serif;
 }
 section .contact-detail a {
   text-decoration: none;
-  color: #3a3a3d;
-  text-decoration: underline;
+  font-weight: normal;
+  color: #535355;
+  font-family: "Raleway", sans-serif;
+}
+section .contact-detail p {
+  font-family: "Raleway", sans-serif;
+  color: #535355;
 }
 section form {
   display: flex;
@@ -135,6 +146,8 @@ section form .detail {
   display: flex;
   flex-direction: column;
   margin-top: 0px;
+  font-family: "Raleway", sans-serif;
+  color: #535355;
 }
 section form label {
   margin-top: 10px;
@@ -147,10 +160,17 @@ section form input {
   border-radius: 5px;
   border: 2px solid #bbb8b8;
 }
+section form ::placeholder {
+  font-family: "Raleway", sans-serif;
+  color: #535355;
+  opacity: 0.5;
+}
 section form .comment {
   display: flex;
   flex-direction: column;
   margin: 0px auto;
+  font-family: "Raleway", sans-serif;
+  color: #535355;
 }
 section form .comment #comment {
   width: 350px;
@@ -162,12 +182,15 @@ section form button {
   font-weight: bolder;
   font-size: 15px;
   margin-top: 20px;
+  margin-left: 290px;
   width: 60px;
-  height: 60px;
-  background-color: rgba(233, 111, 30, 0.938);
-  color: snow;
-  border-radius: 60px;
+  height: 30px;
+  font-family: "Playfair Display", serif;
+  color: white;
+  background-color: rgba(233, 111, 30, 0.738);
+  border-radius: 10px;
   border: 1px solid #bbb8b8;
+  letter-spacing: 1px;
 }
 section form button:hover {
   background-color: #acaaa8be;

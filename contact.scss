@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand+Girassol|Playfair+Display|Playfair+Display+SC|Raleway&display=swap');
+
 @import "frame.scss";
 
 
@@ -10,7 +12,7 @@
 }
 header {
   grid-row: 1 / 2;
-  grid-column: 2 / 3;
+  grid-column: 1 / 3;
   background-color: transparent;
   
 }
@@ -39,18 +41,33 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
     h3 {
       font-size: 28px;
       text-align: start;
       margin: 0px;
+      margin-bottom: 20px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      color: rgb(83, 83, 85);
+      font-family: 'Playfair Display SC', serif;
     }
 
     a {
       text-decoration: none;
-      color: rgb(58, 58, 61);
-      text-decoration: underline;
+      font-weight: normal;
+      color: rgb(83, 83, 85);
+      font-family: 'Raleway', sans-serif;
     }
+
+    p {
+      font-family: 'Raleway', sans-serif;
+      color: rgb(83, 83, 85);
+
+    }
+
+    
     
     
   }
@@ -65,7 +82,9 @@ section {
     .detail {
       display: flex;
       flex-direction: column;
-      margin-top: 0px 
+      margin-top: 0px; 
+      font-family: 'Raleway', sans-serif;
+      color: rgb(83, 83, 85);
     }
     label {
       margin-top: 10px;
@@ -80,10 +99,18 @@ section {
       border: 2px solid rgb(187, 184, 184);
     }
 
+    ::placeholder {
+      font-family: 'Raleway', sans-serif;
+      color: rgb(83, 83, 85);
+      opacity: 0.5;
+    }
+
     .comment {
        display: flex;
        flex-direction: column;
        margin: 0px auto;
+       font-family: 'Raleway', sans-serif;
+       color: rgb(83, 83, 85);
 
       #comment {
         width: 350px;
@@ -96,12 +123,15 @@ section {
       font-weight: bolder;
       font-size: 15px;
       margin-top: 20px;
+      margin-left: 290px;
       width: 60px;
-      height: 60px;
-      background-color: rgba(233, 111, 30, 0.938);
-      color: snow;
-      border-radius: 60px;
+      height: 30px;
+      font-family: 'Playfair Display', serif;
+      color: white;
+      background-color: rgba(233, 111, 30, 0.738);
+      border-radius: 10px;
       border: 1px solid  rgb(187, 184, 184);
+      letter-spacing: 1px;
       
     }
 
