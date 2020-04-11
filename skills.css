@@ -82,6 +82,13 @@ footer {
     margin-right: 10px;
   }
 }
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .grid {
   width: 100%;
   grid-template-rows: 0.2fr 0.2fr 1.3fr 0.2fr;
