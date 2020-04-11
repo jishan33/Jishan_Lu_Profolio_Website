@@ -187,7 +187,7 @@ section {
     width: 100%;
     height: 100%;
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-row: 3 / 5;
     display: flex;
   
     
@@ -201,7 +201,8 @@ section {
       width: 20px;
       height: auto;
       margin: 10px;
-      padding: 20px;
+      padding: 10px;
+      border-radius: 10px;
       border: 2px solid rgb(66, 64, 64);
       
       }
@@ -223,8 +224,9 @@ section {
   
 
     #my-ig {
+      margin-top: 0px;
       width: auto; 
-      height: 150px;
+      height: 100px;
     }
 
   }
