@@ -12,22 +12,11 @@
   position: absolute;
   text-align: center;
   z-index: 1;
-  width: 200px;
+  width: 220px;
   height: 200px;
-  top: 130%;
-  left: -20%;
+  top: 110%;
+  left: -50%;
 }
-
-// @media screen and (min-width: 551px) {
-//   .popup .popuptext {
-//     width: 200px;
-//     height: 260px;
-//     top: 110%;
-//     left: -30%;
-//   }
-
-// }
-
 
 
 /* Toggle this class - hide and show the popup */
@@ -38,10 +27,6 @@
   }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
 
 @keyframes fadeIn {
   from {opacity: 0;}

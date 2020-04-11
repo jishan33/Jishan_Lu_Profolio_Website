@@ -28,12 +28,12 @@ article {
   .skills {
     margin:0px;
     font-size: 80px;
-    margin-top: 13px;
+    margin-top: 7px;
     font-family: 'Playfair Display SC', serif;
   }
   #text {
     margin-left: 150px;
-    margin-top: 78px;
+    margin-top: 70px;
     font-family: 'Playfair Display SC', serif;
   }
 }
@@ -74,11 +74,11 @@ section {
     @import "popup-text.scss";
 
     .ruby, .css, .html, .ig{
-    width: 50px;
+    width: 30px;
     height: auto;
     margin: 20px;
     padding: 20px;
-    border-radius: 80px;
+    border-radius: 25px;
     background-color: rgb(230, 223, 229);
     border: 2px solid rgb(66, 64, 64);
     
@@ -113,7 +113,7 @@ section {
   
 
   #myPopup1, #myPopup2, #myPopup3{
-    font-size: 20px;
+    font-size: 23px;
     color:rgba(34, 34, 59, 1);
     text-align: justify;
     font-family: 'Dancing Script', cursive;
@@ -137,7 +137,7 @@ section {
 }   
    
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   
   .grid {
     grid-template-columns: 1fr;
@@ -149,12 +149,12 @@ section {
     .skills {
       margin:0px;
       font-size: 43px;
-      margin-top: 4px;
+      margin-top: 11px;
     }
     #text {
       font-size: 15px;
       margin-left: 30px;
-      margin-top: 32px;
+      margin-top: 37px;
     }
   }
 

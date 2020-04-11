@@ -1,70 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
 @import "frame.scss";
 
- .grid {
-  background: conic-gradient(from 0.75turn at 10% 13%, green, 10deg, forestgreen, 350deg, aquamarine);
-}
-
-footer, header {
-  background-color: transparent;
-}
+ 
 
 .portfolio-pic img {
-  width: 350px;
-  height: auto;
+  width: auto;
+  height: 150px;
+  filter: opacity(0.8);
 }
 
 .dme-pic img {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 190px;
+  filter: opacity(0.5);
+
 }
 
 .terminal-pic img {
-  width: 350px;
-  height: auto;
-}
+  width: auto;
+  height: 150px;
+  filter: opacity(0.8);
 
-.terminal-pic img:hover {
-  transform: scale(2.5); 
-  margin-left: 100px;
-  box-shadow: none;
 }
-
-.portfolio-pic img:hover {
-  transform: scale(2.5); 
-  box-shadow: none;
-}
-
-.dme-pic img:hover {
-  transform: scale(2.5); 
-  box-shadow: none;
-}
-
 
 #barrel {
   margin-bottom: 15px;
 }
 
-section {
-  margin: 0px auto;
-  grid-row: 2 / 4;
+
+
+.grid {
+  width: 100%;
+  height:100%;
+}
+
+header {
+  grid-row: 1 / 3;
+  width: 90%;
+  z-index: 1;
+  background-color: transparent;
+  
+  #portfolio-link {
+    
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 40px;
+    }
+  }
+
+
+}
+
+.title-block {
+  width: 83%;
+  height:90%;
+  grid-row: 3 / 5;
   grid-column: 1 / 2;
-  width: 80%;
-  height: 90%;
+  z-index: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  color:rgba(209, 202, 208, 1);
+  
+  
+}
+
+
+
+section {
+  width: 90%;
+  height:90%;
+  margin: 0px auto;
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+ 
+  
+
+  .terminal-app {
+    background-color:rgba(243, 235, 230, 1);
+  }
+
+  .personal-portfolio {
+    background-color: rgba(201, 173, 167, 1);
+  }
+
+  .dme-plant {
+    background-color: rgba(209, 202, 208, 1);
+  }
 
   .terminal-app, .personal-portfolio, .dme-plant {
-    width: 100%;
-    height: 80%;
-    background-color: rgba(230, 235, 229, 0.582);
-    margin: 40px;
+    width: 25%;
+    height:80%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.3fr;
     justify-items: center;
-    border: 2px solid rgb(230, 207, 107);
-    box-shadow: 10px 10px 7px 0px rgba(173,191,157,1);
-    border-radius: 5px;
+    
+
 
     figure {
       grid-column: 1 / 2;
@@ -72,7 +113,6 @@ section {
 
     img {
           margin-top: 10px;
-          box-shadow: 6px 6px 7px 0px rgba(224,182,103,1);
 
     }
   }
@@ -126,19 +166,15 @@ section {
 
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   @import "projects-responsive.scss";
-    .grid{
-      background: conic-gradient(from 0.25turn at 20% 7%, green, 10deg, forestgreen, 350deg, aquamarine);
-    } 
+    
   section{
 
     .terminal-app, .personal-portfolio, .dme-plant {
-      box-shadow: 6px 6px 6px 0px rgba(173,191,157,1);
       
       figure img {
         margin-top: 0px;
-        box-shadow: 5px 5px 5px 0px rgba(224,182,103,1);
       }
     }
   } 
@@ -178,34 +214,9 @@ section {
     img #barrel {
       margin-bottom: 25px;
     }
-  
-  header img {
-    margin: 20px;
-    width: 150px;
-    height: auto;
-    position: fixed;
-  }
-
-  footer {
-    .other-links {
-      margin-left: 10px;
-        img {
-          display: inline-block;
-          width: 20px;
-          height: auto;
-          margin-right: 10px;
-        }
-    }
-
-    .portfolio-link a {
-        font-size: 18px;
-        margin-right: 10px;
-    }
-  }
-
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   @import "projects-responsive.scss";
 
   .grid {
@@ -238,40 +249,6 @@ section {
       font-size: 8px;
     }
   }
-
-  footer {
-    .other-links {
-      margin-left: 10px;
-        img {
-          display: inline-block;
-          width: 25px;
-          height: auto;
-          margin-right: 10px;
-        }
-    }
-
-    .portfolio-link a {
-        font-size: 13px;
-        margin-right: 10px;
-    }
-  }
   
 }
 
-@media screen and (max-width: 350px) {
-  @import "projects-responsive.scss";
-  body {
-    font-size: 10px;
-  }
-
-  img {
-    width: auto ;
-    max-width: 100% ;
-    height: auto ;
-  }
-
-  #dme {
-    height: 120px;
-  }
-
-}

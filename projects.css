@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
-* {
-  font-family: "Baloo Da 2", cursive;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 body {
   margin: 0px;
   overflow-x: hidden;
@@ -12,16 +8,19 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #5c8eeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
-  align-items: flex-end;
+  grid-template-rows: 0.2fr 0.5fr 1fr 0.2fr;
+  justify-items: center;
+  align-items: center;
 }
 
 header {
@@ -29,149 +28,140 @@ header {
   height: 100%;
   grid-row: 1/2;
   grid-column: 1/2;
-  background-color: rgba(255, 192, 203, 0.8);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
 }
-header img {
-  margin: 20px;
-  width: 150px;
-  height: auto;
-  position: fixed;
+header #portfolio-link {
+  display: none;
+}
+header #portfolio-link a {
+  text-decoration: none;
+  color: #b1aeae;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+header a.icon {
+  text-decoration: none;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+header i {
+  margin-right: 10px;
+  color: #747474;
+}
+header #portfolio-link a:hover {
+  color: #575656;
 }
 
 footer {
   width: 100%;
   height: 100%;
-  background-color: white;
   grid-row: 4/5;
   grid-column: 1/2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-footer .other-links {
-  margin-left: 30px;
-}
-footer .other-links img {
-  width: 60px;
-  height: auto;
-  margin-right: 30px;
-}
-footer .portfolio-link a {
-  text-decoration: none;
-  color: #89d4a2;
-  text-shadow: 1px 1px #1e552a;
-  font-size: 25px;
-  font-weight: bold;
-  margin-right: 30px;
-}
-footer .portfolio-link a:hover {
-  color: rgba(137, 144, 151, 0.664);
-}
-footer .other-links img:hover {
-  background-color: rgba(137, 144, 151, 0.664);
 }
 
-@media screen and (max-width: 900px) {
-  footer .other-links {
-    margin-left: 10px;
+@media screen and (max-width: 600px) {
+  .grid {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.1fr 1.3fr 0.2fr;
+    justify-items: center;
   }
-  footer .other-links img {
-    display: inline-block;
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
+
+  header {
+    justify-content: space-evenly;
   }
-  footer .portfolio-link a {
-    font-size: 18px;
+  header #portfolio-link a {
+    font-size: 15px;
     margin-right: 10px;
   }
 }
-@media screen and (max-width: 550px) {
-  header img {
-    margin: 20px;
-    width: 80px;
-    height: auto;
-    position: fixed;
-  }
-
-  footer .other-links {
-    margin-left: 10px;
-  }
-  footer .other-links img {
-    display: inline-block;
-    width: 25px;
-    height: auto;
-    margin-right: 10px;
-  }
-  footer .portfolio-link a {
-    font-size: 13px;
-    margin-right: 10px;
-  }
-}
-.grid {
-  background: conic-gradient(from 0.75turn at 10% 13%, green, 10deg, forestgreen, 350deg, aquamarine);
-}
-
-footer, header {
-  background-color: transparent;
-}
-
 .portfolio-pic img {
-  width: 350px;
-  height: auto;
+  width: auto;
+  height: 150px;
+  filter: opacity(0.8);
 }
 
 .dme-pic img {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 190px;
+  filter: opacity(0.5);
 }
 
 .terminal-pic img {
-  width: 350px;
-  height: auto;
-}
-
-.terminal-pic img:hover {
-  transform: scale(2.5);
-  margin-left: 100px;
-  box-shadow: none;
-}
-
-.portfolio-pic img:hover {
-  transform: scale(2.5);
-  box-shadow: none;
-}
-
-.dme-pic img:hover {
-  transform: scale(2.5);
-  box-shadow: none;
+  width: auto;
+  height: 150px;
+  filter: opacity(0.8);
 }
 
 #barrel {
   margin-bottom: 15px;
 }
 
-section {
-  margin: 0px auto;
-  grid-row: 2/4;
-  grid-column: 1/2;
-  width: 80%;
-  height: 90%;
+.grid {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  grid-row: 1/3;
+  width: 90%;
+  z-index: 1;
+  background-color: transparent;
+}
+header #portfolio-link a {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.title-block {
+  width: 83%;
+  height: 90%;
+  grid-row: 3/5;
+  grid-column: 1/2;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  color: #d1cad0;
+}
+
+section {
+  width: 90%;
+  height: 90%;
+  margin: 0px auto;
+  grid-row: 1/4;
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+section .terminal-app {
+  background-color: #f3ebe6;
+}
+section .personal-portfolio {
+  background-color: #c9ada7;
+}
+section .dme-plant {
+  background-color: #d1cad0;
 }
 section .terminal-app, section .personal-portfolio, section .dme-plant {
-  width: 100%;
+  width: 25%;
   height: 80%;
-  background-color: rgba(230, 235, 229, 0.582);
-  margin: 40px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 0.3fr;
   justify-items: center;
-  border: 2px solid #e6cf6b;
-  box-shadow: 10px 10px 7px 0px #adbf9d;
-  border-radius: 5px;
 }
 section .terminal-app figure, section .personal-portfolio figure, section .dme-plant figure {
   grid-column: 1/2;
@@ -179,7 +169,6 @@ section .terminal-app figure, section .personal-portfolio figure, section .dme-p
 }
 section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
   margin-top: 10px;
-  box-shadow: 6px 6px 7px 0px #e0b667;
 }
 section .terminal-app article, section .personal-portfolio article, section .dme-plant article {
   grid-column: 1/2;
@@ -217,7 +206,7 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   background-color: rgba(50, 123, 136, 0.61);
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   img {
     width: 100px;
     height: auto;
@@ -229,7 +218,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   }
 
   section {
-    overflow-y: scroll;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -237,9 +225,8 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     align-items: center;
   }
   section .terminal-app, section .personal-portfolio, section .dme-plant {
-    width: 90%;
-    height: 30%;
-    margin: 10px;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     grid-template-columns: 2fr 1fr 0.3fr;
@@ -270,23 +257,8 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     margin-bottom: 25px;
   }
 
-  header img {
-    margin: 20px;
-    width: 80px;
-    height: auto;
-    position: fixed;
-  }
-
-  .grid {
-    background: conic-gradient(from 0.25turn at 20% 7%, green, 10deg, forestgreen, 350deg, aquamarine);
-  }
-
-  section .terminal-app, section .personal-portfolio, section .dme-plant {
-    box-shadow: 6px 6px 6px 0px #adbf9d;
-  }
   section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
     margin-top: 0px;
-    box-shadow: 5px 5px 5px 0px #e0b667;
   }
 
   .personal-portfolio img, .terminal-app img {
@@ -325,29 +297,8 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   img #barrel {
     margin-bottom: 25px;
   }
-
-  header img {
-    margin: 20px;
-    width: 150px;
-    height: auto;
-    position: fixed;
-  }
-
-  footer .other-links {
-    margin-left: 10px;
-  }
-  footer .other-links img {
-    display: inline-block;
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
-  }
-  footer .portfolio-link a {
-    font-size: 18px;
-    margin-right: 10px;
-  }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   img {
     width: 100px;
     height: auto;
@@ -359,7 +310,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   }
 
   section {
-    overflow-y: scroll;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -367,9 +317,8 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     align-items: center;
   }
   section .terminal-app, section .personal-portfolio, section .dme-plant {
-    width: 90%;
-    height: 30%;
-    margin: 10px;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     grid-template-columns: 2fr 1fr 0.3fr;
@@ -398,13 +347,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: 50%;
     height: auto;
     margin-bottom: 25px;
-  }
-
-  header img {
-    margin: 20px;
-    width: 80px;
-    height: auto;
-    position: fixed;
   }
 
   .grid {
@@ -437,94 +379,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   }
   article p {
     font-size: 8px;
-  }
-
-  footer .other-links {
-    margin-left: 10px;
-  }
-  footer .other-links img {
-    display: inline-block;
-    width: 25px;
-    height: auto;
-    margin-right: 10px;
-  }
-  footer .portfolio-link a {
-    font-size: 13px;
-    margin-right: 10px;
-  }
-}
-@media screen and (max-width: 350px) {
-  img {
-    width: 100px;
-    height: auto;
-  }
-
-  .grid {
-    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
-    align-items: flex-start;
-  }
-
-  section {
-    overflow-y: scroll;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-items: center;
-    align-items: center;
-  }
-  section .terminal-app, section .personal-portfolio, section .dme-plant {
-    width: 90%;
-    height: 30%;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 2fr 1fr 0.3fr;
-    grid-template-rows: 1fr;
-  }
-  section .terminal-app article, section .personal-portfolio article, section .dme-plant article {
-    width: 100%;
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    align-items: center;
-  }
-  section .terminal-app a, section .personal-portfolio a, section .dme-plant a {
-    width: 100%;
-    height: 100%;
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin-left: 0px;
-    margin-right: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel {
-    width: 50%;
-    height: auto;
-    margin-bottom: 25px;
-  }
-
-  header img {
-    margin: 20px;
-    width: 80px;
-    height: auto;
-    position: fixed;
-  }
-
-  body {
-    font-size: 10px;
-  }
-
-  img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-  }
-
-  #dme {
-    height: 120px;
   }
 }
 
