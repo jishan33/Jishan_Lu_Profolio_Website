@@ -114,9 +114,12 @@ header {
   z-index: 1;
   background-color: transparent;
 }
-header #portfolio-link a {
-  display: flex;
+header #portfolio-link {
+  margin-top: 100px;
+  margin-right: 80px;
   flex-direction: column;
+}
+header #portfolio-link a {
   justify-content: space-evenly;
   margin-top: 40px;
 }
@@ -138,7 +141,6 @@ header #portfolio-link a {
 section {
   width: 90%;
   height: 90%;
-  margin: 0px auto;
   grid-row: 1/4;
   grid-column: 1/2;
   width: 100%;
@@ -162,6 +164,7 @@ section .terminal-app, section .personal-portfolio, section .dme-plant {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 0.3fr;
   justify-items: center;
+  z-index: 2;
 }
 section .terminal-app figure, section .personal-portfolio figure, section .dme-plant figure {
   grid-column: 1/2;
@@ -173,12 +176,13 @@ section .terminal-app figure img, section .personal-portfolio figure img, sectio
 section .terminal-app article, section .personal-portfolio article, section .dme-plant article {
   grid-column: 1/2;
   grid-row: 2/3;
-  width: 85%;
+  width: 70%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  text-align: justify;
 }
 section .terminal-app article h3, section .personal-portfolio article h3, section .dme-plant article h3 {
   margin: 0px;
@@ -195,15 +199,18 @@ section .terminal-app #github-logo, section .terminal-app #portfolio, section .t
   width: 100%;
   height: auto;
   margin-top: 10px;
-  border: 2px solid #5a5353;
+  border: 1px solid #5a5353;
   border-radius: 30px;
+  filter: opacity(0.5);
 }
 section .terminal-app #github-logo, section .personal-portfolio #github-logo, section .dme-plant #github-logo {
-  margin-top: 10px;
+  border: 1px solid #5a5353;
+  padding: 3px;
+  filter: opacity(0.2);
 }
 
 #github-logo:hover, #portfolio:hover, #barrel:hover {
-  background-color: rgba(50, 123, 136, 0.61);
+  background-color: #807b7b;
 }
 
 @media screen and (max-width: 1200px) {
@@ -213,14 +220,45 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   }
 
   .grid {
-    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
-    align-items: flex-start;
+    grid-template-rows: 0.2fr 0.1fr 1fr 0.4fr 0.2fr;
+  }
+
+  header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 90%;
+    z-index: 4;
+  }
+  header #portfolio-link {
+    flex-direction: row;
+    margin: 0px;
+  }
+  header #portfolio-link a {
+    margin-top: 0px;
+  }
+
+  .title-block {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    width: 90%;
+    height: 100%;
+    justify-content: flex-start;
+    font-size: 25px;
+    z-index: 3;
+    margin-top: 0px;
+  }
+
+  footer {
+    grid-row: 5/6;
+    grid-column: 1/2;
   }
 
   section {
-    flex-direction: column;
-    width: 100%;
+    grid-row: 2/6;
+    grid-column: 1/2;
+    width: 90%;
     height: 100%;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
   }
@@ -255,6 +293,10 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: 50%;
     height: auto;
     margin-bottom: 25px;
+    margin-right: 20px;
+  }
+  section .terminal-app a #github-logo, section .personal-portfolio a #github-logo, section .dme-plant a #github-logo {
+    border: none;
   }
 
   section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img {
@@ -281,19 +323,6 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     height: auto;
   }
 
-  .terminal-pic img:hover {
-    transform: scale(2);
-  }
-
-  .portfolio-pic img:hover {
-    transform: scale(1.8);
-    margin-left: 100px;
-  }
-
-  .dme-pic img:hover {
-    transform: scale(1.8);
-  }
-
   img #barrel {
     margin-bottom: 25px;
   }
@@ -305,14 +334,45 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
   }
 
   .grid {
-    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
-    align-items: flex-start;
+    grid-template-rows: 0.2fr 0.1fr 1fr 0.4fr 0.2fr;
+  }
+
+  header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 90%;
+    z-index: 4;
+  }
+  header #portfolio-link {
+    flex-direction: row;
+    margin: 0px;
+  }
+  header #portfolio-link a {
+    margin-top: 0px;
+  }
+
+  .title-block {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    width: 90%;
+    height: 100%;
+    justify-content: flex-start;
+    font-size: 25px;
+    z-index: 3;
+    margin-top: 0px;
+  }
+
+  footer {
+    grid-row: 5/6;
+    grid-column: 1/2;
   }
 
   section {
-    flex-direction: column;
-    width: 100%;
+    grid-row: 2/6;
+    grid-column: 1/2;
+    width: 90%;
     height: 100%;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
   }
@@ -347,20 +407,35 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
     width: 50%;
     height: auto;
     margin-bottom: 25px;
+    margin-right: 20px;
+  }
+  section .terminal-app a #github-logo, section .personal-portfolio a #github-logo, section .dme-plant a #github-logo {
+    border: none;
   }
 
   .grid {
-    grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
+    grid-template-rows: 0.3fr 0.2fr 0.9fr 1.5fr 0.2fr;
+  }
+
+  .title-block {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100px;
+    height: 30px;
+    margin-top: 280px;
+    z-index: 2;
+    margin-right: 200px;
+    opacity: 0.5;
   }
 
   .terminal-app img {
-    width: 130px;
+    width: 150px;
     height: auto;
   }
 
   .personal-portfolio img {
-    height: 100px;
-    width: auto;
+    height: auto;
+    width: 150px;
   }
 
   #barrel {
@@ -369,6 +444,10 @@ section .terminal-app #github-logo, section .personal-portfolio #github-logo, se
 
   .dme-pic #dme {
     margin-bottom: 0px;
+  }
+
+  #github-logo, #portfolio, #barrel {
+    margin-right: 20px;
   }
 
   article {

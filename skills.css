@@ -91,7 +91,7 @@ header {
 }
 
 footer {
-  width: 95%;
+  width: 90%;
   background-color: #beb5bd;
 }
 
@@ -107,19 +107,19 @@ article {
 article .skills {
   margin: 0px;
   font-size: 80px;
-  margin-top: 7px;
+  margin-top: 14px;
   font-family: "Playfair Display SC", serif;
 }
 article #text {
   margin-left: 150px;
-  margin-top: 70px;
+  margin-top: 80px;
   font-family: "Playfair Display SC", serif;
 }
 
 section {
   grid-row: 3/4;
   grid-column: 1/2;
-  width: 95%;
+  width: 90%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -237,12 +237,15 @@ section #myPopup4 h4 {
   article .skills {
     margin: 0px;
     font-size: 43px;
-    margin-top: 11px;
+    margin-top: 7px;
+    z-index: 2;
+    position: relative;
   }
   article #text {
     font-size: 15px;
     margin-left: 30px;
-    margin-top: 37px;
+    margin-top: 35px;
+    z-index: 2;
   }
 
   section .click-me {

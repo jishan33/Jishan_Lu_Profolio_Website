@@ -12,7 +12,7 @@ header {
 }
 
 footer {
-  width: 95%;
+  width: 90%;
   background-color:rgba(190, 181, 189, 1);
 }
 
@@ -28,12 +28,13 @@ article {
   .skills {
     margin:0px;
     font-size: 80px;
-    margin-top: 7px;
+    margin-top: 14px;
     font-family: 'Playfair Display SC', serif;
+    
   }
   #text {
     margin-left: 150px;
-    margin-top: 70px;
+    margin-top: 80px;
     font-family: 'Playfair Display SC', serif;
   }
 }
@@ -42,7 +43,7 @@ article {
 section {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
-  width: 95%;
+  width: 90%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -143,18 +144,24 @@ section {
     grid-template-columns: 1fr;
      grid-template-rows: 0.1fr 0.1fr 1.2fr 0.2fr;
   }
+
+  
   article {
     grid-row: 2 / 4;
     grid-column: 1 / 2;
     .skills {
       margin:0px;
       font-size: 43px;
-      margin-top: 11px;
+      margin-top: 7px;
+      z-index: 2;
+      position: relative;
     }
     #text {
       font-size: 15px;
       margin-left: 30px;
-      margin-top: 37px;
+      margin-top: 35px;
+      z-index: 2;
+    
     }
   }
 
