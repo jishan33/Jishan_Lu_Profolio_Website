@@ -207,7 +207,7 @@ section {
   @import "projects-responsive.scss";
 
   .grid {
-    grid-template-rows: 0.3fr 0.2fr 0.9fr 1.5fr 0.2fr;
+    grid-template-rows: 0.35fr 0.2fr 0.9fr 1.5fr 0.2fr;
   } 
   
   .title-block{
@@ -215,10 +215,12 @@ section {
     grid-column: 1 / 2;
     width: 100px;
     height: 30px;
-    margin-top: 280px;
+    margin-top: 273px;
     z-index: 2;
-    margin-right: 200px;
+    margin-right: 250px;
     opacity: 0.5;
+    
+    
   }
 
   .terminal-app img {
