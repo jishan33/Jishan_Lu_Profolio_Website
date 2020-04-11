@@ -111,7 +111,8 @@ footer {
 header {
   grid-row: 1/3;
   width: 90%;
-  z-index: 1;
+  height: 100%;
+  z-index: 2;
   background-color: transparent;
 }
 header #portfolio-link {
@@ -133,7 +134,7 @@ header #portfolio-link a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Playfair Display", serif;
   color: #d1cad0;
 }
