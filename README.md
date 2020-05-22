@@ -1,6 +1,7 @@
 # Jishan Lu Portfolio Website
 
-Website: https://jishan.netlify.com/
+Website: https://portfolio.jishan33.com/
+
 Github: https://github.com/jishan33/Jishan_Lu_Portfolio_Website_T1A3
 
 # Purpose
