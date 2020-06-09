@@ -7,22 +7,36 @@
 .portfolio-pic img {
   width: auto;
   height: 150px;
-  filter: opacity(0.8);
+  
 }
 
 .dme-pic img {
   width: auto;
   height: 190px;
-  filter: opacity(0.7);
+  
 
 }
 
 .terminal-pic img {
   width: auto;
   height: 150px;
-  filter: opacity(0.8);
+  // filter: opacity(0.8);
 
 }
+
+.fruit-market-pic img {
+  width: auto;
+  height: 150px;
+  // filter: opacity(0.8);
+}
+
+.spaceX-app-pic img {
+  width: auto;
+  height: 150px;
+  // filter: opacity(0.8);
+}
+
+
 
 #barrel {
   margin-bottom: 15px;
@@ -81,11 +95,11 @@ section {
  
   
 
-  .terminal-app {
+  .terminal-app, .spaceX-app {
     background-color:rgba(243, 235, 230, 1);
   }
 
-  .personal-portfolio {
+  .personal-portfolio, .fruit-market {
     background-color: rgba(201, 173, 167, 1);
   }
 
@@ -93,7 +107,7 @@ section {
     background-color: rgba(209, 202, 208, 1);
   }
 
-  .terminal-app, .personal-portfolio, .dme-plant {
+  .terminal-app, .personal-portfolio, .dme-plant, .fruit-market, .spaceX-app {
     width: 25%;
     height:80%;
     display: grid;
@@ -147,14 +161,14 @@ section {
       margin-top: 10px;
       border: 1px solid rgb(90, 83, 83);
       border-radius: 30px;
-      filter: opacity(0.5);
+      // filter: opacity(0.5);
       
     }
     
     #github-logo {
       border: 1px solid  rgb(90, 83, 83);
       padding: 3px;
-      filter: opacity(0.2);
+      // filter: opacity(0.2);
 
     }  
   }
@@ -168,10 +182,13 @@ section {
 
 @media screen and (max-width: 1200px) {
   @import "projects-responsive.scss";
+  body {
+    overflow-y: visible;
+  }
     
   section{
 
-    .terminal-app, .personal-portfolio, .dme-plant {
+    .terminal-app, .personal-portfolio, .dme-plant, .fruit-market, .spaceX-app  {
       
       figure img {
         margin-top: 0px;
@@ -189,7 +206,7 @@ section {
       height: 180px;
     }
 
-    .terminal-pic img {
+    .terminal-pic img, .fruit-market-pic img, .spaceX-app-pic img{
       width: 200px;
       height: auto;
     }
@@ -201,7 +218,7 @@ section {
 
 @media screen and (max-width: 600px) {
   @import "projects-responsive.scss";
-
+  
   .grid {
     grid-template-rows: 0.35fr 0.2fr 0.9fr 1.5fr 0.2fr;
   } 
