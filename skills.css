@@ -187,7 +187,7 @@ section .icons .popuptext.show {
     opacity: 1;
   }
 }
-section .icons .ruby, section .icons .css, section .icons .html, section .icons .ig {
+section .icons .ruby, section .icons .css, section .icons .html, section .icons .js {
   width: 30px;
   height: auto;
   margin: 20px;
@@ -211,27 +211,16 @@ section .icons .css:hover {
 section .icons .html:hover {
   background: conic-gradient(grey 180deg, wheat 180deg 360deg);
 }
-section .icons .ig:hover {
+section .icons .js:hover {
   background: conic-gradient(from 0.3turn at 50% 50%, orange, 50deg, yellow, 100deg, purple, 250deg, yellow);
 }
-section #myPopup1, section #myPopup2, section #myPopup3 {
+section #myPopup1, section #myPopup2, section #myPopup3, section #myPopup4 {
   font-size: 23px;
   color: #22223b;
   text-align: justify;
   font-family: "Dancing Script", cursive;
 }
-section #myPopup1 h4, section #myPopup2 h4, section #myPopup3 h4 {
-  text-align: center;
-}
-section #myPopup4 {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  color: #22223b;
-  text-align: justify;
-  font-family: "Dancing Script", cursive;
-}
-section #myPopup4 h4 {
+section #myPopup1 h4, section #myPopup2 h4, section #myPopup3 h4, section #myPopup4 h4 {
   text-align: center;
 }
 
@@ -251,14 +240,14 @@ section #myPopup4 h4 {
   article .skills {
     margin: 0px;
     font-size: 50px;
-    margin-top: 13px;
+    margin-top: 25px;
     z-index: 2;
     position: relative;
   }
   article #text {
     font-size: 10px;
     margin-left: 25px;
-    margin-top: 55px;
+    margin-top: 65px;
     z-index: 2;
   }
 
@@ -280,7 +269,7 @@ section #myPopup4 h4 {
     display: flex;
     flex-direction: column;
   }
-  section .icons .ruby, section .icons .css, section .icons .html, section .icons .ig {
+  section .icons .ruby, section .icons .css, section .icons .html, section .icons .js {
     width: 20px;
     height: auto;
     margin: 10px;
@@ -294,11 +283,6 @@ section #myPopup4 h4 {
   section #myPopup1 h4, section #myPopup2 h4, section #myPopup3 h4, section #myPopup4 h4 {
     margin-bottom: 5px;
     text-align: start;
-  }
-  section #my-ig {
-    margin-top: 0px;
-    width: auto;
-    height: 100px;
   }
 
   section .icons .popup .popuptext {

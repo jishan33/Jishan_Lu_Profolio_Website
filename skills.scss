@@ -90,7 +90,7 @@ section {
 
     @import "popup-text.scss";
 
-    .ruby, .css, .html, .ig{
+    .ruby, .css, .html, .js{
     width: 30px;
     height: auto;
     margin: 20px;
@@ -122,14 +122,14 @@ section {
      grey 180deg, wheat 180deg 360deg);
     }
 
-    .ig:hover {
+    .js:hover {
       background: conic-gradient(from 0.30turn at 50% 50%, orange, 50deg, yellow, 100deg, purple, 250deg, yellow);
     }
 
   }
   
 
-  #myPopup1, #myPopup2, #myPopup3{
+  #myPopup1, #myPopup2, #myPopup3, #myPopup4{
     font-size: 23px;
     color:rgba(34, 34, 59, 1);
     text-align: justify;
@@ -139,18 +139,7 @@ section {
     }
       
   }
-  #myPopup4 {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    color: rgba(34, 34, 59, 1);
-    text-align: justify;
-    font-family: 'Dancing Script', cursive;
-    h4 {
-      text-align: center;
-    }
-
-  }
+  
 }   
    
 
@@ -171,14 +160,14 @@ section {
     .skills {
       margin: 0px;
       font-size: 50px;
-      margin-top: 13px;
+      margin-top: 25px;
       z-index: 2;
       position: relative;
     }
     #text {
       font-size: 10px;
       margin-left: 25px;
-      margin-top: 55px;
+      margin-top: 65px;
       z-index: 2;
       // position: absolute;
     
@@ -206,7 +195,7 @@ section {
       display: flex;
       flex-direction: column;
     
-    .ruby, .css, .html, .ig{
+    .ruby, .css, .html, .js{
       width: 20px;
       height: auto;
       margin: 10px;
@@ -228,15 +217,6 @@ section {
       }
     }
 
-
-
-  
-
-    #my-ig {
-      margin-top: 0px;
-      width: auto; 
-      height: 100px;
-    }
 
   }
    
