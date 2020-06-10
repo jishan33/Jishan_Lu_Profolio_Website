@@ -118,10 +118,6 @@ figure .text {
 figure img {
   height: 60%;
   width: auto;
-  filter: grayscale(150%);
-}
-figure img:hover {
-  filter: none;
 }
 
 article {
