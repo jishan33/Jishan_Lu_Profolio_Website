@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital@1&display=swap');
 
 body {
   margin: 0px;
@@ -33,7 +34,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   background-color: transparent;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Bellota', cursive;
+
 
   #portfolio-link {
     display: none;
@@ -41,7 +43,7 @@ header {
   }
   #portfolio-link a {
     text-decoration: none;
-    color:rgb(194, 193, 192);
+    color:rgb(145, 141, 138);
     font-size: 20px;
     margin-right: 30px;  
   }
