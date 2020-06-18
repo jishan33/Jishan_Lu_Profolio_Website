@@ -124,12 +124,17 @@ span {
 	  background-clip: text;
     
     -webkit-animation: title_animation 80s steps(10000) infinite; 
+    -moz-animation: title_animation 80s steps(10000) infinite;  
+    -ms-animation: title_animation 80s steps(10000) infinite;  
+    -o-animation: title_animation 80s steps(10000) infinite;  
+
+
 	  -webkit-text-fill-color: transparent;
     animation: title_animation 80s steps(10000) infinite;
 
-    -ms-transform: rotate2d(0,0,0);
-    -webkit-transform: rotate2d(0,0,0);
-    transform: rotate2d(0,0,0);
+    // -ms-transform: rotate2d(0,0,0);
+    // -webkit-transform: rotate2d(0,0,0);
+    // transform: rotate2d(0,0,0);
 
     // backface-visibility: hidden;
     // -webkit-backface-visibility: hidden;
