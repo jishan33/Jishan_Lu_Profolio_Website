@@ -88,13 +88,20 @@
         
         
 
-        #github-logo, #portfolio, #barrel{
+        #github-logo, #portfolio, #barrel, #dme-icon{
           width: 70%;
           height: auto;
           margin: 0px;
-          margin-top: 160px;
+          margin-top: 85px;
+          
   
         } 
+
+        #dme-icon {
+          width: 60%;
+          
+          margin-left: 5px;
+        }
 
         
       }
