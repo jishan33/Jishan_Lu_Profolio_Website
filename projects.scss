@@ -86,7 +86,7 @@ header {
   align-items: flex-end;
   font-size: 40px;
   font-family: 'Playfair Display', serif;
-  color:rgba(209, 202, 208, 1);  
+  color:rgba(243, 235, 230, 1);  
 }
 
 
@@ -234,26 +234,23 @@ section {
   } 
   
   .title-block{
-    grid-row: 2 / 3;
+    grid-row: 4 / 5;
     grid-column: 1 / 2;
     width: 100px;
     height: 30px;
-    margin-top: 273px;
-    z-index: 2;
+    margin-bottom: 130px;
+    z-index: 5;
     margin-right: 250px;
     opacity: 0.5;
     
     
   }
 
-  .terminal-app img {
+  .terminal-app img, .personal-portfolio img, .fruit-market-pic img, .spaceX-app-pic img {
     width: 150px;
     height: auto;
   }
-  .personal-portfolio img {
-    height: auto;
-    width: 150px;
-  }
+ 
 
 
   .dme-pic #dme {
@@ -263,6 +260,11 @@ section {
   #github-logo, #portfolio, #barrel{
     margin-right: 20px;
   }
+
+   .dme-pic img {
+      width: auto;
+      height: 150px;
+    }
 
 
   
