@@ -123,14 +123,14 @@ span {
 	  background-clip: text;
     
 
-    animation: title_animation 80s steps(10000) infinite;
 
     -webkit-animation: title_animation 80s linear infinite;
 	  -webkit-text-fill-color: transparent;
+    animation: title_animation 80s steps(10000) infinite;
 
-    transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 
     // backface-visibility: hidden;
     // -webkit-backface-visibility: hidden;
@@ -139,10 +139,6 @@ span {
 
 
 
-@keyframes title_animation {
-	0% { background-position: 0% 100%; }
-	100% { background-position: 100% 50%; }
-}
 
 @-webkit-keyframes title_animation {
 	0% { background-position: 0% 50%; }
@@ -154,6 +150,10 @@ span {
 	100% { background-position: 100% 50%; }
 }
 
+@keyframes title_animation {
+	0% { background-position: 0% 100%; }
+	100% { background-position: 100% 50%; }
+}
 
 
 
