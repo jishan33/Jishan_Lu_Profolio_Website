@@ -96,6 +96,7 @@ span {
   -webkit-animation: title_animation 80s linear infinite;
   -webkit-text-fill-color: transparent;
   transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0); }
 
 @keyframes title_animation {
