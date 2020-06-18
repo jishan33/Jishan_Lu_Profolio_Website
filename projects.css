@@ -68,25 +68,15 @@ footer {
     header #portfolio-link a {
       font-size: 15px;
       margin-right: 10px; } }
-.portfolio-pic img {
-  width: auto;
-  height: 150px; }
-
 .dme-pic img {
   width: auto;
-  height: 190px; }
+  height: 190px;
+  border-radius: 10px; }
 
-.terminal-pic img {
+.spaceX-app-pic img, .fruit-market-pic img, .terminal-pic img, .portfolio-pic img {
   width: auto;
-  height: 150px; }
-
-.fruit-market-pic img {
-  width: auto;
-  height: 150px; }
-
-.spaceX-app-pic img {
-  width: auto;
-  height: 150px; }
+  height: 150px;
+  border-radius: 10px; }
 
 #barrel, #dme-icon {
   margin-bottom: 15px; }
@@ -120,7 +110,7 @@ header {
   align-items: flex-end;
   font-size: 40px;
   font-family: 'Playfair Display', serif;
-  color: #f3ebe6; }
+  color: #d1cad0; }
 
 section {
   width: 100%;
@@ -130,9 +120,9 @@ section {
   margin-right: 50px;
   display: flex;
   justify-content: flex-start; }
-  section .terminal-app {
+  section .terminal-app, section .personal-portfolio {
     background-color: #f3ebe6; }
-  section .personal-portfolio, section .spaceX-app {
+  section .spaceX-app {
     background-color: #c9ada7; }
   section .dme-plant, section .fruit-market {
     background-color: #d1cad0; }
@@ -152,7 +142,7 @@ section {
     section .terminal-app article, section .personal-portfolio article, section .dme-plant article, section .fruit-market article, section .spaceX-app article {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
-      width: 70%;
+      width: 80%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -169,7 +159,7 @@ section {
       grid-row: 3 / 4;
       margin-left: 80%; }
     section .terminal-app #github-logo, section .terminal-app #portfolio, section .terminal-app #barrel, section .terminal-app #dme-icon, section .personal-portfolio #github-logo, section .personal-portfolio #portfolio, section .personal-portfolio #barrel, section .personal-portfolio #dme-icon, section .dme-plant #github-logo, section .dme-plant #portfolio, section .dme-plant #barrel, section .dme-plant #dme-icon, section .fruit-market #github-logo, section .fruit-market #portfolio, section .fruit-market #barrel, section .fruit-market #dme-icon, section .spaceX-app #github-logo, section .spaceX-app #portfolio, section .spaceX-app #barrel, section .spaceX-app #dme-icon {
-      width: 100%;
+      width: 50px;
       height: auto;
       margin-top: 10px;
       border-radius: 30px; }
@@ -227,13 +217,14 @@ section {
       grid-template-columns: 1fr 1fr 0.3fr;
       grid-template-rows: 1fr; }
       section .terminal-app article, section .personal-portfolio article, section .dme-plant article, section .fruit-market article, section .spaceX-app article {
-        width: 90%;
+        width: 100%;
         height: 100%;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         display: flex;
         align-items: center;
-        text-align: justify; }
+        text-align: justify;
+        margin: 10px; }
       section .terminal-app a, section .personal-portfolio a, section .dme-plant a, section .fruit-market a, section .spaceX-app a {
         width: 100%;
         height: auto;
@@ -242,12 +233,12 @@ section {
         margin: 0px;
         display: flex; }
         section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .terminal-app a #dme-icon, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .personal-portfolio a #dme-icon, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel, section .dme-plant a #dme-icon, section .fruit-market a #github-logo, section .fruit-market a #portfolio, section .fruit-market a #barrel, section .fruit-market a #dme-icon, section .spaceX-app a #github-logo, section .spaceX-app a #portfolio, section .spaceX-app a #barrel, section .spaceX-app a #dme-icon {
-          width: 70%;
+          width: 40px;
           height: auto;
           margin: 0px;
           margin-top: 85px; }
         section .terminal-app a #dme-icon, section .personal-portfolio a #dme-icon, section .dme-plant a #dme-icon, section .fruit-market a #dme-icon, section .spaceX-app a #dme-icon {
-          width: 60%;
+          width: 40px;
           margin-left: 5px; }
 
   body {
@@ -258,15 +249,11 @@ section {
     section .terminal-app figure img, section .personal-portfolio figure img, section .dme-plant figure img, section .fruit-market figure img, section .spaceX-app figure img {
       margin-top: 0px; }
 
-  .portfolio-pic img {
-    width: 200px;
-    height: auto; }
-
   .dme-pic img {
     width: auto;
-    height: 180px; }
+    height: 150px; }
 
-  .terminal-pic img, .fruit-market-pic img, .spaceX-app-pic img {
+  .terminal-pic img, .fruit-market-pic img, .spaceX-app-pic img, .portfolio-pic img {
     width: 200px;
     height: auto; }
 
@@ -322,13 +309,14 @@ section {
       grid-template-columns: 1fr 1fr 0.3fr;
       grid-template-rows: 1fr; }
       section .terminal-app article, section .personal-portfolio article, section .dme-plant article, section .fruit-market article, section .spaceX-app article {
-        width: 90%;
+        width: 100%;
         height: 100%;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         display: flex;
         align-items: center;
-        text-align: justify; }
+        text-align: justify;
+        margin: 10px; }
       section .terminal-app a, section .personal-portfolio a, section .dme-plant a, section .fruit-market a, section .spaceX-app a {
         width: 100%;
         height: auto;
@@ -337,12 +325,12 @@ section {
         margin: 0px;
         display: flex; }
         section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .terminal-app a #dme-icon, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .personal-portfolio a #dme-icon, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel, section .dme-plant a #dme-icon, section .fruit-market a #github-logo, section .fruit-market a #portfolio, section .fruit-market a #barrel, section .fruit-market a #dme-icon, section .spaceX-app a #github-logo, section .spaceX-app a #portfolio, section .spaceX-app a #barrel, section .spaceX-app a #dme-icon {
-          width: 70%;
+          width: 40px;
           height: auto;
           margin: 0px;
           margin-top: 85px; }
         section .terminal-app a #dme-icon, section .personal-portfolio a #dme-icon, section .dme-plant a #dme-icon, section .fruit-market a #dme-icon, section .spaceX-app a #dme-icon {
-          width: 60%;
+          width: 40px;
           margin-left: 5px; }
 
   .grid {
@@ -352,28 +340,29 @@ section {
     margin-right: 0px; }
 
   .title-block {
-    grid-row: 4 / 5;
+    grid-row: 3 / 5;
     grid-column: 1 / 2;
     width: 100px;
     height: 30px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     z-index: 5;
     margin-right: 250px;
-    opacity: 0.5; }
+    opacity: 0.5;
+    color: #f3ebe6; }
 
   .terminal-app img, .personal-portfolio img, .fruit-market-pic img, .spaceX-app-pic img {
-    width: 150px;
+    width: 130px;
     height: auto; }
 
   .dme-pic #dme {
     margin-bottom: 0px; }
 
   #github-logo, #portfolio, #barrel {
-    margin-right: 20px; }
+    width: 20px; }
 
   .dme-pic img {
     width: auto;
-    height: 150px; }
+    height: 120px; }
 
   article {
     justify-content: flex-start; }

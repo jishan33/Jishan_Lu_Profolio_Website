@@ -3,38 +3,18 @@
 
 @import "frame.scss";
 
- 
-
-.portfolio-pic img {
-  width: auto;
-  height: 150px;
-  
-}
 
 .dme-pic img {
   width: auto;
   height: 190px;
-  
+  border-radius: 10px;
 
 }
 
-.terminal-pic img {
+.spaceX-app-pic img, .fruit-market-pic img, .terminal-pic img, .portfolio-pic img {
   width: auto;
   height: 150px;
-  // filter: opacity(0.8);
-
-}
-
-.fruit-market-pic img {
-  width: auto;
-  height: 150px;
-  // filter: opacity(0.8);
-}
-
-.spaceX-app-pic img {
-  width: auto;
-  height: 150px;
-  // filter: opacity(0.8);
+  border-radius: 10px;
 }
 
 
@@ -86,7 +66,7 @@ header {
   align-items: flex-end;
   font-size: 40px;
   font-family: 'Playfair Display', serif;
-  color:rgba(243, 235, 230, 1);  
+  color: rgba(209, 202, 208, 1);  
 }
 
 
@@ -105,11 +85,11 @@ section {
  
   
 
-  .terminal-app {
+  .terminal-app, .personal-portfolio {
     background-color:rgba(243, 235, 230, 1);
   }
 
-  .personal-portfolio, .spaceX-app {
+   .spaceX-app {
     background-color: rgba(201, 173, 167, 1);
   }
 
@@ -141,7 +121,7 @@ section {
     article {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
-      width: 70%;
+      width: 80%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -166,7 +146,7 @@ section {
 
 
     #github-logo, #portfolio, #barrel, #dme-icon{
-      width: 100%;
+      width: 50px;
       height: auto;
       margin-top: 10px;
       border-radius: 30px;  
@@ -200,17 +180,12 @@ section {
     }
   } 
 
-    .portfolio-pic img {
-      width: 200px;
-      height: auto;
-    }
-
     .dme-pic img {
       width: auto;
-      height: 180px;
+      height: 150px;
     }
 
-    .terminal-pic img, .fruit-market-pic img, .spaceX-app-pic img{
+    .terminal-pic img, .fruit-market-pic img, .spaceX-app-pic img, .portfolio-pic img {
       width: 200px;
       height: auto;
     }
@@ -232,36 +207,36 @@ section {
   }
   
   .title-block{
-    grid-row: 4 / 5;
+    grid-row: 3 / 5;
     grid-column: 1 / 2;
     width: 100px;
     height: 30px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     z-index: 5;
     margin-right: 250px;
     opacity: 0.5;
-    
+    color: rgba(243, 235, 230, 1);
     
   }
 
   .terminal-app img, .personal-portfolio img, .fruit-market-pic img, .spaceX-app-pic img {
-    width: 150px;
+    width: 130px;
     height: auto;
   }
  
 
 
   .dme-pic #dme {
-      margin-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   #github-logo, #portfolio, #barrel{
-    margin-right: 20px;
+    width:20px;
   }
 
    .dme-pic img {
       width: auto;
-      height: 150px;
+      height: 120px;
     }
 
 
