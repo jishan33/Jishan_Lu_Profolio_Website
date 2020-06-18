@@ -105,10 +105,10 @@ section {
   } 
 }
 
-span { 
+h1 { 
     text-transform: uppercase;
   	// font: 60px "Oswald", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
   	letter-spacing: 0;
   	padding: .25em 0 .325em;
@@ -123,14 +123,14 @@ span {
  	  -webkit-background-clip: text;
 	  background-clip: text;
     
-    -webkit-animation: title_animation 80s steps(10000) infinite; 
-    -moz-animation: title_animation 80s steps(10000) infinite;  
-    -ms-animation: title_animation 80s steps(10000) infinite;  
-    -o-animation: title_animation 80s steps(10000) infinite;  
+    // -webkit-animation: title_animation 80s steps(10000) infinite; 
+    // -moz-animation: title_animation 80s steps(10000) infinite;  
+    // -ms-animation: title_animation 80s steps(10000) infinite;  
+    // -o-animation: title_animation 80s steps(10000) infinite;  
 
 
-	  -webkit-text-fill-color: transparent;
-    animation: title_animation 80s steps(10000) infinite;
+	  // -webkit-text-fill-color: transparent;
+    // animation: title_animation 80s steps(10000) infinite;
 
     // -ms-transform: rotate2d(0,0,0);
     // -webkit-transform: rotate2d(0,0,0);
@@ -204,8 +204,8 @@ footer {
         font-size: 18px;
         font-weight: normal;
       }
-      span {
-        font-size: 35px;
+      h1 {
+        font-size: 30px;
         text-align: center;
       }
       p {

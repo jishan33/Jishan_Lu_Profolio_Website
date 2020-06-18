@@ -79,9 +79,9 @@ section {
       letter-spacing: 3px;
       font-size: 20px; }
 
-span {
+h1 {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 0;
   padding: .25em 0 .325em;
@@ -91,13 +91,7 @@ span {
   /* Clip Background Image */
   background: url(./photos/animated_text_fill.png) repeat-y;
   -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-animation: title_animation 80s steps(10000) infinite;
-  -moz-animation: title_animation 80s steps(10000) infinite;
-  -ms-animation: title_animation 80s steps(10000) infinite;
-  -o-animation: title_animation 80s steps(10000) infinite;
-  -webkit-text-fill-color: transparent;
-  animation: title_animation 80s steps(10000) infinite; }
+  background-clip: text; }
 
 @-webkit-keyframes title_animation {
   0% {
@@ -149,8 +143,8 @@ footer {
       section .intro h3 {
         font-size: 18px;
         font-weight: normal; }
-      section .intro span {
-        font-size: 35px;
+      section .intro h1 {
+        font-size: 30px;
         text-align: center; }
       section .intro p {
         letter-spacing: 1px;
