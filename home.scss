@@ -116,6 +116,7 @@ h1 {
 	  margin: 0 auto;
   	text-shadow: 0 0 80px rgba(255,255,255,.5);
 
+
 /* Clip Background Image */
 
 	  background: url(./photos/animated_text_fill.png) repeat-y;
@@ -123,14 +124,16 @@ h1 {
  	  -webkit-background-clip: text;
 	  background-clip: text;
     
-    // -webkit-animation: title_animation 80s steps(10000) infinite; 
-    // -moz-animation: title_animation 80s steps(10000) infinite;  
-    // -ms-animation: title_animation 80s steps(10000) infinite;  
-    // -o-animation: title_animation 80s steps(10000) infinite;  
+    -webkit-animation: title_animation 80s steps(10000) infinite; 
+    -moz-animation: title_animation 80s steps(10000) infinite;  
+    -ms-animation: title_animation 80s steps(10000) infinite;  
+    -o-animation: title_animation 80s steps(10000) infinite;  
 
 
-	  // -webkit-text-fill-color: transparent;
-    // animation: title_animation 80s steps(10000) infinite;
+	  -webkit-text-fill-color: transparent;
+    animation: title_animation 80s steps(10000) infinite;
+
+    z-index: 10;
 
     // -ms-transform: rotate2d(0,0,0);
     // -webkit-transform: rotate2d(0,0,0);
