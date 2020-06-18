@@ -124,7 +124,7 @@ span {
     
 
 
-    -webkit-animation: title_animation 80s linear infinite;
+    -webkit-animation: title_animation 80s steps(10000) infinite;
 	  -webkit-text-fill-color: transparent;
     animation: title_animation 80s steps(10000) infinite;
 
