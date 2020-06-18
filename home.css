@@ -89,7 +89,7 @@ span {
   margin: 0 auto;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   /* Clip Background Image */
-  background: url(https://s3.amazonaws.com/f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  background: url(./photos/animated_text_fill.png) repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-animation: title_animation 80s steps(10000) infinite;
