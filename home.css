@@ -90,18 +90,14 @@ span {
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   /* Clip Background Image */
   background: url(./photos/animated_text_fill.png) repeat-y;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-animation: title_animation 80s steps(10000) infinite;
   -webkit-text-fill-color: transparent;
   animation: title_animation 80s steps(10000) infinite;
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+  -ms-transform: rotate2d(0, 0, 0);
+  -webkit-transform: rotate2d(0, 0, 0);
+  transform: rotate2d(0, 0, 0); }
 
 @-webkit-keyframes title_animation {
   0% {
