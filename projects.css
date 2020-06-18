@@ -230,16 +230,13 @@ section {
         height: auto;
         grid-column: 3 / 4;
         grid-row: 1 / 2;
-        margin: 0px;
-        display: flex; }
-        section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .terminal-app a #dme-icon, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .personal-portfolio a #dme-icon, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel, section .dme-plant a #dme-icon, section .fruit-market a #github-logo, section .fruit-market a #portfolio, section .fruit-market a #barrel, section .fruit-market a #dme-icon, section .spaceX-app a #github-logo, section .spaceX-app a #portfolio, section .spaceX-app a #barrel, section .spaceX-app a #dme-icon {
-          width: 40px;
+        margin: 0px; }
+        section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .terminal-app a #dme-icon, section .terminal-app a #dme-icon, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .personal-portfolio a #dme-icon, section .personal-portfolio a #dme-icon, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel, section .dme-plant a #dme-icon, section .dme-plant a #dme-icon, section .fruit-market a #github-logo, section .fruit-market a #portfolio, section .fruit-market a #barrel, section .fruit-market a #dme-icon, section .fruit-market a #dme-icon, section .spaceX-app a #github-logo, section .spaceX-app a #portfolio, section .spaceX-app a #barrel, section .spaceX-app a #dme-icon, section .spaceX-app a #dme-icon {
+          width: 30px;
           height: auto;
-          margin: 0px;
-          margin-top: 85px; }
-        section .terminal-app a #dme-icon, section .personal-portfolio a #dme-icon, section .dme-plant a #dme-icon, section .fruit-market a #dme-icon, section .spaceX-app a #dme-icon {
-          width: 40px;
-          margin-left: 5px; }
+          margin-top: 100px;
+          margin-left: 20px;
+          opacity: 0.7; }
 
   body {
     overflow-y: visible; }
@@ -322,16 +319,13 @@ section {
         height: auto;
         grid-column: 3 / 4;
         grid-row: 1 / 2;
-        margin: 0px;
-        display: flex; }
-        section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .terminal-app a #dme-icon, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .personal-portfolio a #dme-icon, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel, section .dme-plant a #dme-icon, section .fruit-market a #github-logo, section .fruit-market a #portfolio, section .fruit-market a #barrel, section .fruit-market a #dme-icon, section .spaceX-app a #github-logo, section .spaceX-app a #portfolio, section .spaceX-app a #barrel, section .spaceX-app a #dme-icon {
-          width: 40px;
+        margin: 0px; }
+        section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .terminal-app a #dme-icon, section .terminal-app a #dme-icon, section .personal-portfolio a #github-logo, section .personal-portfolio a #portfolio, section .personal-portfolio a #barrel, section .personal-portfolio a #dme-icon, section .personal-portfolio a #dme-icon, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel, section .dme-plant a #dme-icon, section .dme-plant a #dme-icon, section .fruit-market a #github-logo, section .fruit-market a #portfolio, section .fruit-market a #barrel, section .fruit-market a #dme-icon, section .fruit-market a #dme-icon, section .spaceX-app a #github-logo, section .spaceX-app a #portfolio, section .spaceX-app a #barrel, section .spaceX-app a #dme-icon, section .spaceX-app a #dme-icon {
+          width: 30px;
           height: auto;
-          margin: 0px;
-          margin-top: 85px; }
-        section .terminal-app a #dme-icon, section .personal-portfolio a #dme-icon, section .dme-plant a #dme-icon, section .fruit-market a #dme-icon, section .spaceX-app a #dme-icon {
-          width: 40px;
-          margin-left: 5px; }
+          margin-top: 100px;
+          margin-left: 20px;
+          opacity: 0.7; }
 
   .grid {
     grid-template-rows: 0.35fr 0.2fr 0.9fr 1.5fr 0.2fr; }
