@@ -119,7 +119,11 @@ span {
 /* Clip Background Image */
 
 	  background: url(./photos/animated_text_fill.png) repeat-y;
-	  -webkit-background-clip: text;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ 	  -webkit-background-clip: text;
 	  background-clip: text;
     
 
