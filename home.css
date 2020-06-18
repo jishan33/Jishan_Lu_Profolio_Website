@@ -100,16 +100,6 @@ span {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden; }
 
-@-moz-keyframes aitf {
-  0% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
-@-webkit-keyframes aitf {
-  0% {
-    background-position: 0% 50%; }
-  100% {
-    background-position: 100% 50%; } }
 @keyframes aitf {
   0% {
     background-position: 0% 100%; }
