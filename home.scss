@@ -122,9 +122,9 @@ span {
 	  background-clip: text;
     
 
-    animation: aitf 80s linear infinite;
+    animation: title_animation 80s steps(10000) infinite;
 
-    -webkit-animation: aitf 80s linear infinite;
+    -webkit-animation: title_animation 80s linear infinite;
 	  -webkit-text-fill-color: transparent;
 
     transform: translate3d(0,0,0);
@@ -137,17 +137,17 @@ span {
 
 
 
-@keyframes aitf {
+@keyframes title_animation {
 	0% { background-position: 0% 100%; }
 	100% { background-position: 100% 50%; }
 }
 
-@-webkit-keyframes aitf {
+@-webkit-keyframes title_animation {
 	0% { background-position: 0% 50%; }
 	100% { background-position: 100% 50%; }
 }
 
-@-moz-keyframes aitf {
+@-moz-keyframes title_animation {
   0% { background-position: 0% 50%; }
 	100% { background-position: 100% 50%; }
 }
