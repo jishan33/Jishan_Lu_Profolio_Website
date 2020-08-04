@@ -89,7 +89,7 @@ Protecting against this kind of modification is important as otherwise my site's
 
 ## Screenshots
 
-![Page 1](./photos/portfolio-A.png)
+![Page 1](./photos/portfolio-1.png)
 ![Page 2](./photos/portfolio-2.png)
 ![Page 3](./photos/portfolio-3.png)
 ![Page 4](./photos/portfolio-4.png)
