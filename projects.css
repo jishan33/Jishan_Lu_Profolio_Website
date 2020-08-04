@@ -128,12 +128,12 @@ section {
   display: flex;
   justify-content: flex-start; }
   section .terminal-app,
-  section .shorties-app {
+  section .fruit-market {
     background-color: #f3ebe6; }
   section .spaceX-app {
     background-color: #c9ada7; }
   section .dme-plant,
-  section .fruit-market {
+  section .shorties-app {
     background-color: #d1cad0; }
   section .terminal-app,
   section .shorties-app,

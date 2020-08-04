@@ -1,5 +1,3 @@
-// @import url("https://fonts.googleapis.com/css?family=Quicksand+Playfair+Display&display=swap");
-
 @import "frame.scss";
 
 .dme-pic img {
@@ -11,7 +9,7 @@
 .spaceX-app-pic img,
 .fruit-market-pic img,
 .terminal-pic img,
-.shorties-app-pic img{
+.shorties-app-pic img {
   width: auto;
   height: 150px;
   border-radius: 10px;
@@ -19,7 +17,7 @@
 
 .shorties-app-pic:hover {
   transform: scale(4);
-  margin-top: 50px
+  margin-top: 50px;
 }
 
 #barrel,
@@ -39,9 +37,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 2;
-  // justify-content: flex-end;
   margin-right: 50px;
-  // background-color: transparent;
 
   #portfolio-link {
     margin-top: 10px;
@@ -78,7 +74,7 @@ section {
   justify-content: flex-start;
 
   .terminal-app,
-  .shorties-app {
+  .fruit-market {
     background-color: rgba(243, 235, 230, 1);
   }
 
@@ -87,7 +83,7 @@ section {
   }
 
   .dme-plant,
-  .fruit-market {
+  .shorties-app {
     background-color: rgba(209, 202, 208, 1);
   }
 
@@ -155,7 +151,6 @@ section {
   }
 }
 
-
 #github-logo:hover,
 #notes-icon:hover,
 #barrel:hover,
@@ -197,9 +192,9 @@ section {
   }
 
   .shorties-app-pic:hover {
-  margin-bottom: 50px;
-  transform: scale(1.5);
-}
+    margin-bottom: 50px;
+    transform: scale(1.5);
+  }
 
   img #barrel,
   img #dme-icon {
