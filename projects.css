@@ -80,10 +80,6 @@ footer {
   height: 150px;
   border-radius: 10px; }
 
-.shorties-app-pic:hover {
-  transform: scale(4);
-  margin-top: 50px; }
-
 #barrel,
 #dme-icon {
   margin-bottom: 15px; }
@@ -358,10 +354,6 @@ section {
   .shorties-app-pic img {
     width: 200px;
     height: auto; }
-
-  .shorties-app-pic:hover {
-    margin-bottom: 50px;
-    transform: scale(1.5); }
 
   img #barrel,
   img #dme-icon {
