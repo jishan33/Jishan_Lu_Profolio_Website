@@ -90,7 +90,7 @@ section {
 
     @import "popup-text.scss";
 
-    .ruby, .css, .html, .js{
+    .ruby, .css, .html, .js, .react{
     width: 30px;
     height: auto;
     margin: 20px;
@@ -107,7 +107,10 @@ section {
       width: 200px; 
       height: auto;
     }
-    
+    .react:hover {
+      background: conic-gradient( 
+     rgb(0, 81, 255) 120deg, rgb(118, 168, 118) 120deg 240deg, rgb(99, 99, 187) 240deg 360deg);
+    }
     
     .ruby:hover {
       background-color: red;
@@ -129,7 +132,7 @@ section {
   }
   
 
-  #myPopup1, #myPopup2, #myPopup3, #myPopup4{
+  #myPopup1, #myPopup2, #myPopup3, #myPopup4, #myPopup5{
     font-size: 23px;
     color:rgba(34, 34, 59, 1);
     text-align: justify;
@@ -195,7 +198,7 @@ section {
       display: flex;
       flex-direction: column;
     
-    .ruby, .css, .html, .js{
+    .ruby, .css, .html, .js, .react{
       width: 20px;
       height: auto;
       margin: 10px;
@@ -208,7 +211,7 @@ section {
 
     }
 
-    #myPopup1, #myPopup2, #myPopup3, #myPopup4 {
+    #myPopup1, #myPopup2, #myPopup3, #myPopup4, #myPopup5 {
       font-size: 15px;
     
       h4 {

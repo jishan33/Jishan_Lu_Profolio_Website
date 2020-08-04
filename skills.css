@@ -4,16 +4,14 @@
 body {
   margin: 0px;
   overflow-x: hidden;
-  overflow-y: hidden;
-}
+  overflow-y: hidden; }
 
 .container {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .grid {
   width: 90%;
@@ -22,49 +20,41 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 0.5fr 1fr 0.2fr;
   justify-items: center;
-  align-items: center;
-}
+  align-items: center; }
 
 header {
   width: 100%;
   height: 100%;
-  grid-row: 1/2;
-  grid-column: 1/2;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: transparent;
-  font-family: "Bellota", cursive;
-}
-header #portfolio-link {
-  display: none;
-}
-header #portfolio-link a {
-  text-decoration: none;
-  color: #918d8a;
-  font-size: 20px;
-  margin-right: 30px;
-}
-header a.icon {
-  text-decoration: none;
-  float: right;
-  display: flex;
-  align-items: center;
-}
-header i {
-  margin-right: 10px;
-  color: #747474;
-}
-header #portfolio-link a:hover {
-  color: #575656;
-}
+  font-family: 'Bellota', cursive; }
+  header #portfolio-link {
+    display: none; }
+  header #portfolio-link a {
+    text-decoration: none;
+    color: #918d8a;
+    font-size: 20px;
+    margin-right: 30px; }
+  header a.icon {
+    text-decoration: none;
+    float: right;
+    display: flex;
+    align-items: center; }
+  header i {
+    margin-right: 10px;
+    color: #747474; }
+  header #portfolio-link a:hover {
+    color: #575656; }
 
 footer {
   width: 100%;
   height: 100%;
-  grid-row: 4/5;
-  grid-column: 1/2;
-}
+  grid-row: 4 / 5;
+  grid-column: 1 / 2; }
 
 @media screen and (max-width: 600px) {
   .grid {
@@ -72,229 +62,190 @@ footer {
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 0.25fr 1.1fr 1.3fr 0.2fr;
-    justify-items: center;
-  }
+    justify-items: center; }
 
   header {
-    justify-content: space-evenly;
-  }
-  header #portfolio-link a {
-    font-size: 15px;
-    margin-right: 10px;
-  }
-}
+    justify-content: space-evenly; }
+    header #portfolio-link a {
+      font-size: 15px;
+      margin-right: 10px; } }
 .container {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: hidden;
-}
+  overflow-y: hidden; }
 
 .grid {
   width: 100%;
-  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.2fr;
-}
+  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.2fr; }
 
 header {
-  width: 90%;
-}
+  width: 90%; }
 
 footer {
   width: 90%;
-  background-color: #d9d3d8;
-}
+  background-color: #d9d3d8; }
 
 article {
   width: 70%;
   height: 10%;
-  grid-row: 2/3;
-  grid-column: 1/2;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
   display: inline-flex;
   align-content: flex-end;
-  justify-content: center;
-}
-article .skills {
-  margin: 0px;
-  font-size: 80px;
-  margin-bottom: 47px;
-  font-family: "Playfair Display SC", serif;
-  z-index: 2;
-}
-article #text {
-  margin-left: 150px;
-  margin-top: 65px;
-  font-family: "Playfair Display SC", serif;
-  z-index: 2;
-}
+  justify-content: center; }
+  article .skills {
+    margin: 0px;
+    font-size: 80px;
+    margin-bottom: 47px;
+    font-family: 'Playfair Display SC', serif;
+    z-index: 2; }
+  article #text {
+    margin-left: 150px;
+    margin-top: 65px;
+    font-family: 'Playfair Display SC', serif;
+    z-index: 2; }
 
 section {
-  grid-row: 3/4;
-  grid-column: 1/2;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
   width: 90%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1.3fr 0.7fr;
   align-items: center;
-  background-color: #d9d3d8;
-}
-section .click-me {
-  width: 100%;
-  height: 100%;
-  grid-row: 2/3;
-  grid-column: 1/3;
-  text-align: center;
-  font-size: 50px;
-  color: rgba(255, 255, 255, 0.3);
-  font-family: "Hind", sans-serif;
-  letter-spacing: 3px;
-}
-section .icons {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  display: flex;
-  justify-content: space-evenly;
-  /* The actual popup */
-  /* Toggle this class - hide and show the popup */
-  /* Add animation (fade in the popup) */
-}
-section .icons .popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-section .icons .popup .popuptext {
-  visibility: hidden;
-  padding: 8px;
-  position: absolute;
-  text-align: center;
-  z-index: 1;
-  width: 220px;
-  height: 200px;
-  top: 110%;
-  left: -50%;
-}
-section .icons .popuptext.show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
+  background-color: #d9d3d8; }
+  section .click-me {
+    width: 100%;
+    height: 100%;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 3px; }
+  section .icons {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+    /* The actual popup */
+    /* Toggle this class - hide and show the popup */
+    /* Add animation (fade in the popup) */ }
+    section .icons .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer; }
+    section .icons .popup .popuptext {
+      visibility: hidden;
+      padding: 8px;
+      position: absolute;
+      text-align: center;
+      z-index: 1;
+      width: 220px;
+      height: 200px;
+      top: 110%;
+      left: -50%; }
+    section .icons .popuptext.show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s; }
 @keyframes fadeIn {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
   to {
-    opacity: 1;
-  }
-}
-section .icons .ruby, section .icons .css, section .icons .html, section .icons .js {
-  width: 30px;
-  height: auto;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 25px;
-  background-color: #e6dfe5;
-  border: 2px solid #424040;
-}
-section .icons .popuptext a img {
-  margin-top: 10px;
-  width: 200px;
-  height: auto;
-}
-section .icons .ruby:hover {
-  background-color: red;
-  transition: background-color 1s ease-out;
-}
-section .icons .css:hover {
-  background: conic-gradient(red 120deg, green 120deg 240deg, blue 240deg 360deg);
-}
-section .icons .html:hover {
-  background: conic-gradient(grey 180deg, wheat 180deg 360deg);
-}
-section .icons .js:hover {
-  background: conic-gradient(from 0.3turn at 50% 50%, orange, 50deg, yellow, 100deg, purple, 250deg, yellow);
-}
-section #myPopup1, section #myPopup2, section #myPopup3, section #myPopup4 {
-  font-size: 23px;
-  color: #22223b;
-  text-align: justify;
-  font-family: "Dancing Script", cursive;
-}
-section #myPopup1 h4, section #myPopup2 h4, section #myPopup3 h4, section #myPopup4 h4 {
-  text-align: center;
-}
+    opacity: 1; } }
+    section .icons .ruby, section .icons .css, section .icons .html, section .icons .js, section .icons .react {
+      width: 30px;
+      height: auto;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 25px;
+      background-color: #e6dfe5;
+      border: 2px solid #424040; }
+    section .icons .popuptext a img {
+      margin-top: 10px;
+      width: 200px;
+      height: auto; }
+    section .icons .react:hover {
+      background: conic-gradient(#0051ff 120deg, #76a876 120deg 240deg, #6363bb 240deg 360deg); }
+    section .icons .ruby:hover {
+      background-color: red;
+      transition: background-color 1s ease-out; }
+    section .icons .css:hover {
+      background: conic-gradient(red 120deg, green 120deg 240deg, blue 240deg 360deg); }
+    section .icons .html:hover {
+      background: conic-gradient(grey 180deg, wheat 180deg 360deg); }
+    section .icons .js:hover {
+      background: conic-gradient(from 0.3turn at 50% 50%, orange, 50deg, yellow, 100deg, purple, 250deg, yellow); }
+  section #myPopup1, section #myPopup2, section #myPopup3, section #myPopup4, section #myPopup5 {
+    font-size: 23px;
+    color: #22223b;
+    text-align: justify;
+    font-family: 'Dancing Script', cursive; }
+    section #myPopup1 h4, section #myPopup2 h4, section #myPopup3 h4, section #myPopup4 h4, section #myPopup5 h4 {
+      text-align: center; }
 
 @media screen and (max-width: 1200px) {
   .grid {
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.15fr 0.1fr 1.2fr 0.2fr;
-  }
+    grid-template-rows: 0.15fr 0.1fr 1.2fr 0.2fr; }
 
   article {
-    grid-row: 1/3;
-    grid-column: 1/2;
-    justify-content: space-between;
-  }
-  article .skills {
-    margin: 0px;
-    font-size: 50px;
-    margin-top: 25px;
-    z-index: 2;
-    position: relative;
-  }
-  article #text {
-    font-size: 10px;
-    margin-left: 25px;
-    margin-top: 65px;
-    z-index: 2;
-  }
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    justify-content: space-between; }
+    article .skills {
+      margin: 0px;
+      font-size: 50px;
+      margin-top: 25px;
+      z-index: 2;
+      position: relative; }
+    article #text {
+      font-size: 10px;
+      margin-left: 25px;
+      margin-top: 65px;
+      z-index: 2; }
 
   section .click-me {
     width: 0%;
-    font-size: 10px;
-  }
+    font-size: 10px; }
 
   section {
     width: 100%;
     height: 100%;
-    grid-column: 1/2;
-    grid-row: 3/5;
-    display: flex;
-  }
-  section .icons {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  section .icons .ruby, section .icons .css, section .icons .html, section .icons .js {
-    width: 20px;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #424040;
-  }
-  section #myPopup1, section #myPopup2, section #myPopup3, section #myPopup4 {
-    font-size: 15px;
-  }
-  section #myPopup1 h4, section #myPopup2 h4, section #myPopup3 h4, section #myPopup4 h4 {
-    margin-bottom: 5px;
-    text-align: start;
-  }
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    display: flex; }
+    section .icons {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      section .icons .ruby, section .icons .css, section .icons .html, section .icons .js, section .icons .react {
+        width: 20px;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #424040; }
+    section #myPopup1, section #myPopup2, section #myPopup3, section #myPopup4, section #myPopup5 {
+      font-size: 15px; }
+      section #myPopup1 h4, section #myPopup2 h4, section #myPopup3 h4, section #myPopup4 h4, section #myPopup5 h4 {
+        margin-bottom: 5px;
+        text-align: start; }
 
   section .icons .popup .popuptext {
     width: 220px;
     height: 80px;
     top: -40%;
-    left: 30%;
-  }
+    left: 30%; }
 
   footer {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
 /*# sourceMappingURL=skills.css.map */

@@ -73,20 +73,12 @@ footer {
   height: 190px;
   border-radius: 10px; }
 
-.spaceX-app-pic img,
-.fruit-market-pic img,
-.terminal-pic img,
-.shorties-app-pic img {
+.spaceX-app-pic img, .fruit-market-pic img, .terminal-pic img, .shorties-app-pic img {
   width: auto;
   height: 150px;
   border-radius: 10px; }
 
-.shorties-app-pic:hover {
-  transform: scale(4);
-  margin-top: 50px; }
-
-#barrel,
-#dme-icon {
+#barrel, #dme-icon {
   margin-bottom: 15px; }
 
 .grid {
@@ -117,7 +109,7 @@ header {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 40px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #d1cad0; }
 
 section {
@@ -128,44 +120,26 @@ section {
   margin-right: 50px;
   display: flex;
   justify-content: flex-start; }
-  section .terminal-app,
-  section .shorties-app {
+  section .terminal-app, section .shorties-app {
     background-color: #f3ebe6; }
   section .spaceX-app {
     background-color: #c9ada7; }
-  section .dme-plant,
-  section .fruit-market {
+  section .dme-plant, section .fruit-market {
     background-color: #d1cad0; }
-  section .terminal-app,
-  section .shorties-app,
-  section .dme-plant,
-  section .fruit-market,
-  section .spaceX-app {
+  section .terminal-app, section .shorties-app, section .dme-plant, section .fruit-market, section .spaceX-app {
     width: 25%;
-    height: 81%;
+    height: 80%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.3fr;
     justify-items: center;
     z-index: 2; }
-    section .terminal-app figure,
-    section .shorties-app figure,
-    section .dme-plant figure,
-    section .fruit-market figure,
-    section .spaceX-app figure {
+    section .terminal-app figure, section .shorties-app figure, section .dme-plant figure, section .fruit-market figure, section .spaceX-app figure {
       grid-column: 1 / 2;
       grid-row: 1 / 2; }
-      section .terminal-app figure img,
-      section .shorties-app figure img,
-      section .dme-plant figure img,
-      section .fruit-market figure img,
-      section .spaceX-app figure img {
+      section .terminal-app figure img, section .shorties-app figure img, section .dme-plant figure img, section .fruit-market figure img, section .spaceX-app figure img {
         margin-top: 10px; }
-    section .terminal-app article,
-    section .shorties-app article,
-    section .dme-plant article,
-    section .fruit-market article,
-    section .spaceX-app article {
+    section .terminal-app article, section .shorties-app article, section .dme-plant article, section .fruit-market article, section .spaceX-app article {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
       width: 80%;
@@ -175,59 +149,22 @@ section {
       justify-content: center;
       align-content: center;
       text-align: justify; }
-      section .terminal-app article h3,
-      section .shorties-app article h3,
-      section .dme-plant article h3,
-      section .fruit-market article h3,
-      section .spaceX-app article h3 {
+      section .terminal-app article h3, section .shorties-app article h3, section .dme-plant article h3, section .fruit-market article h3, section .spaceX-app article h3 {
         margin: 0px;
         text-align: center; }
-    section .terminal-app a,
-    section .shorties-app a,
-    section .dme-plant a,
-    section .fruit-market a,
-    section .spaceX-app a {
+    section .terminal-app a, section .shorties-app a, section .dme-plant a, section .fruit-market a, section .spaceX-app a {
       width: 10%;
       height: 70%;
       grid-column: 1 / 2;
       grid-row: 3 / 4;
       margin-left: 80%; }
-    section .terminal-app #github-logo,
-    section .terminal-app #notes-icon,
-    section .terminal-app #barrel,
-    section .terminal-app #dme-icon,
-    section .shorties-app #github-logo,
-    section .shorties-app #notes-icon,
-    section .shorties-app #barrel,
-    section .shorties-app #dme-icon,
-    section .dme-plant #github-logo,
-    section .dme-plant #notes-icon,
-    section .dme-plant #barrel,
-    section .dme-plant #dme-icon,
-    section .fruit-market #github-logo,
-    section .fruit-market #notes-icon,
-    section .fruit-market #barrel,
-    section .fruit-market #dme-icon,
-    section .spaceX-app #github-logo,
-    section .spaceX-app #notes-icon,
-    section .spaceX-app #barrel,
-    section .spaceX-app #dme-icon {
+    section .terminal-app #github-logo, section .terminal-app #portfolio, section .terminal-app #barrel, section .terminal-app #dme-icon, section .shorties-app #github-logo, section .shorties-app #portfolio, section .shorties-app #barrel, section .shorties-app #dme-icon, section .dme-plant #github-logo, section .dme-plant #portfolio, section .dme-plant #barrel, section .dme-plant #dme-icon, section .fruit-market #github-logo, section .fruit-market #portfolio, section .fruit-market #barrel, section .fruit-market #dme-icon, section .spaceX-app #github-logo, section .spaceX-app #portfolio, section .spaceX-app #barrel, section .spaceX-app #dme-icon {
       width: 50px;
       height: auto;
       margin-top: 10px;
       border-radius: 30px; }
-    section .terminal-app #notes-icon,
-    section .shorties-app #notes-icon,
-    section .dme-plant #notes-icon,
-    section .fruit-market #notes-icon,
-    section .spaceX-app #notes-icon {
-      margin-top: 0px;
-      margin-bottom: 10px; }
 
-#github-logo:hover,
-#notes-icon:hover,
-#barrel:hover,
-#dme-icon:hover {
+#github-logo:hover, #portfolio:hover, #barrel:hover, #dme-icon:hover {
   background-color: rgba(175, 172, 172, 0.507); }
 
 @media screen and (max-width: 1200px) {
@@ -272,22 +209,14 @@ section {
     flex-direction: column;
     justify-items: center;
     align-items: center; }
-    section .terminal-app,
-    section .shorties-app,
-    section .dme-plant,
-    section .fruit-market,
-    section .spaceX-app {
+    section .terminal-app, section .shorties-app, section .dme-plant, section .fruit-market, section .spaceX-app {
       width: 100%;
       height: 100%;
       justify-content: center;
       align-items: center;
       grid-template-columns: 1fr 1fr 0.3fr;
       grid-template-rows: 1fr; }
-      section .terminal-app article,
-      section .shorties-app article,
-      section .dme-plant article,
-      section .fruit-market article,
-      section .spaceX-app article {
+      section .terminal-app article, section .shorties-app article, section .dme-plant article, section .fruit-market article, section .spaceX-app article {
         width: 100%;
         height: 100%;
         grid-column: 2 / 3;
@@ -296,41 +225,13 @@ section {
         align-items: center;
         text-align: justify;
         margin: 10px; }
-      section .terminal-app a,
-      section .shorties-app a,
-      section .dme-plant a,
-      section .fruit-market a,
-      section .spaceX-app a {
+      section .terminal-app a, section .shorties-app a, section .dme-plant a, section .fruit-market a, section .spaceX-app a {
         width: 100%;
         height: auto;
         grid-column: 3 / 4;
         grid-row: 1 / 2;
         margin: 0px; }
-        section .terminal-app a #github-logo,
-        section .terminal-app a #portfolio,
-        section .terminal-app a #barrel,
-        section .terminal-app a #notes-icon,
-        section .terminal-app a #dme-icon,
-        section .shorties-app a #github-logo,
-        section .shorties-app a #portfolio,
-        section .shorties-app a #barrel,
-        section .shorties-app a #notes-icon,
-        section .shorties-app a #dme-icon,
-        section .dme-plant a #github-logo,
-        section .dme-plant a #portfolio,
-        section .dme-plant a #barrel,
-        section .dme-plant a #notes-icon,
-        section .dme-plant a #dme-icon,
-        section .fruit-market a #github-logo,
-        section .fruit-market a #portfolio,
-        section .fruit-market a #barrel,
-        section .fruit-market a #notes-icon,
-        section .fruit-market a #dme-icon,
-        section .spaceX-app a #github-logo,
-        section .spaceX-app a #portfolio,
-        section .spaceX-app a #barrel,
-        section .spaceX-app a #notes-icon,
-        section .spaceX-app a #dme-icon {
+        section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .terminal-app a #dme-icon, section .terminal-app a #dme-icon, section .shorties-app a #github-logo, section .shorties-app a #portfolio, section .shorties-app a #barrel, section .shorties-app a #dme-icon, section .shorties-app a #dme-icon, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel, section .dme-plant a #dme-icon, section .dme-plant a #dme-icon, section .fruit-market a #github-logo, section .fruit-market a #portfolio, section .fruit-market a #barrel, section .fruit-market a #dme-icon, section .fruit-market a #dme-icon, section .spaceX-app a #github-logo, section .spaceX-app a #portfolio, section .spaceX-app a #barrel, section .spaceX-app a #dme-icon, section .spaceX-app a #dme-icon {
           width: 30px;
           height: auto;
           margin-top: 100px;
@@ -342,30 +243,18 @@ section {
 
   section {
     margin-right: 0px; }
-    section .terminal-app figure img,
-    section .shorties-app figure img,
-    section .dme-plant figure img,
-    section .fruit-market figure img,
-    section .spaceX-app figure img {
+    section .terminal-app figure img, section .shorties-app figure img, section .dme-plant figure img, section .fruit-market figure img, section .spaceX-app figure img {
       margin-top: 0px; }
 
   .dme-pic img {
     width: auto;
     height: 150px; }
 
-  .terminal-pic img,
-  .fruit-market-pic img,
-  .spaceX-app-pic img,
-  .shorties-app-pic img {
+  .terminal-pic img, .fruit-market-pic img, .spaceX-app-pic img, .shorties-app-pic img {
     width: 200px;
     height: auto; }
 
-  .shorties-app-pic:hover {
-    margin-bottom: 50px;
-    transform: scale(1.5); }
-
-  img #barrel,
-  img #dme-icon {
+  img #barrel, img #dme-icon {
     margin-bottom: 25px; } }
 @media screen and (max-width: 600px) {
   img {
@@ -409,22 +298,14 @@ section {
     flex-direction: column;
     justify-items: center;
     align-items: center; }
-    section .terminal-app,
-    section .shorties-app,
-    section .dme-plant,
-    section .fruit-market,
-    section .spaceX-app {
+    section .terminal-app, section .shorties-app, section .dme-plant, section .fruit-market, section .spaceX-app {
       width: 100%;
       height: 100%;
       justify-content: center;
       align-items: center;
       grid-template-columns: 1fr 1fr 0.3fr;
       grid-template-rows: 1fr; }
-      section .terminal-app article,
-      section .shorties-app article,
-      section .dme-plant article,
-      section .fruit-market article,
-      section .spaceX-app article {
+      section .terminal-app article, section .shorties-app article, section .dme-plant article, section .fruit-market article, section .spaceX-app article {
         width: 100%;
         height: 100%;
         grid-column: 2 / 3;
@@ -433,41 +314,13 @@ section {
         align-items: center;
         text-align: justify;
         margin: 10px; }
-      section .terminal-app a,
-      section .shorties-app a,
-      section .dme-plant a,
-      section .fruit-market a,
-      section .spaceX-app a {
+      section .terminal-app a, section .shorties-app a, section .dme-plant a, section .fruit-market a, section .spaceX-app a {
         width: 100%;
         height: auto;
         grid-column: 3 / 4;
         grid-row: 1 / 2;
         margin: 0px; }
-        section .terminal-app a #github-logo,
-        section .terminal-app a #portfolio,
-        section .terminal-app a #barrel,
-        section .terminal-app a #notes-icon,
-        section .terminal-app a #dme-icon,
-        section .shorties-app a #github-logo,
-        section .shorties-app a #portfolio,
-        section .shorties-app a #barrel,
-        section .shorties-app a #notes-icon,
-        section .shorties-app a #dme-icon,
-        section .dme-plant a #github-logo,
-        section .dme-plant a #portfolio,
-        section .dme-plant a #barrel,
-        section .dme-plant a #notes-icon,
-        section .dme-plant a #dme-icon,
-        section .fruit-market a #github-logo,
-        section .fruit-market a #portfolio,
-        section .fruit-market a #barrel,
-        section .fruit-market a #notes-icon,
-        section .fruit-market a #dme-icon,
-        section .spaceX-app a #github-logo,
-        section .spaceX-app a #portfolio,
-        section .spaceX-app a #barrel,
-        section .spaceX-app a #notes-icon,
-        section .spaceX-app a #dme-icon {
+        section .terminal-app a #github-logo, section .terminal-app a #portfolio, section .terminal-app a #barrel, section .terminal-app a #dme-icon, section .terminal-app a #dme-icon, section .shorties-app a #github-logo, section .shorties-app a #portfolio, section .shorties-app a #barrel, section .shorties-app a #dme-icon, section .shorties-app a #dme-icon, section .dme-plant a #github-logo, section .dme-plant a #portfolio, section .dme-plant a #barrel, section .dme-plant a #dme-icon, section .dme-plant a #dme-icon, section .fruit-market a #github-logo, section .fruit-market a #portfolio, section .fruit-market a #barrel, section .fruit-market a #dme-icon, section .fruit-market a #dme-icon, section .spaceX-app a #github-logo, section .spaceX-app a #portfolio, section .spaceX-app a #barrel, section .spaceX-app a #dme-icon, section .spaceX-app a #dme-icon {
           width: 30px;
           height: auto;
           margin-top: 100px;
@@ -491,19 +344,14 @@ section {
     opacity: 0.5;
     color: #f3ebe6; }
 
-  .terminal-app img,
-  .fruit-market-pic img,
-  .spaceX-app-pic img,
-  .shorties-app-pic img {
+  .terminal-app img, .shorties-app img, .fruit-market-pic img, .spaceX-app-pic img {
     width: 130px;
     height: auto; }
 
   .dme-pic #dme {
     margin-bottom: 0px; }
 
-  #github-logo,
-  #notes-icon,
-  #barrel {
+  #github-logo, #portfolio, #barrel {
     width: 20px; }
 
   .dme-pic img {
@@ -517,4 +365,4 @@ section {
     article p {
       font-size: 8px; } }
 
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=project.css.map */
