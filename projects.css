@@ -69,15 +69,19 @@ footer {
       margin-right: 10px; } }
 .dme-pic img {
   width: auto;
-  height: 190px;
+  height: 150px;
   border-radius: 10px; }
 
 .spaceX-app-pic img,
 .fruit-market-pic img,
-.terminal-pic img,
-.shorties-app-pic img {
+.terminal-pic img {
   width: auto;
-  height: 150px;
+  height: 130px;
+  border-radius: 10px; }
+
+.shorties-app-pic img {
+  width: 300px;
+  height: auto;
   border-radius: 10px; }
 
 #barrel,
@@ -217,7 +221,7 @@ section {
     section .fruit-market #notes-icon,
     section .spaceX-app #notes-icon {
       margin-top: 0px;
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
 
 #github-logo:hover,
 #notes-icon:hover,
@@ -496,6 +500,10 @@ section {
   #notes-icon,
   #barrel {
     width: 20px; }
+
+  #notes-icon {
+    margin-top: 0px;
+    margin-bottom: 0px; }
 
   .dme-pic img {
     width: auto;
