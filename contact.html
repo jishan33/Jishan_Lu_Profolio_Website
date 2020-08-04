@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="contact.css" integrity="sha384-">
+  <link rel="stylesheet" href="contact.css" integrity="sha384-XQJje1c26BlhBr8UUSfnUDsB0L+t7LPdRSEA7xL4RBYnaLOc3eorpuKJoNLSPq31">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>Contact Me</title>
 </head>
 
@@ -29,9 +28,8 @@
         <div class="contact-detail">
           <h3>Contact Information</h3>
           <a
-            href="https://www.google.com/maps/place/Carnegie+VIC+3163/@-37.8937582,145.0385649,14z/data=!3m1!4b1!4m5!3m4!1s0x6ad6698e96878b6f:0x5045675218cdc40!8m2!3d-37.8891994!4d145.0570577"><i
-              class="fas fa-map-marker-alt"></i> Carnegie, VIC 3163</a>
-          <p><i class="far fa-envelope"></i> jishan@jishan33.com</p>
+            href="https://www.google.com/maps/place/Carnegie+VIC+3163/@-37.8937582,145.0385649,14z/data=!3m1!4b1!4m5!3m4!1s0x6ad6698e96878b6f:0x5045675218cdc40!8m2!3d-37.8891994!4d145.0570577"><img src="./photos/address-icon.png" id="address-icon" alt="address-icon"> Carnegie, VIC 3163</a>
+          <p><img src="./photos/email-icon.png" id="email-icon" alt="email-icon"> jishan@jishan33.com</p>
         </div>
 
         <form action="https://formspree.io/mjvozkeg" method="POST">
@@ -54,15 +52,15 @@
         <div id="map">
           <script>
             function initMap() {
-              var melbourne = { lat: -37.8892, lng: 145.0571 };
+              var melbourne = {lat: -37.8892, lng: 145.0571};
               var map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 10, center: melbourne });
-              var marker = new google.maps.Marker({ position: melbourne, map: map, label: "A" });
+                document.getElementById('map'), {zoom: 10, center: melbourne});
+              var marker = new google.maps.Marker({position: melbourne, map: map, label: "A"});
             }
           </script>
           <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbHnYBnBBWZ5GfQZBcmv4ILgr-A2uP7vI&callback=initMap">
-          </script>
+            </script>
       </figure>
 
 
@@ -79,6 +77,7 @@
             x.style.display = "block";
           }
         }
+
       </script>
     </div>
   </div>

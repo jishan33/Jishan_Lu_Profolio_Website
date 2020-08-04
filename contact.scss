@@ -159,6 +159,12 @@ section {
     width: 80%;
   }
 
+  #address-icon, #email-icon {
+    width: 13px;
+    margin-right: 5px;
+    margin-top: 2px;
+  }
+
 
 @media screen and (max-width: 900px) {
   form .detail input, section form .comment #comment {
